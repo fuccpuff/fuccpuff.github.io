@@ -450,7 +450,7 @@ header .links {
 
 #objects_in_one_place #new_cases #exclamation_new_cases {
     position: absolute;
-    right: 16px;
+    left: 360px;
     z-index: 1;
 }
 
@@ -467,7 +467,9 @@ header .links {
 }
 
 #new_cases_content > h1 {
-    font-size: 31px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
 }
 
 #objects_in_one_place #new_cases #cases {
@@ -492,6 +494,10 @@ header .links {
 
 #objects_in_one_place #new_cases #new_cases_content > h4 {
     margin-top: 5px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16.95px;
+    line-height: 21px;
 }
 
 #objects_in_one_place #object_info {

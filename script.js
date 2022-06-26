@@ -116,14 +116,15 @@ function runBlockAnimations(el) {
     })
 }
 
-document.querySelectorAll('.animated_block').forEach(el => {
-    let blockDelay = 0;
-    if ('blockDelay' in el.dataset)
-        blockDelay = el.dataset['blockDelay']
-    onReachElement(el, runBlockAnimations, true, blockDelay);
-})
-
-animate()
+window.onload = () => {
+    document.querySelectorAll('.animated_block').forEach(el => {
+        let blockDelay = 0;
+        if ('blockDelay' in el.dataset)
+            blockDelay = el.dataset['blockDelay']
+        onReachElement(el, runBlockAnimations, true, blockDelay);
+    })
+    animate()
+}
 
 document.querySelectorAll('.economy_element').forEach(el => {
     let mouseEnter = 0;
