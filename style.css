@@ -441,7 +441,7 @@ header .links {
     width: 475px;
     height: 277px;
     left: -72px;
-    top: -55px;
+    top: -58px;
     background: linear-gradient(132.2deg, #6FA7DE 15.68%, #93C4F4 79.98%);
     box-shadow: 13px 21px 35px 0 rgba(21, 30, 39, 0.11);
     overflow: hidden;
@@ -450,7 +450,7 @@ header .links {
 
 #objects_in_one_place #new_cases #exclamation_new_cases {
     position: absolute;
-    right: 40px;
+    right: 16px;
     z-index: 1;
 }
 
