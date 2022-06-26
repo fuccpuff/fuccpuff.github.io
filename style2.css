@@ -1,0 +1,296 @@
+@font-face {
+    font-family: "Journal Sans New";
+    src: url("fonts/JournalSansNew.ttf") format("opentype"),
+         url("fonts/JournalSansNew-Bold.ttf") format("opentype");
+}
+
+* {
+    font-family: "Journal Sans New", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+header {
+    position: absolute;
+    padding: 24px 72px;
+    width: 100%;
+    z-index: 1;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .links {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.blue_links_header a {
+    color: #3B89D7 !important;
+}
+
+#faq_link {
+    color: white;
+}
+
+#start_link {
+    display: flex;
+    align-items: center;
+    margin-left: 75px;
+    margin-bottom: 5px;
+    color: #FFF;
+}
+
+#start_link img {
+    margin-left: 20px;
+}
+
+a {
+    color: #3B89D7;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+body {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+}
+
+.flex-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 1;
+}
+
+.img_container {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+#support_form {
+    margin-top: 20px;
+}
+
+#auth_img {
+    background: url("static/auth.png") no-repeat;
+}
+
+#register_img {
+    background: url("static/register.png") no-repeat;
+}
+
+#support_img {
+    background: url("static/support.png") no-repeat;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.form_container {
+    width: 450px;
+    padding: 20px;
+    padding-bottom: 63px;
+}
+
+#register_form {
+    position: relative;
+}
+
+.form_container a {
+    display: block;
+    margin-top: 30px;
+}
+
+.form_container form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+input, textarea {
+    padding: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-top: 16px;
+}
+
+.textarea_input_label {
+    align-items: normal;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+.register_form {
+    width: 750px;
+    padding-top: 100px;
+}
+
+.support_form {
+    width: 750px;
+    padding-top: 100px;
+}
+
+.img_container .register_footer {
+    position: absolute;
+    bottom: 20px;
+}
+
+.right.img_container .register_footer {
+    right: 20px;
+}
+
+.img_container .register_footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.auth_form footer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer_links a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: #999;
+    font-weight: normal;
+}
+
+.form_container.register_form .register_footer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.input_label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+.input_label input {
+    margin-top: 0;
+}
+
+.input_label div {
+    min-width: 90px;
+    flex: 1;
+    margin-right: 25px;
+}
+
+.input_label input, .input_label textarea {
+    flex: 3;
+}
+
+.checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    transition: 0.1s;
+}
+
+.checkbox:checked+label::before {
+    background-color: #3B89D7;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+    border: 1px solid #3B89D7;
+    transition: 0.1s;
+}
+
+#forgot_password {
+    text-decoration: underline;
+    color: #3B89D7;
+}
+
+#auth_form .form_button {
+    font-size: 18px;
+}
+
+.form_button {
+    cursor: pointer;
+    width: 200px;
+    background-color: #FF4D00;
+    border: none;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.checkboxes {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 13px;
+}
+
+.checkboxes .checkbox_container {
+    max-width: 250px;
+}
+
+.logo_right {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
