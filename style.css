@@ -450,7 +450,7 @@ header .links {
 
 #objects_in_one_place #new_cases #exclamation_new_cases {
     position: absolute;
-    left: 360px;
+    right: 40px;
     z-index: 1;
 }
 
