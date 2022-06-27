@@ -130,13 +130,13 @@ document.querySelectorAll('.economy_element').forEach(el => {
     let mouseEnter = 0;
     el.addEventListener('mouseenter', () => {
         mouseEnter = new Date().getTime()
-        el.querySelector('img').classList.add('wiggle_animation')
+        el.querySelector('.economy_animation_element').classList.add('wiggle_animation')
     })
     el.addEventListener('mouseleave', () => {
         let thistime = new Date().getTime()
         if (mouseEnter + 1000 > thistime)
-            setTimeout(() => el.querySelector('img').classList.remove('wiggle_animation'), 1000 - thistime + mouseEnter)
-        else el.querySelector('img').classList.remove('wiggle_animation')
+        setTimeout(() => el.querySelector('.economy_animation_element').classList.remove('wiggle_animation'), 1000 - thistime + mouseEnter)
+        else el.querySelector('.economy_animation_element').classList.remove('wiggle_animation')
     })
 })
 

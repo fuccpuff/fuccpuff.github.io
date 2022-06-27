@@ -13,8 +13,9 @@
 <header class="animated_block">
     <div class="container">
         <div class="logo animation top_elastic_animation" data-delay="100">
-            <img src="static/logo_left.png" alt=""><img src="static/logo_w.png" alt="" id="logo_w_left"><img src="static/logo_w.png" alt="" id="logo_w_right"><img src="static/logo_right.png" alt="">
-        </div>
+            <img src="static/logo_left.png" alt=""><img src="static/logo_w.png" alt="" id="logo_w_left"><img
+            src="static/logo_w.png" alt="" id="logo_w_right"><img src="static/logo_right.png" alt="">
+                </div>
         <div class="links">
             <a href="support.html" id="faq_link" class="animation opacity_animation" data-delay="150">FAQ</a>
             <a href="auth.html" id="start_link" class="animation opacity_animation" data-delay="200">начать <img
@@ -33,7 +34,7 @@
         </div>
     </div>
     <div class="blue_rectangle"></div>
-    <img src="static/building.png" alt="" id="building" class="animation right_animation_building" data-delay="100">
+    <img src="static/building.png" alt="" id="building" class="animation bottom_animation_building" data-delay="100">
 </div>
 <div id="second_block" class="animated_block" data-block-delay="400">
     <img src="static/el1.svg" alt="" id="el1" class="animation slide_from_left" data-delay="200">
@@ -63,11 +64,11 @@
         <span>чтобы они всегда были под рукой</span>
     </div>
     <div class="possibility_element animation bottom_animation" data-delay="250" id="pe5">
-            <div class="possibility_img" id="pizza_img">
-                <img src="static/report1.svg" alt="">
-                <img src="static/report2.svg" alt="">
-                <img src="static/report3.svg" alt="">
-            </div>
+        <div class="possibility_img" id="pizza_img">
+            <img src="static/report1.svg" alt="">
+            <img src="static/report2.svg" alt="">
+            <img src="static/report3.svg" alt="">
+        </div>
         <h3>Создавайте отчеты</h3>
         <span>и отслеживайте результаты вашей работы</span>
     </div>
@@ -96,17 +97,49 @@
         <div class="left">
             <div class="economy_first_row">
                 <div class="economy_element">
-                    <img src="static/warehouses.svg" alt="" class="animation slide_from_left_small_elem" data-delay="0">
+                    <div class="economy_img">
+                        <img src="static/economy_bg.svg" alt="">
+                        <div class="economy_img_dynamic">
+                            <div class="economy_img_animation_hover economy_animation_element">
+                                <img src="static/warehouses_top.svg" alt=""
+                                class="animation slide_from_top_warehouses"
+                                     style="position: absolute; left: 50%;">
+                                <img src="static/warehouses_bottom.svg" alt="" id="warehouses_static"
+                                     style="position: absolute; bottom: 0">
+                            </div>
+                        </div>
+                    </div>
+                    <!--                    <img src="static/warehouses.svg" alt="" class="animation slide_from_left_small_elem" data-delay="0">-->
                     <h4 class="animation opacity_animation" data-delay="300">складские помещения</h4>
                 </div>
             </div>
             <div class="economy_second_row">
                 <div class="economy_element">
-                    <img src="static/retail_space.svg" alt="" class="animation slide_from_left_small_elem" data-delay="150">
+                    <div class="economy_img">
+                        <img src="static/economy_bg.svg" alt="">
+                        <div class="economy_img_dynamic">
+                            <div class="economy_img_animation_hover economy_animation_element">
+                                <img src="static/retail_space_dynamic.svg" alt="" class="animation slide_from_left_small_elem" style="position: absolute; bottom: 0; left: 0">
+                                <img src="static/retail_space_static.svg" alt="" style="position: absolute; top: 0; right: 0">
+                            </div>
+                        </div>
+                    </div>
+                    <!--                    <img src="static/retail_space.svg" alt="" class="animation slide_from_left_small_elem" data-delay="150">-->
                     <h4 class="animation opacity_animation" data-delay="450">торговые площади</h4>
                 </div>
                 <div class="economy_element">
-                    <img src="static/office_spaces.svg" alt="" class="animation slide_from_left_small_elem" data-delay="300">
+                    <div class="economy_img">
+                        <img src="static/economy_bg.svg" alt="">
+                        <div class="economy_img_dynamic">
+                            <div class="economy_img_animation_hover economy_animation_element">
+                                <img src="static/economy_office_spaces_dynamic.svg" alt=""
+                                     class="animation slide_from_left_small_elem">
+                                <img src="static/economy_office_spaces_static.svg" alt=""
+                                     id="economy_office_spaces_static">
+                            </div>
+                        </div>
+                    </div>
+                    <!--                    <img src="static/office_spaces.svg" alt="" class="animation slide_from_left_small_elem" data-delay="300">-->
                     <h4 class="animation opacity_animation" data-delay="600">офисные пространства</h4>
                 </div>
             </div>

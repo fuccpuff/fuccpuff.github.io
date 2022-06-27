@@ -1,9 +1,14 @@
 @font-face {
     font-family: "Journal Sans New";
-    src: url("fonts/JournalSansNew.ttf") format("opentype"),
-    url("fonts/JournalSansNew-Bold.ttf") format("opentype");
+    font-weight: 500;
+    src: url("fonts/JournalSansNew.ttf") format("opentype");
 }
 
+@font-face {
+    font-family: "Journal Sans New";
+    font-weight: 700;
+    src: url("fonts/JournalSansNew-Bold.ttf") format("opentype");
+}
 @font-face {
     font-family: "Gilroy";
     src: url("fonts/Gilroy-Heavy.ttf") format("opentype");
@@ -313,6 +318,7 @@ header .links {
     opacity: 0;
     transition: 0.5s;
     text-align: center;
+    font-size: 12px;
 }
 
 .possibility_element.hovered span {
@@ -433,6 +439,56 @@ header .links {
     margin-right: 83px;
 }
 
+.economy_img {
+    width: 148px;
+    height: 162px;
+    position: relative;
+}
+
+.economy_img > img {
+    position: absolute;
+}
+
+.economy_img .economy_img_dynamic {
+    width: 102px;
+    height: 102px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slide_from_left_small_elem_warehouses {
+    transform: translateX(-100vw);
+}
+
+.slide_from_left_small_elem_warehouses.animated {
+    transform: translateX(-50%);
+    transition: 1s;
+}
+
+.slide_from_top_warehouses {
+    transform: translateX(-50%) translateY(-200px);
+    opacity: 0;
+}
+
+.slide_from_top_warehouses.animated {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+    transition: 1s;
+}
+
+#economy_office_spaces_static {
+    position: absolute;
+    bottom: 13px;
+    right: 5px;
+}
+
+.economy_img_animation_hover {
+    width: 100%;
+    height: 100%;
+}
+
 #objects_in_one_place {
     margin-top: 150px;
 }
@@ -440,7 +496,7 @@ header .links {
 #objects_in_one_place #new_cases {
     width: 475px;
     height: 277px;
-    left: -72px;
+    left: -96px;
     top: -58px;
     background: linear-gradient(132.2deg, #6FA7DE 15.68%, #93C4F4 79.98%);
     box-shadow: 13px 21px 35px 0 rgba(21, 30, 39, 0.11);
@@ -538,7 +594,7 @@ header .links {
     cursor: pointer;
     min-width: 170px;
     width: 170px;
-    padding: 20px;
+    padding: 18px;
     border: 1px solid rgba(40, 40, 40, 0.11);
     border-radius: 8px;
     margin: 8px;
@@ -620,7 +676,7 @@ header .links {
 
 #objects_in_one_place .label {
     height: 74px;
-    width: 350px;
+    width: 360px;
 }
 
 .heading {
@@ -659,6 +715,10 @@ header .links {
 
 #profit_analysis {
 
+}
+
+input {
+    outline: none;
 }
 
 #profit_rectangle {
@@ -1224,6 +1284,10 @@ header .links {
     z-index: 0;
 }
 
+#checks {
+    margin-top: 150px;
+}
+
 .nab2 {
     left: 390px;
 }
@@ -1529,6 +1593,17 @@ footer .footer_links a:nth-child(2) {
 }
 
 .bottom_animation.animated {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.bottom_animation_building {
+    transform: translateY(300px);
+    opacity: 0;
+}
+
+.bottom_animation_building.animated {
     transform: translateY(0);
     opacity: 1;
     transition: 0.5s;
