@@ -51,6 +51,7 @@
     src: url("fonts/geometria_extrabold.otf") format("opentype");
 }
 
+
 :root {
     --651C: #ACBED2;
     --WARMGRAY5C: #A59D96;
@@ -550,9 +551,7 @@ header .links {
 
 #objects_in_one_place #new_cases #new_cases_content > h4 {
     margin-top: 5px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16.95px;
+    font-size: 16px;
     line-height: 21px;
 }
 
@@ -904,7 +903,7 @@ input {
 
 #profit_analysis #cells_count_2 {
     position: absolute;
-    right: 0;
+    left: -92px;
     top: -240px;
     z-index: -1;
 }
