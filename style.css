@@ -315,6 +315,7 @@ header .links {
 }
 
 .possibility_element span {
+    margin-top: 4px;
     color: #000000;
     opacity: 0;
     transition: 0.5s;
