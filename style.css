@@ -83,7 +83,7 @@ a {
 }
 
 header {
-    position: fixed;
+    position: absolute;
     padding: 24px 72px;
     width: 100%;
     z-index: 999;
