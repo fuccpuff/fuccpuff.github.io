@@ -1869,12 +1869,14 @@ footer .footer_links a:nth-child(2) {
     #economy_block .economy {
         position: relative;
     }
-    
+
     #main_block_left h1 {
         font-size: 45px;
         line-height: 45px;
     }
 }
+
+
 
 /*.possibility_element:before {*/
 /*    content: "";*/
@@ -1890,3 +1892,4 @@ footer .footer_links a:nth-child(2) {
 /*    transform: scale(1.1);*/
 /*    transition: 0.5s;*/
 /*}*/
+}
