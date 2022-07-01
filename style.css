@@ -1835,12 +1835,22 @@ footer .footer_links a:nth-child(2) {
     #building {
         left: 50vw;
     }
+    #main_block_left h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
 }
 
 @media (max-width: 1200px) {
     .heading {
         font-size: 80px;
     }
+    #main_block_left .form_button {
+        width: 260px;
+        height: 60px;
+        font-size: 24px;
+        margin-top: 100px;
+        padding: 0;
 }
 
 @media (max-width: 900px) {
@@ -1858,6 +1868,11 @@ footer .footer_links a:nth-child(2) {
 
     #economy_block .economy {
         position: relative;
+    }
+    
+    #main_block_left h1 {
+        font-size: 45px;
+        line-height: 45px;
     }
 }
 
