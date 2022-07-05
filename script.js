@@ -67,6 +67,29 @@ function focus(elem, index) {
     }
 }
 
+SmoothScroll({
+    // Время скролла 400 = 0.4 секунды
+    animationTime    : 800,
+    // Размер шага в пикселях 
+    stepSize         : 25,
+    // Дополнительные настройки:
+    // Ускорение 
+    accelerationDelta : 30,  
+    // Максимальное ускорение
+    accelerationMax   : 2,   
+    // Поддержка клавиатуры
+    keyboardSupport   : true,  
+    // Шаг скролла стрелками на клавиатуре в пикселях
+    arrowScroll       : 50,
+    // Pulse (less tweakable)
+    // ratio of "tail" to "acceleration"
+    pulseAlgorithm   : true,
+    pulseScale       : 4,
+    pulseNormalize   : 1,
+    // Поддержка тачпада
+    touchpadSupport   : true,
+})
+
 function closeNewCases() {
     document.querySelector('#new_cases').style.opacity = '0';
     setTimeout(() => {
@@ -228,20 +251,20 @@ document.addEventListener('DOMContentLoaded', () => {
     addTween("#sm5", bottomAnimation, '#profit_analysis', 200, 100)
     addTween("#sm6", bottomAnimation, '#profit_analysis', 200, 200)
     addTween("#count_object", translateX0, '#profit_analysis', 200, -50)
-    addTween("#bradley3", opacity1, '#profit_analysis', 200, -100)
-    addTween("#bradley4", opacity1, '#profit_analysis', 300, -100)
-    addTween("#cells_count_1", opacity1, '#profit_analysis', 100, -150)
-    addTween("#cells_count_2", opacity1, '#profit_analysis', 100, -150)
+/*     addTween("#bradley3", opacity1, '#profit_analysis', 200, -100)
+    addTween("#bradley4", opacity1, '#profit_analysis', 300, -100) */
+/*     addTween("#cells_count_1", opacity1, '#profit_analysis', 100, -150)
+    addTween("#cells_count_2", opacity1, '#profit_analysis', 100, -150) */
 
     addTween("#sm7", bottomAnimation, '#contragents', 200, -50)
     addTween("#sm8", bottomAnimation, '#contragents', 200, 100)
     addTween("#sm9", bottomAnimation, '#contragents', 100, 150)
     addTween("#sm10", bottomAnimation, '#contragents', 100, 150)
     addTween("#cool_img", bottomAnimation, '#contragents', 200, -50)
-    addTween("#bradley5", opacity1, '#contragents', 200, -100)
+/*     addTween("#bradley5", opacity1, '#contragents', 200, -100) */
     addTween("#bradley6", opacity1, '#contragents', 250, -100)
     addTween("#check_cells", opacity1, '#contragents', 200, -150)
-    addTween("#ilya_cells", opacity1, '#contragents', 250, -150)
+/*     addTween("#ilya_cells", opacity1, '#contragents', 250, -150) */
     addTween("#info_cadastral", translateX0, '#contragents', 250, 0)
 
     addTween("#sm11", bottomAnimation, '#references', 200, -50)
@@ -260,8 +283,8 @@ document.addEventListener('DOMContentLoaded', () => {
     addTween("#regulations", translateX0, '#actual_information', 200, -50)
     addTween(".doc_animation_1", docAnimation, '#actual_information', 200, 20)
     addTween(".doc_animation_2", docAnimation, '#actual_information', 200, 40)
-    addTween(".doc_animation_3", docAnimation, '#actual_information', 200, 60)
-    addTween(".doc_animation_4", docAnimation, '#actual_information', 200, 80)
+/*     addTween(".doc_animation_3", docAnimation, '#actual_information', 200, 60)
+    addTween(".doc_animation_4", docAnimation, '#actual_information', 200, 80) */
 
     addTween("#sm17", bottomAnimation, '#checks', 200, -50)
     addTween("#sm18", bottomAnimation, '#checks', 200, -75)

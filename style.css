@@ -887,7 +887,7 @@ input {
 .block {
     position: relative;
     height: 100vh;
-    margin-top: 150px;
+    margin-top: 10px;
     display: flex;
 }
 
