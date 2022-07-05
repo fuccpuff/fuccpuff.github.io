@@ -369,19 +369,35 @@ header .links {
     left: 60vw;
 }
 
-#economy_block #economy_number {
+#economy_block #economy_number_stroke {
     position: absolute;
     font-family: 'Gilroy', sans-serif;
     color: #93C4F5;
-    background: -webkit-linear-gradient(180deg, #93C4F5 0%, #6FA7DE 78.12%);
+    background: -webkit-linear-gradient(161.98deg, #91C3F4 -0.19%, #3C8AD7 63.29%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 600px;
     top: 150px;
     width: 590px;
     letter-spacing: -65px;
-    -webkit-filter: drop-shadow(39px 14px 59px rgba(8, 25, 41, 0.15));
-    filter: drop-shadow(39px 14px 59px rgba(8, 25, 41, 0.15));
+    -webkit-filter: drop-shadow(38.8786px 13.66px 58.8433px rgba(8, 25, 41, 0.15));
+    filter: drop-shadow(38.8786px 13.66px 58.8433px rgba(8, 25, 41, 0.15));
+}
+
+#economy_block #economy_number {
+    position: absolute;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 24px;
+    color: #93C4F5;
+    background: -webkit-linear-gradient(158.02deg, #93C4F5 -1.5%, #3B89D7 68.5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 600px;
+    top: 150px;
+    width: 590px;
+    letter-spacing: -65px;
+    -webkit-filter: drop-shadow(38.8786px 13.66px 58.8433px rgba(8, 25, 41, 0.15));
+    filter: drop-shadow(38.8786px 13.66px 58.8433px rgba(8, 25, 41, 0.15));
 }
 
 #economy_block #economy_percent {
@@ -1171,17 +1187,17 @@ input {
 
 .info_doc:nth-child(1) {
     left: -200px;
-    top: 50px;
+    top: 30px;
     z-index: 2;
 }
 
 .info_doc:nth-child(2) {
     left: 150px;
-    top: -100px;
+    top: -45px;
 }
 
 .info_doc:nth-child(3) {
-    left: -150px;
+    left: 350px;
     top: 220px;
     z-index: 1;
 }
@@ -1229,6 +1245,8 @@ input {
     padding: 30px;
     color: #FFF;
     font-family: "Geometria", "Journal Sans New", sans-serif;
+    font-size: 13px;
+    line-height: 16px;
 }
 
 .act:nth-child(1) {
@@ -1401,8 +1419,8 @@ input {
 }
 
 .team .member {
-    width: 200px;
-    margin: 0 150px;
+    width: 270px;
+    margin: 0 110px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1788,11 +1806,11 @@ footer .footer_links a:nth-child(2) {
 }
 
 .doc_animation_1 {
-    transform: scale(0) rotate(70deg);
+    transform: scale(0) rotate(-21.62deg);
 }
 
 .doc_animation_2 {
-    transform: scale(0) rotate(-70deg);
+    transform: scale(0) rotate(27.57deg);
 }
 
 .doc_animation.animated {
