@@ -212,6 +212,7 @@ header .links {
 
 #second_block {
     position: relative;
+    margin-top: -30px;
 }
 
 #el1 {
