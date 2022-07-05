@@ -255,6 +255,7 @@ header .links {
     box-shadow: 0px 4px 41px 0px rgba(0, 0, 0, 0.11);
     z-index: 100;
     padding: 15px;
+    
 }
 
 .possibility_element h3 {
@@ -318,6 +319,7 @@ header .links {
 
 .possibility_element.hovered #obligations img:nth-child(2) {
     transform: rotate(120deg) scale(0.72);
+    
 }
 
 .possibility_element span {
@@ -335,6 +337,7 @@ header .links {
 
 .possibility_element:hover {
     margin: 0 70px !important;
+    border: 0.5px solid #000000;
 }
 
 .wiggle_animation {
@@ -499,12 +502,12 @@ header .links {
 }
 
 #objects_in_one_place #new_cases {
-    width: 475px;
-    height: 277px;
-    left: -96px;
-    top: -58px;
-    background: linear-gradient(132.2deg, #6FA7DE 15.68%, #93C4F4 79.98%);
-    box-shadow: 13px 21px 35px 0 rgba(21, 30, 39, 0.11);
+    width: 420px;
+    height: 238px;
+    left: -99px;
+    top: -54px;
+    background: linear-gradient(180deg, #3A87D3 0%, #7BB4EC 100%);
+    box-shadow: 13px 21px 35px rgba(21, 30, 39, 0.11);
     overflow: hidden;
     color: #FFF;
 }
@@ -552,7 +555,7 @@ header .links {
 }
 
 #objects_in_one_place #new_cases #new_cases_content > h4 {
-    margin-top: 5px;
+    margin-top: 25px;
     font-size: 16px;
     line-height: 21px;
 }
@@ -802,7 +805,7 @@ input {
     align-items: center;
     padding-left: 50px;
     margin: 15px 0 15px 45px;
-    background-color: #73AAE0;
+    background-color: #5D9FE0;;
     color: #FFF;
     font-weight: bold;
     font-size: 18px;
@@ -1022,7 +1025,7 @@ input {
 }
 
 #cadastral_nav .nav_el.chosen {
-    background: linear-gradient(180deg, #6FA7DE 0%, #93C4F5 100%);
+    background: linear-gradient(117.01deg, #3A87D3 33.12%, #93C4F5 110.35%);
     color: #FFF;
     border: none;
 }
@@ -1106,6 +1109,7 @@ input {
 #egrn form textarea {
     margin-top: 30px;
     padding: 20px;
+    resize: none;
 }
 
 #egrn form input, #egrn form select {
@@ -1406,13 +1410,14 @@ input {
 }
 
 .member h4 {
-    font-size: 36px;
+    font-size: 29px;
     color: #000000;
     margin-top: 40px;
     text-align: center;
 }
 
 .member span {
+    margin-top: 20px;
     color: #000000;
     transition: 0.5s;
     font-size: 16px;
