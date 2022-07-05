@@ -5,63 +5,69 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>OWNEX</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://app.getreview.io/tags/KzLIjGgfmpeLzWuY/sdk.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="animation.gsap.js"></script>
 </head>
 <body>
+<div id="trigger" class="spacer s0"></div>
 <header class="animated_block">
     <div class="container">
-        <div class="logo animation top_elastic_animation" data-delay="100">
+        <div class="logo">
             <img src="static/logo_left.png" alt=""><img src="static/logo_w.png" alt="" id="logo_w_left"><img
-            src="static/logo_w.png" alt="" id="logo_w_right"><img src="static/logo_right.png" alt="">
-                </div>
+                src="static/logo_w.png" alt="" id="logo_w_right"><img src="static/logo_right.png" alt="">
+        </div>
         <div class="links">
-            <a href="support.html" id="faq_link" class="animation opacity_animation" data-delay="150">FAQ</a>
-            <a href="auth.html" id="start_link" class="animation opacity_animation" data-delay="200">начать <img
+            <a id="faq_link">FAQ</a>
+            <a id="start_link">начать <img
                     src="static/starticon.svg" alt=""></a>
         </div>
     </div>
 </header>
 <div id="main_block" class="animated_block">
     <div id="main_block_left">
-        <h1 class="heading animation bottom_animation" data-delay="0">Сервис по управлению коммерческой
+        <h1 class="heading">Сервис по управлению коммерческой
             недвижимостью</h1>
         <div class="right_block">
-            <h2 class="animation bottom_animation" data-delay="200">Помогает контроллировать все<br> операционные задачи
-                и состояние объектов</h2>
-            <button class="form_button animation bottom_animation" data-delay="400">приступить</button>
+<!--             <h2 class="animation">Помогает контроллировать все<br> операционные задачи
+                и состояние объектов</h2> -->
+            <button class="form_button parallax" data-rellax-speed="2">приступить</button>
         </div>
     </div>
     <div class="blue_rectangle"></div>
-    <img src="static/building.png" alt="" id="building" class="animation bottom_animation_building" data-delay="100">
+    <img src="static/building.png" alt="" id="building" class="parallax" data-rellax-speed="10">
 </div>
-<div id="second_block" class="animated_block" data-block-delay="600">
+<div id="second_block" class="animated_block" data-block-delay="400">
     <img src="static/el1.svg" alt="" id="el1" class="animation slide_from_left" data-delay="200">
-    <div id="screen1_container" class="animation scale_from_zero" data-delay="300">
+    <div id="screen1_container" class="scale0">
         <img class="site_example" src="static/1screen.png">
     </div>
 </div>
-<div id="possibility_block" class="animated_block" data-block-delay="600">
+<div id="possibility_block" class="animated_block" data-block-delay="400">
     <div class="possibility_element animation bottom_animation" data-delay="50" id="pe1">
         <img src="static/rouble.svg" alt="">
         <h3>Ведите финансовый учет</h3>
-        <span>чтобы ничего не упустить</span>
+        <span>Чтобы ничего не упустить</span>
     </div>
     <div class="possibility_element animation bottom_animation" data-delay="100" id="pe2">
         <img src="static/risks.svg" alt="">
         <h3>Управляйте рисками</h3>
-        <span>избегайте негативных последствий</span>
+        <span>Избегайте негативных последствий</span>
     </div>
     <div class="possibility_element animation bottom_animation" data-delay="150" id="pe3">
         <img src="static/deals.svg" alt="">
         <h3>Контролируйте сделки</h3>
-        <span>проверяйте надежность партнеров</span>
+        <span>Проверяйте надежность партнеров</span>
     </div>
     <div class="possibility_element animation bottom_animation" data-delay="200" id="pe4">
         <img src="static/documents.svg" alt="">
         <h3>Храните документы и акты</h3>
-        <span>чтобы они всегда были под рукой</span>
+        <span>Чтобы они всегда были под рукой</span>
     </div>
     <div class="possibility_element animation bottom_animation" data-delay="250" id="pe5">
         <div class="possibility_img" id="pizza_img">
@@ -70,12 +76,12 @@
             <img src="static/report3.svg" alt="">
         </div>
         <h3>Создавайте отчеты</h3>
-        <span>и отслеживайте результаты вашей работы</span>
+        <span>И отслеживайте результаты вашей работы</span>
     </div>
     <div class="possibility_element animation bottom_animation" data-delay="300" id="pe6">
         <img src="static/changes.svg" alt="">
         <h3>Отслеживайте изменения в законах</h3>
-        <span>не покидая сервис</span>
+        <span>Не покидая сервис</span>
     </div>
     <div class="possibility_element animation bottom_animation" data-delay="350" id="pe7">
         <div class="possibility_img" id="obligations">
@@ -83,89 +89,29 @@
             <img src="static/obligations_rays.svg" alt="">
         </div>
         <h3>Рассчитывайте финансовые обязательства</h3>
-        <span>с помощью онлайн-калькулятора</span>
+        <span>С помощью онлайн-калькулятора</span>
     </div>
     <div class="possibility_element animation bottom_animation" data-delay="400" id="pe8">
         <img src="static/profit_analysis.svg" alt="">
         <h3>Анализируйте доходность объектов</h3>
-        <span>и управляйте прибылью</span>
+        <span>И управляйте прибылью</span>
     </div>
 </div>
 <div class="block_container">
     <div class="gray_rectangle" id="economy_rectangle"></div>
-    <div class="block animated_block" id="economy_block" data-block-delay="600">
-        <div class="left">
-            <div class="economy_first_row">
-                <div class="economy_element">
-                    <div class="economy_img">
-                        <img src="static/economy_bg.svg" alt="">
-                        <div class="economy_img_dynamic">
-                            <div class="economy_img_animation_hover economy_animation_element">
-                                <img src="static/warehouses_top.svg" alt=""
-                                class="animation slide_from_top_warehouses"
-                                     style="position: absolute; left: 50%;">
-                                <img src="static/warehouses_bottom.svg" alt="" id="warehouses_static"
-                                     style="position: absolute; bottom: 0">
-                            </div>
-                        </div>
-                    </div>
-                    <!--                    <img src="static/warehouses.svg" alt="" class="animation slide_from_left_small_elem" data-delay="0">-->
-                    <h4 class="animation opacity_animation" data-delay="300">складские помещения</h4>
-                </div>
-            </div>
-            <div class="economy_second_row">
-                <div class="economy_element">
-                    <div class="economy_img">
-                        <img src="static/economy_bg.svg" alt="">
-                        <div class="economy_img_dynamic">
-                            <div class="economy_img_animation_hover economy_animation_element">
-                                <img src="static/retail_space_dynamic.svg" alt="" class="animation slide_from_left_small_elem" style="position: absolute; bottom: 0; left: 0">
-                                <img src="static/retail_space_static.svg" alt="" style="position: absolute; top: 0; right: 0">
-                            </div>
-                        </div>
-                    </div>
-                    <!--                    <img src="static/retail_space.svg" alt="" class="animation slide_from_left_small_elem" data-delay="150">-->
-                    <h4 class="animation opacity_animation" data-delay="450">торговые площади</h4>
-                </div>
-                <div class="economy_element">
-                    <div class="economy_img">
-                        <img src="static/economy_bg.svg" alt="">
-                        <div class="economy_img_dynamic">
-                            <div class="economy_img_animation_hover economy_animation_element">
-                                <img src="static/economy_office_spaces_dynamic.svg" alt=""
-                                     class="animation slide_from_left_small_elem">
-                                <img src="static/economy_office_spaces_static.svg" alt=""
-                                     id="economy_office_spaces_static">
-                            </div>
-                        </div>
-                    </div>
-                    <!--                    <img src="static/office_spaces.svg" alt="" class="animation slide_from_left_small_elem" data-delay="300">-->
-                    <h4 class="animation opacity_animation" data-delay="600">офисные пространства</h4>
-                </div>
-            </div>
-        </div>
-        <div id="economy">
-            <div id="economy_number" class="animation scale_from_zero" data-delay="900">25</div>
-            <div id="economy_percent" class="animation scale_from_zero" data-delay="1000">%</div>
-            <div id="economy_info" class="animation bottom_animation" data-delay="1100">Ownex поможет сэкономить до 25%
-                расходов на управление и содержание объектов
-                коммерческой недвижимости
-            </div>
-        </div>
-    </div>
-    <div class="block animated_block" id="objects_in_one_place" data-block-delay="600">
+    <div class="block animated_block" id="objects_in_one_place" data-block-delay="700">
         <div class="left block_left">
-            <div class="label animation bottom_animation" data-delay="200">Фокусируйтесь на главном</div>
-            <h1 class="heading animation bottom_animation" data-delay="100">Все объекты<br> в одном месте</h1>
-            <div class="heading_info animation bottom_animation" data-delay="250">В панели управления OWNEX все ключевые
+            <div class="label sm_bottom_animation" id="sm1">Фокусируйтесь на главном</div>
+            <h1 class="heading sm_bottom_animation" id="sm2">Все объекты<br> в одном месте</h1>
+            <div class="heading_info sm_bottom_animation" id="sm3">В панели управления OWNEX все ключевые
                 характеристики объектов собраны в одном
                 окне, чтобы вы оперативно реагировали на изменения.
             </div>
-            <img src="static/vector.svg" alt="" id="vector_img" class="animation bottom_animation" data-delay="500">
+            <img src="static/vector.svg" alt="" id="vector_img" class="sm_bottom_animation">
             <div class="shadow"></div>
         </div>
         <div class="right block_right">
-            <div id="new_cases" class="example animation windows_animation" data-delay="1500">
+            <div id="new_cases" class="example windows_animation">
                 <img src="static/exclamation_point.svg" alt="" id="exclamation_new_cases">
                 <img src="static/x.svg" id="close_new_cases" alt="X" onclick="closeNewCases()">
                 <div id="new_cases_content">
@@ -178,7 +124,7 @@
                     </div>
                 </div>
             </div>
-            <div id="object_info" class="example animation slide_from_right" data-delay="200">
+            <div id="object_info" class="example smanimation">
                 <div class="header">
                     <h1 class="cadastral">77:01:0001001:1234</h1>
                     <h1 class="name">Наименование объекта</h1>
@@ -195,7 +141,7 @@
                             <div>Здание (тест)</div>
                         </div>
                         <div class="feature" id="address_feature">
-                            <h4>Адрес объекта</h4>
+                            <h4>Адрес</h4>
                             <div>Московская область, г.Москва, ул. Карла маркса, д.144/2а, корп. 10, кв. 246</div>
                         </div>
                     </div>
@@ -215,9 +161,9 @@
                     </div>
                 </div>
             </div>
-            <img src="static/cells.png" id="cells_img_cadastral" alt="" class="animation opacity_animation" data-delay="400">
-            <!-- img src="static/cells.png" id="cells_img_important" alt="" class="animation opacity_animation" data-delay="400"> -->
-            <div class="bradley_container animation opacity_animation" data-delay="650">
+            <img src="static/cells.png" id="cells_img_cadastral" alt="" class="opacity0">
+            <img src="static/cells.png" id="cells_img_important" alt="" class="opacity0">
+            <div class="bradley_container smanimation" id="bradley1">
                 <div id="check_cadastral_cost" class="bradley_font">проверить<br>&nbsp;&nbsp;&nbsp;кадастровую<br>&nbsp;стоимость!!!
                 </div>
             </div>
@@ -225,19 +171,19 @@
     </div>
     <div class="block block_reverse animated_block" id="profit_analysis" data-block-delay="600">
         <div class="left block_left">
-            <div class="label animation bottom_animation" data-delay="200">Используйте инструменты сервиса</br>и управляйте
+            <div class="label animation bottom_animation" data-delay="200" id="sm4">Используйте инструменты сервиса и управляйте
                 финансовыми рисками
             </div>
-            <h1 class="heading animation bottom_animation" data-delay="100">Анализ доходности</h1>
-            <div class="heading_info animation bottom_animation" data-delay="250">Подготавливайте договоры, выставляйте
+            <h1 class="heading animation bottom_animation" data-delay="100" id="sm5">Анализ доходности</h1>
+            <div class="heading_info animation bottom_animation" data-delay="250" id="sm6">Подготавливайте договоры, выставляйте
                 счета, отслеживайте дебиторскую
-                задолженность, составляйте финансовые отчеты, а еще ведите учет арендаторов и поступлений арендных</br>
+                задолженность, составляйте финансовые отчеты, а еще ведите учет арендаторов и поступлений арендных
                 платежей.
             </div>
             <div class="gray_rectangle" id="profit_rectangle"></div>
         </div>
         <div class="right block_right">
-            <div id="count_object" class="example animation slide_from_left" data-delay="200">
+            <div id="count_object" class="example smanimation">
                 <div class="count_content">
                     <div class="count_left">
                         <div>Период</div>
@@ -285,42 +231,102 @@
                             <input type="text" value="1,9%" disabled>
                         </div>
                     </div>
-                    <div id="count_tax">Итого земельный</br>налог</div>
+                    <div id="count_tax">Итого земельный налог</div>
                 </div>
                 <button id="count_btn" class="form_button">Рассчитать</button>
             </div>
-            <img src="static/cells.png" alt="" id="cells_count_1" class="animation opacity_animation" data-delay="400">
-            <img src="static/cells.png" alt="" id="cells_count_2" class="animation opacity_animation" data-delay="400">
-            <div class="bradley_container animation opacity_animation" data-delay="250">
+            <img src="static/cells.png" alt="" id="cells_count_1" class="opacity0">
+            <img src="static/cells.png" alt="" id="cells_count_2" class="opacity0">
+            <div class="bradley_container smanimation" data-delay="250" id="bradley3">
                 <div class="bradley_font" id="count_1">Н = (Н1 - Н2) x К<br>+ Н2</div>
             </div>
-            <div class="bradley_container animation opacity_animation" data-delay="450">
+            <div class="bradley_container smanimation" data-delay="450" id="bradley4">
                 <div class="bradley_font" id="count_2">1 258 552<br>&nbsp;&nbsp;&nbsp;012,26*1,9%=<br>=???????</div>
+            </div>
+        </div>
+    </div>
+    <div class="block animated_block" id="economy_block" data-block-delay="1000">
+        <div class="left">
+            <div class="economy_first_row">
+                <div class="economy_element">
+                    <div class="economy_img">
+                        <img src="static/economy_bg.svg" alt="">
+                        <div class="economy_img_dynamic">
+                            <div class="economy_img_animation_hover economy_animation_element">
+                                <img src="static/warehouses_top.svg" alt="" id="warehouses_top"
+                                     class="smanimation"
+                                     style="position: absolute; left: 50%;">
+                                <img src="static/warehouses_bottom.svg" alt="" id="warehouses_static"
+                                     style="position: absolute; bottom: 0">
+                            </div>
+                        </div>
+                    </div>
+                    <!--                    <img src="static/warehouses.svg" alt="" class="animation slide_from_left_small_elem" data-delay="0">-->
+                    <h4 class="animation opacity_animation" data-delay="300">складские помещения</h4>
+                </div>
+            </div>
+            <div class="economy_second_row">
+                <div class="economy_element">
+                    <div class="economy_img">
+                        <img src="static/economy_bg.svg" alt="">
+                        <div class="economy_img_dynamic">
+                            <div class="economy_img_animation_hover economy_animation_element">
+                                <img src="static/retail_space_dynamic.svg" alt="" id="retail_space_cart" class="smanimation" style="position: absolute; bottom: 0; left: 0">
+                                <img src="static/retail_space_static.svg" alt="" style="position: absolute; top: 0; right: 0">
+                            </div>
+                        </div>
+                    </div>
+                    <!--                    <img src="static/retail_space.svg" alt="" class="animation slide_from_left_small_elem" data-delay="150">-->
+                    <h4 class="animation opacity_animation" data-delay="450">торговые площади</h4>
+                </div>
+                <div class="economy_element">
+                    <div class="economy_img">
+                        <img src="static/economy_bg.svg" alt="">
+                        <div class="economy_img_dynamic">
+                            <div class="economy_img_animation_hover economy_animation_element">
+                                <img src="static/economy_office_spaces_dynamic.svg" alt=""
+                                     class="smanimation" id="economy_office">
+                                <img src="static/economy_office_spaces_static.svg" alt=""
+                                     id="economy_office_spaces_static">
+                            </div>
+                        </div>
+                    </div>
+                    <!--                    <img src="static/office_spaces.svg" alt="" class="animation slide_from_left_small_elem" data-delay="300">-->
+                    <h4 class="animation opacity_animation" data-delay="600">офисные пространства</h4>
+                </div>
+            </div>
+        </div>
+        <div id="economy">
+            <div id="economy_number" class="smanimation">25</div>
+            <div id="economy_percent" class="smanimation">%</div>
+            <div id="economy_info" class="smanimation">Ownex поможет сэкономить до 25%
+                расходов на управление и содержание объектов
+                коммерческой недвижимости
             </div>
         </div>
     </div>
     <div class="block animated_block" id="contragents" data-block-delay="600">
         <div class="left block_left">
-            <div class="label animation bottom_animation" data-delay="200">Будьте уверены в тех, с кем сотрудничаете
+            <div class="label sm_bottom_animation" id="sm7">Будьте уверены в тех, с кем сотрудничаете
             </div>
-            <h1 class="heading animation bottom_animation" data-delay="100">Проверка контрагентов</h1>
-            <div class="heading_info animation bottom_animation" data-delay="250">Оцените риски сотрудничества: для
-                этого</br>сервис подготовит отчет по каждому</br>из
-                ваших партнеров, проверит ИНН</br>и другие реквизиты.<br>
-                <button class="form_button" style="font-size: 25.56px; padding: 22px; width: 265px; height: 77.67px; border-radius: 14.41px; text-align: center; ">начать</button>
+            <h1 class="heading sm_bottom_animation" id="sm8">Проверка контрагентов</h1>
+            <div class="heading_info sm_bottom_animation" id="sm9">Оцените риски сотрудничества: для
+                этого сервис подготовит отчет по каждому из
+                ваших партнеров, проверит ИНН и другие реквизиты.<br>
+                <button class="form_button sm_bottom_animation" id="sm10" style="font-size: 26px; padding: 22px;">начать</button>
             </div>
-            <img src="static/cool.png" alt="" id="cool_img" class="animation bottom_animation" data-delay="250">
+            <img src="static/cool.png" alt="" id="cool_img" class=" sm_bottom_animation">
         </div>
         <div class="right block_right">
-            <img src="static/cells.png" id="check_cells" alt="" class="animation opacity_animation" data-delay="400">
-            <img src="static/cells.png" id="ilya_cells" alt="" class="animation opacity_animation" data-delay="400">
-            <div class="bradley_container animation opacity_animation" data-delay="450">
+            <img src="static/cells.png" id="check_cells" alt="" class="opacity0">
+            <img src="static/cells.png" id="ilya_cells" alt="" class="opacity0">
+            <div class="bradley_container opacity0" id="bradley5">
                 <div id="ilya_text" class="bradley_font">Илья,<br> а это кто?</div>
             </div>
-            <div class="bradley_container animation opacity_animation" data-delay="250">
+            <div class="bradley_container opacity0" id="bradley6">
                 <div id="check_asap_text" class="bradley_font">срочно проверить!!!</div>
             </div>
-            <div id="info_cadastral" class="example animation slide_from_right" data-delay="200">
+            <div id="info_cadastral" class="example smanimation">
                 <div class="header" id="cadastral_number">77:01:0001001:1234</div>
                 <div id="cadastral_nav">
                     <div class="nav_el chosen">Общая информация</div>
@@ -340,21 +346,21 @@
     </div>
     <div class="block block_reverse animated_block" id="references" data-block-delay="600">
         <div class="left block_left">
-            <div class="label animation bottom_animation" data-delay="200">Экономьте время на поиске документов и
+            <div class="label sm_bottom_animation" id="sm11">Экономьте время на поиске документов и
                 справок
             </div>
-            <h1 class="heading animation bottom_animation" data-delay="100">Справки</br>и выписки</br>в один клик</h1>
-            <div class="heading_info animation bottom_animation" data-delay="250">Заказывайте выписки из ЕГРН</br>и
-                проверяйте контрагентов</br>с помощью OWNEX.
+            <h1 class="heading sm_bottom_animation" id="sm12">Справки и выписки в один клик</h1>
+            <div class="heading_info sm_bottom_animation" id="sm13">Заказывайте выписки из ЕГРН и
+                проверяйте контрагентов с помощью OWNEX.
             </div>
-            <img src="static/clap.png" alt="" id="clap_img" class="animation bottom_animation" data-delay="250">
+            <img src="static/clap.png" alt="" id="clap_img" class="sm_bottom_animation">
             <div class="gray_rectangle"></div>
         </div>
         <div class="right block_right">
             <div class="bradley_container animation opacity_animation" data-delay="450">
-                <div class="bradley_font" id="andrey_references">Андрей, где<br>выписки??</div>
+                <div class="bradley_font opacity0" id="andrey_references">Андрей, где<br>выписки??</div>
             </div>
-            <div id="egrn" class="example animation slide_from_left" data-delay="200">
+            <div id="egrn" class="example smanimation">
                 <div class="header">Заказ выписок ЕГРН</div>
                 <div id="email_label_egrn">Введите e-mail, на который будут отправлены выписки</div>
                 <form>
@@ -364,12 +370,12 @@
                             <option value="">Тип выписки</option>
                         </select>
                     </div>
-                    <textarea class="form_input" name="" cols="30" rows="10" disabled>77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026</textarea>
+                    <textarea class="form_input" name="" cols="30" rows="10">77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026</textarea>
                     <button class="form_button">Заказать выписку</button>
                 </form>
-                <img src="static/references.svg" alt="" id="references_img">
+                <img src="static/references.svg" alt="" id="references_img" class="smanimation">
             </div>
-            <div id="make_reference" class="example animation slide_from_left_small_elem" data-delay="400">
+            <div id="make_reference" class="example smanimation">
                 <div class="header">Заказать выписку</div>
                 <div id="date_of_extract">Дата выписки</div>
                 <form>
@@ -381,21 +387,21 @@
     </div>
     <div class="block animated_block" id="actual_information" data-block-delay="600">
         <div class="left block_left">
-            <div class="label animation bottom_animation" data-delay="200">Узнавайте первыми обо всех изменениях</div>
-            <h1 class="heading animation bottom_animation" data-delay="100">Актуальная юридическая информация</h1>
-            <div class="heading_info animation bottom_animation" data-delay="250">Система информирует вас</br>
-                об изменениях в законодательстве,</br>
-                формирующейся судебной практике</br>и налоговых резервах.
+            <div class="label sm_bottom_animation" id="sm14">Узнавайте первыми обо всех изменениях</div>
+            <h1 class="heading sm_bottom_animation" id="sm15">Актуальная юридическая информация</h1>
+            <div class="heading_info sm_bottom_animation" id="sm16">Система автоматически информирует вас
+                об изменениях в законодательстве,
+                формирующейся судебной практике и налоговых резервах.
             </div>
             <img src="static/tworects.svg" alt="" id="tworects">
-            <img src="static/juridical_info.svg" alt="" id="juridical_info_img">
+            <img src="static/juridical_info.svg" alt="" id="juridical_info_img" class="sm_bottom_animation">
         </div>
         <div class="right block_right">
-            <img src="static/doc1.png" alt="" class="info_doc animation doc_animation_1 doc_animation">
-            <img src="static/doc2.png" alt="" class="info_doc animation doc_animation_2 doc_animation">
-            <img src="static/doc3.png" alt="" class="info_doc animation doc_animation_1 doc_animation">
-            <img src="static/doc4.png" alt="" class="info_doc animation doc_animation_2 doc_animation">
-            <div id="regulations" class="example animation scale_from_zero" data-delay="400">
+            <img src="static/doc1.png" alt="" class="info_doc doc_animation_1 doc_animation">
+            <img src="static/doc2.png" alt="" class="info_doc doc_animation_2 doc_animation">
+            <img src="static/doc3.png" alt="" class="info_doc doc_animation_1 doc_animation">
+            <img src="static/doc4.png" alt="" class="info_doc doc_animation_2 doc_animation">
+            <div id="regulations" class="example smanimation">
                 <h1 class="header">НОРМАТИВНЫЕ АКТЫ</h1>
                 <div id="acts">
                     <div class="act">
@@ -427,24 +433,24 @@
     </div>
     <div class="block block_reverse animated_block" id="checks" data-block-delay="600">
         <div class="left block_left">
-            <div class="label animation bottom_animation" data-delay="200">Исключите правовые риски заранее</div>
-            <h1 class="heading animation bottom_animation" data-delay="100">Проверки<br> больше не будут<br> внезапными
+            <div class="label sm_bottom_animation" id="sm17">Исключите правовые риски заранее</div>
+            <h1 class="heading sm_bottom_animation" id="sm18">Проверки<br> больше не будут<br> внезапными
             </h1>
-            <div class="heading_info animation bottom_animation" data-delay="250">OWNEX своевременно оповещает о
+            <div class="heading_info sm_bottom_animation" id="sm19">OWNEX своевременно оповещает о
                 плановых проверках и предлагает механизмы и
                 варианты реагирования.
             </div>
-            <img src="static/headblow.gif" alt="" id="headblow_img" class="animation bottom_animation" data-delay="100">
+            <img src="static/headblow.gif" alt="" id="headblow_img" class="animation sm_bottom_animation">
         </div>
         <div class="right block_right">
-            <div class="check example animation scale_bounce_animation" data-delay="400">
+            <div class="check example scale0" id="sm20">
                 <div class="text">
                     <b>В сентябре 2022 года</b><br>Роспотребнадзор начинает серию проверок. Узнайте, как подготовиться
                 </div>
                 <u><b>подробнее</b></u>
                 <img src="static/bell.svg" alt="" class="bell">
             </div>
-            <div class="check example animation scale_bounce_animation" data-delay="800">
+            <div class="check example scale0" id="sm21">
                 <div class="text">
                     <b>С 20 по 30 октября</b><br>на один из ваших <u>объектов</u> планируется выездная проверка. Будьте
                     готовы!
@@ -452,50 +458,55 @@
                 <u><b>подробнее</b></u>
                 <img src="static/bell.svg" alt="" class="bell">
             </div>
-            <div class="check example animation scale_bounce_animation" data-delay="1200">
+            <div class="check example scale0" id="sm22">
                 <div class="text">
                     Пришло время плановой проверки от МЧС
                 </div>
                 <u><b>подробнее</b></u>
                 <img src="static/bell.svg" alt="" class="bell">
             </div>
-            <img src="static/lightning.svg" alt="" id="lightning" class="animation scale_bounce_animation"
-                 data-delay="250">
+            <img src="static/lightning.svg" alt="" id="lightning" class="scale0">
         </div>
     </div>
 </div>
 <div id="service_team">
     <div class="animated_block" data-block-delay="500">
-        <h1 class="heading animation bottom_animation" data-delay="200">Один сервис —<br>одна команда </h1>
+        <h1 class="heading sm_bottom_animation" id="sm23">Один сервис —<br>одна команда </h1>
     </div>
     <img src="static/team_left.svg" alt="" id="team_rects_left">
     <img src="static/team_right.svg" alt="" id="team_rects_right">
     <div class="team animated_block" data-block-delay="500">
-        <div class="member animation bottom_animation" data-delay="50">
+        <div class="member sm_bottom_animation" id="sm24">
             <img src="static/team_owner.svg" alt="">
             <h4>собственник</h4>
+            <span>Получает структурированную информацию по всем объектам</span>
         </div>
-        <div class="member animation bottom_animation" data-delay="100">
+        <div class="member sm_bottom_animation" id="sm25">
             <img src="static/control.svg" alt="">
             <h4>управляющий</h4>
+            <span>Удаленно следит за операционной работой, не занимается рутиной</span>
         </div>
-        <div class="member animation bottom_animation" data-delay="150">
+        <div class="member sm_bottom_animation" id="sm26">
             <img src="static/financial_director.svg" alt="">
             <h4>финансовый директор</h4>
+            <span>Управляет прибыльностью объектов на основе детализированных отчетов</span>
         </div>
     </div>
     <div class="team animated_block" data-block-delay="300">
-        <div class="member animation bottom_animation" data-delay="200">
+        <div class="member sm_bottom_animation" id="sm27">
             <img src="static/accountant.svg" alt="">
             <h4>бухгалтер</h4>
+            <span>Рассчитывает арендные и налоговые платежи на онлайн-калькуляторе</span>
         </div>
-        <div class="member animation bottom_animation" data-delay="250">
+        <div class="member sm_bottom_animation" id="sm28">
             <img src="static/lawyer.svg" alt="">
             <h4>юрист</h4>
+            <span>Благодаря новостной ленте оперативно реагирует на изменения в законодательстве</span>
         </div>
-        <div class="member animation bottom_animation" data-delay="300">
+        <div class="member sm_bottom_animation" id="sm29">
             <img src="static/manager.svg" alt="">
             <h4>менеджер</h4>
+            <span>Ставит задачи и контролирует их выполнение прямо в сервисе</span>
         </div>
     </div>
 </div>
@@ -528,8 +539,7 @@
     <img src="static/rects3.svg" alt="" id="rects3">
     <img src="static/rects4.svg" alt="" id="rects4">
 </div>
-
+<script src="rellax.min.js"></script>
 <script src="script.js"></script>
-
 </body>
 </html>
