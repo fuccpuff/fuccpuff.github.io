@@ -324,11 +324,12 @@ header .links {
 }
 
 .possibility_element span {
-    color: #666;
+    color: #000000;
     opacity: 0;
     transition: 0.5s;
     font-size: 12px;
     text-align: center;
+    margin-top: 10px;
 }
 
 .possibility_element.hovered span {
