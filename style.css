@@ -516,7 +516,7 @@ header .links {
 }
 
 #objects_in_one_place {
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
 #objects_in_one_place #new_cases {
@@ -887,6 +887,7 @@ input {
 .block {
     position: relative;
     height: 100vh;
+    margin-top: 150px;
     display: flex;
 }
 
