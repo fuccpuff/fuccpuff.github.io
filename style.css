@@ -706,6 +706,15 @@ header .links {
     border-radius: 10px;
     background-color: #FFF;
     padding: 21px 39px;
+    opacity: 0;
+    transition: 0.5s;
+    position: absolute;
+    top: 0;
+}
+
+.heading:hover ~ .label {
+    opacity: 1;
+    transition: 0.5s;
 }
 
 #objects_in_one_place .label {
@@ -716,11 +725,11 @@ header .links {
 .heading {
     font-size: 106px;
     line-height: 93px;
-    margin-top: 20px;
+    margin-top: 120px;
 }
 
 #objects_in_one_place .heading {
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .heading_info {

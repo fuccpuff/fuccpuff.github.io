@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
     addTween("#economy_office", {transform: 'translateX(0)'}, '#economy_block', 400, 0)
     addTween("#economy_info", scale1, '#economy_block', 400, 0)
 
-    addTween("#sm1", bottomAnimation, '#objects_in_one_place', 200, -150)
+    // addTween("#sm1", bottomAnimation, '#objects_in_one_place', 200, -150)
     addTween("#sm2", bottomAnimation, '#objects_in_one_place', 200, -100)
     addTween("#sm3", bottomAnimation, '#objects_in_one_place', 200, -50)
     addTween(".windows_animation", bottomAnimation, '#objects_in_one_place', 200, -50)
@@ -247,7 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
     addTween("#cells_img_cadastral", opacity1, '#objects_in_one_place', 250, 300)
     addTween("#cells_img_important", opacity1, '#objects_in_one_place', 200, 200)
 
-    addTween("#sm4", bottomAnimation, '#profit_analysis', 200, -50)
+    // addTween("#sm4", bottomAnimation, '#profit_analysis', 200, -50)
     addTween("#sm5", bottomAnimation, '#profit_analysis', 200, 100)
     addTween("#sm6", bottomAnimation, '#profit_analysis', 200, 200)
     addTween("#count_object", translateX0, '#profit_analysis', 200, -50)
@@ -256,7 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
 /*     addTween("#cells_count_1", opacity1, '#profit_analysis', 100, -150)
     addTween("#cells_count_2", opacity1, '#profit_analysis', 100, -150) */
 
-    addTween("#sm7", bottomAnimation, '#contragents', 200, -50)
+    // addTween("#sm7", bottomAnimation, '#contragents', 200, -50)
     addTween("#sm8", bottomAnimation, '#contragents', 200, 100)
     addTween("#sm9", bottomAnimation, '#contragents', 100, 150)
     addTween("#sm10", bottomAnimation, '#contragents', 100, 150)
@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
 /*     addTween("#ilya_cells", opacity1, '#contragents', 250, -150) */
     addTween("#info_cadastral", translateX0, '#contragents', 250, 0)
 
-    addTween("#sm11", bottomAnimation, '#references', 200, -50)
+    // addTween("#sm11", bottomAnimation, '#references', 200, -50)
     addTween("#sm12", bottomAnimation, '#references', 200, -50)
     addTween("#sm13", bottomAnimation, '#references', 200, -50)
     addTween("#clap_img", bottomAnimation, '#references', 300, 150)
@@ -276,7 +276,7 @@ document.addEventListener('DOMContentLoaded', () => {
     addTween("#make_reference", translateX0, '#references', 200, 0)
     addTween("#references_img", translateX0, '#references', 200, 0)
 
-    addTween("#sm14", bottomAnimation, '#actual_information', 200, -50)
+    // addTween("#sm14", bottomAnimation, '#actual_information', 200, -50)
     addTween("#sm15", bottomAnimation, '#actual_information', 200, -75)
     addTween("#sm16", bottomAnimation, '#actual_information', 200, -100)
     addTween("#juridical_info_img", bottomAnimation, '#actual_information', 300, 150)
@@ -286,7 +286,7 @@ document.addEventListener('DOMContentLoaded', () => {
 /*     addTween(".doc_animation_3", docAnimation, '#actual_information', 200, 60)
     addTween(".doc_animation_4", docAnimation, '#actual_information', 200, 80) */
 
-    addTween("#sm17", bottomAnimation, '#checks', 200, -50)
+    // addTween("#sm17", bottomAnimation, '#checks', 200, -50)
     addTween("#sm18", bottomAnimation, '#checks', 200, -75)
     addTween("#sm19", bottomAnimation, '#checks', 200, -100)
     addTween("#headblow_img", bottomAnimation, '#checks', 300, 150)

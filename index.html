@@ -8,12 +8,15 @@
     <title>OWNEX</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://app.getreview.io/tags/KzLIjGgfmpeLzWuY/sdk.js" async></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+            integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
     <script src="animation.gsap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+            integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="trigger" class="spacer s0"></div>
@@ -34,8 +37,8 @@
     <div id="main_block_left">
         <h1 class="heading">Сервис по управлению</br>коммерческой</br>недвижимостью</h1>
         <div class="right_block">
-<!--             <h2 class="animation">Помогает контроллировать все<br> операционные задачи
-                и состояние объектов</h2> -->
+            <!--             <h2 class="animation">Помогает контроллировать все<br> операционные задачи
+                            и состояние объектов</h2> -->
             <button class="form_button parallax" data-rellax-speed="2">приступить</button>
         </div>
     </div>
@@ -48,7 +51,7 @@
         <img class="site_example" src="static/1screen.png">
     </div>
 </div>
-<center><h1>Начни контролировать все операционные задачи по состоянию и эксплуатации объектов</h1></center>
+<div style="display: flex; justify-content: center; text-align: center"><h1>Начни контролировать все операционные задачи по состоянию и эксплуатации объектов</h1></div>
 <div id="possibility_block" class="animated_block" data-block-delay="400">
     <div class="possibility_element animation bottom_animation" data-delay="50" id="pe1">
         <img src="static/rouble.svg" alt="">
@@ -99,11 +102,11 @@
     </div>
 </div>
 <div class="block_container">
-    
+
     <div class="block animated_block" id="objects_in_one_place" data-block-delay="700">
         <div class="left block_left">
-            <div class="label sm_bottom_animation" id="sm1">Фокусируйтесь на главном</div>
             <h1 class="heading sm_bottom_animation" id="sm2">Все объекты<br>в одном месте</h1>
+            <div class="label" id="sm1">Фокусируйтесь на главном</div>
             <div class="heading_info sm_bottom_animation" id="sm3">В панели управления OWNEX все</br>ключевые
                 характеристики объектов</br>собраны в одном
                 окне, чтобы вы</br>оперативно реагировали на изменения.
@@ -118,11 +121,11 @@
                 <div id="new_cases_content">
                     <h1>ОБРАТИТЕ</br>ВНИМАНИЕ</h1>
                     <h4>Появились кейсы, связанные</br>с изменением данного параметра:</h4>
-<!--                     <div id="cases">
-                        <div class="case"><h1>1</h1><h4>кейс</h4></div>
-                        <div class="case"><h1>2</h1><h4>кейс</h4></div>
-                        <div class="case"><h1>3</h1><h4>кейс</h4></div>
-                    </div> -->
+                    <!--                     <div id="cases">
+                                            <div class="case"><h1>1</h1><h4>кейс</h4></div>
+                                            <div class="case"><h1>2</h1><h4>кейс</h4></div>
+                                            <div class="case"><h1>3</h1><h4>кейс</h4></div>
+                                        </div> -->
                 </div>
             </div>
             <div id="object_info" class="example smanimation">
@@ -172,13 +175,15 @@
     </div>
     <div class="block block_reverse animated_block" id="profit_analysis" data-block-delay="600">
         <div class="left block_left">
-            <div class="label animation bottom_animation" data-delay="200" id="sm4">Используйте инструменты сервиса и управляйте
+            <h1 class="heading animation bottom_animation" data-delay="100" id="sm5">Анализ</br>доходности</h1>
+            <div class="label" data-delay="200" id="sm4">Используйте инструменты сервиса и управляйте
                 финансовыми рисками
             </div>
-            <h1 class="heading animation bottom_animation" data-delay="100" id="sm5">Анализ</br>доходности</h1>
-            <div class="heading_info animation bottom_animation" data-delay="250" id="sm6">Подготавливайте договоры, выставляйте
+            <div class="heading_info animation bottom_animation" data-delay="250" id="sm6">Подготавливайте договоры,
+                выставляйте
                 счета,</br>отслеживайте дебиторскую
-                задолженность,</br>составляйте финансовые отчеты, а еще ведите</br>учет арендаторов и поступлений арендных</br>
+                задолженность,</br>составляйте финансовые отчеты, а еще ведите</br>учет арендаторов и поступлений
+                арендных</br>
                 платежей.
             </div>
             <div class="gray_rectangle" id="profit_rectangle"></div>
@@ -236,14 +241,14 @@
                 </div>
                 <button id="count_btn" class="form_button">Рассчитать</button>
             </div>
-<!--             <img src="static/cells.png" alt="" id="cells_count_1" class="opacity0">
-            <img src="static/cells.png" alt="" id="cells_count_2" class="opacity0"> -->
-<!--             <div class="bradley_container smanimation" data-delay="250" id="bradley3">
-                <div class="bradley_font" id="count_1">Н = (Н1 - Н2) x К<br>+ Н2</div>
-            </div>
-            <div class="bradley_container smanimation" data-delay="450" id="bradley4">
-                <div class="bradley_font" id="count_2">1 258 552<br>&nbsp;&nbsp;&nbsp;012,26*1,9%=<br>=???????</div>
-            </div> -->
+            <!--             <img src="static/cells.png" alt="" id="cells_count_1" class="opacity0">
+                        <img src="static/cells.png" alt="" id="cells_count_2" class="opacity0"> -->
+            <!--             <div class="bradley_container smanimation" data-delay="250" id="bradley3">
+                            <div class="bradley_font" id="count_1">Н = (Н1 - Н2) x К<br>+ Н2</div>
+                        </div>
+                        <div class="bradley_container smanimation" data-delay="450" id="bradley4">
+                            <div class="bradley_font" id="count_2">1 258 552<br>&nbsp;&nbsp;&nbsp;012,26*1,9%=<br>=???????</div>
+                        </div> -->
         </div>
     </div>
     <div class="block animated_block" id="economy_block" data-block-delay="1000">
@@ -273,8 +278,10 @@
                         <img src="static/economy_bg.svg" alt="">
                         <div class="economy_img_dynamic">
                             <div class="economy_img_animation_hover economy_animation_element">
-                                <img src="static/retail_space_dynamic.svg" alt="" id="retail_space_cart" class="smanimation" style="position: absolute; bottom: 0; left: 0">
-                                <img src="static/retail_space_static.svg" alt="" style="position: absolute; top: 0; right: 0">
+                                <img src="static/retail_space_dynamic.svg" alt="" id="retail_space_cart"
+                                     class="smanimation" style="position: absolute; bottom: 0; left: 0">
+                                <img src="static/retail_space_static.svg" alt=""
+                                     style="position: absolute; top: 0; right: 0">
                             </div>
                         </div>
                     </div>
@@ -310,22 +317,23 @@
     </div>
     <div class="block animated_block" id="contragents" data-block-delay="600">
         <div class="left block_left">
-            <div class="label sm_bottom_animation" id="sm7">Будьте уверены в тех,</br>с кем сотрудничаете
-            </div>
             <h1 class="heading sm_bottom_animation" id="sm8">Проверка</br>контрагентов</h1>
+            <div class="label" id="sm7">Будьте уверены в тех,</br>с кем сотрудничаете</div>
             <div class="heading_info sm_bottom_animation" id="sm9">Оцените риски сотрудничества: для
                 этого</br>сервис подготовит отчет по каждому</br>из
                 ваших партнеров, проверит ИНН</br>и другие реквизиты.<br>
-                <button class="form_button sm_bottom_animation" id="sm10" style="font-size: 26px; padding: 0px; width: 265px; height: 78px">начать</button>
+                <button class="form_button sm_bottom_animation" id="sm10"
+                        style="font-size: 26px; padding: 0px; width: 265px; height: 78px">начать
+                </button>
             </div>
             <img src="static/cool.png" alt="" id="cool_img" class=" sm_bottom_animation">
         </div>
         <div class="right block_right">
             <img src="static/cells.png" id="check_cells" alt="" class="opacity0">
             <!-- <img src="static/cells.png" id="ilya_cells" alt="" class="opacity0"> -->
-           <!--  <div class="bradley_container opacity0" id="bradley5">
-                <div id="ilya_text" class="bradley_font">Илья,<br> а это кто?</div>
-            </div> -->
+            <!--  <div class="bradley_container opacity0" id="bradley5">
+                 <div id="ilya_text" class="bradley_font">Илья,<br> а это кто?</div>
+             </div> -->
             <div class="bradley_container opacity0" id="bradley6">
                 <div id="check_asap_text" class="bradley_font">срочно проверить!!!</div>
             </div>
@@ -349,10 +357,10 @@
     </div>
     <div class="block block_reverse animated_block" id="references" data-block-delay="600">
         <div class="left block_left">
-            <div class="label sm_bottom_animation" id="sm11">Экономьте время на поиске документов и
+            <h1 class="heading sm_bottom_animation" id="sm12">Справки</br>и выписки</br>в один клик</h1>
+            <div class="label" id="sm11">Экономьте время на поиске документов и
                 справок
             </div>
-            <h1 class="heading sm_bottom_animation" id="sm12">Справки</br>и выписки</br>в один клик</h1>
             <div class="heading_info sm_bottom_animation" id="sm13">Заказывайте выписки из ЕГРН</br>и
                 проверяйте контрагентов</br>с помощью OWNEX.
             </div>
@@ -390,8 +398,8 @@
     </div>
     <div class="block animated_block" id="actual_information" data-block-delay="600">
         <div class="left block_left">
-            <div class="label sm_bottom_animation" id="sm14">Узнавайте первыми обо всех изменениях</div>
             <h1 class="heading sm_bottom_animation" id="sm15">Актуальная</br>юридическая</br>информация</h1>
+            <div class="label" id="sm14">Узнавайте первыми обо всех изменениях</div>
             <div class="heading_info sm_bottom_animation" id="sm16">Система информирует вас</br>
                 об изменениях в законодательстве,</br>
                 формирующейся судебной практике</br>и налоговых резервах.
@@ -436,9 +444,8 @@
     </div>
     <div class="block block_reverse animated_block" id="checks" data-block-delay="600">
         <div class="left block_left">
-            <div class="label sm_bottom_animation" id="sm17">Исключите правовые риски заранее</div>
-            <h1 class="heading sm_bottom_animation" id="sm18">Проверки<br>больше не будут<br>внезапными
-            </h1>
+            <h1 class="heading sm_bottom_animation" id="sm18">Проверки<br>больше не будут<br>внезапными</h1>
+            <div class="label" id="sm17">Исключите правовые риски заранее</div>
             <div class="heading_info sm_bottom_animation" id="sm19">OWNEX своевременно оповещает</br>о
                 плановых проверках и предлагает</br>механизмы и
                 варианты реагирования.
@@ -544,35 +551,36 @@
 </div>
 <script src="rellax.min.js"></script>
 <script src="script.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+        integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
 <script>
-SmoothScroll({
-    // Время скролла 400 = 0.4 секунды
-    animationTime    : 800,
-    // Размер шага в пикселях 
-    stepSize         : 75,
+    SmoothScroll({
+        // Время скролла 400 = 0.4 секунды
+        animationTime: 800,
+        // Размер шага в пикселях
+        stepSize: 75,
 
-    // Дополнительные настройки:
-    
-    // Ускорение 
-    accelerationDelta : 30,  
-    // Максимальное ускорение
-    accelerationMax   : 2,   
+        // Дополнительные настройки:
 
-    // Поддержка клавиатуры
-    keyboardSupport   : true,  
-    // Шаг скролла стрелками на клавиатуре в пикселях
-    arrowScroll       : 50,
+        // Ускорение
+        accelerationDelta: 30,
+        // Максимальное ускорение
+        accelerationMax: 2,
 
-    // Pulse (less tweakable)
-    // ratio of "tail" to "acceleration"
-    pulseAlgorithm   : true,
-    pulseScale       : 4,
-    pulseNormalize   : 1,
+        // Поддержка клавиатуры
+        keyboardSupport: true,
+        // Шаг скролла стрелками на клавиатуре в пикселях
+        arrowScroll: 50,
 
-    // Поддержка тачпада
-    touchpadSupport   : true,
-})
+        // Pulse (less tweakable)
+        // ratio of "tail" to "acceleration"
+        pulseAlgorithm: true,
+        pulseScale: 4,
+        pulseNormalize: 1,
+
+        // Поддержка тачпада
+        touchpadSupport: true,
+    })
 </script>
 </body>
 </html>
