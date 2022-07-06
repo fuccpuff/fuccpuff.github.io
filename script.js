@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let tween = TweenMax.to(element, 1, animation);
         new ScrollMagic.Scene({triggerElement: triggerElement, duration: duration, offset: offset})
             .setTween(tween)
-            .addIndicators({name: "tween css class"}) // add indicators (requires plugin)
+           /*  .addIndicators({name: "tween css class"}) // add indicators (requires plugin) */
             .addTo(controller);
     }
 
@@ -227,80 +227,89 @@ document.addEventListener('DOMContentLoaded', () => {
     let opacity1 = {opacity: 1}
     let docAnimation = {transform: 'scale(1) rotate(0)'}
 
+
+    /* 1-й экран */
     addTween("#screen1_container", scale1, '#second_block', 550, -50)
 
+    /* экран с 25% */
     addTween("#economy_number", scale1, '#economy_block', 300, -50)
     addTween("#economy_percent", scale1, '#economy_block', 300, -50)
     addTween("#warehouses_top", {transform: 'translateX(-50%) translateY(0)'}, '#economy_block', 350, -50)
-    addTween("#retail_space_cart", {transform: 'translateX(0)'}, '#economy_block', 350, -50)
-    addTween("#economy_office", {transform: 'translateX(0)'}, '#economy_block', 400, 0)
+    addTween("#retail_space_cart", {transform: 'translateX(0)'}, '#economy_block', 350, 50)
+    addTween("#economy_office", {transform: 'translateX(0)'}, '#economy_block', 400, 50)
     addTween("#economy_info", scale1, '#economy_block', 400, 0)
 
+    /* экран "Все объекты в одном месте"" */
     // addTween("#sm1", bottomAnimation, '#objects_in_one_place', 200, -150)
-    addTween("#sm2", bottomAnimation, '#objects_in_one_place', 200, -100)
-    addTween("#sm3", bottomAnimation, '#objects_in_one_place', 200, -50)
-    addTween(".windows_animation", bottomAnimation, '#objects_in_one_place', 200, -50)
-    addTween("#object_info", translateX0, '#objects_in_one_place', 200, -50)
-    addTween("#vector_img", bottomAnimation, '#objects_in_one_place', 300, -50)
+    addTween("#sm2", bottomAnimation, '#objects_in_one_place', 350, -250)
+    addTween("#sm3", bottomAnimation, '#objects_in_one_place', 350, -100)
+    addTween(".windows_animation", bottomAnimation, '#objects_in_one_place', 450, -100)
+    addTween("#object_info", translateX0, '#objects_in_one_place', 500, -100)
+    addTween("#vector_img", bottomAnimation, '#objects_in_one_place', 700, -100)
+    addTween("#bradley1", opacity1, '#objects_in_one_place', 550, -100)
+    addTween("#cells_img_cadastral", opacity1, '#objects_in_one_place', 500, -100)
+    addTween("#cells_img_important", opacity1, '#objects_in_one_place', 500, -100)
 
-    addTween("#bradley1", opacity1, '#objects_in_one_place', 300, 400)
-    addTween("#cells_img_cadastral", opacity1, '#objects_in_one_place', 250, 300)
-    addTween("#cells_img_important", opacity1, '#objects_in_one_place', 200, 200)
-
+    /* экран "Анализ доходности" */
     // addTween("#sm4", bottomAnimation, '#profit_analysis', 200, -50)
-    addTween("#sm5", bottomAnimation, '#profit_analysis', 200, 100)
-    addTween("#sm6", bottomAnimation, '#profit_analysis', 200, 200)
-    addTween("#count_object", translateX0, '#profit_analysis', 200, -50)
-/*     addTween("#bradley3", opacity1, '#profit_analysis', 200, -100)
-    addTween("#bradley4", opacity1, '#profit_analysis', 300, -100) */
-/*     addTween("#cells_count_1", opacity1, '#profit_analysis', 100, -150)
-    addTween("#cells_count_2", opacity1, '#profit_analysis', 100, -150) */
+    addTween("#sm5", bottomAnimation, '#profit_analysis', 700, -300)
+    addTween("#sm6", bottomAnimation, '#profit_analysis', 800, -300)
+    addTween("#count_object", translateX0, '#profit_analysis', 600, -250)
+/*  adddTween("#bradley3", opacity1, '#profit_analysis', 200, -100)
+    addTween("#bradley4", opacity1, '#profit_analysis', 300, -100) 
+    addTween("#cells_count_1", opacity1, '#profit_analysis', 100, -150)
+    addTween("#cells_count_2", opacity1, '#profit_analysis', 100, -150)  */
 
+    /* экран "Проверка контрагентов" */
     // addTween("#sm7", bottomAnimation, '#contragents', 200, -50)
-    addTween("#sm8", bottomAnimation, '#contragents', 200, 100)
-    addTween("#sm9", bottomAnimation, '#contragents', 100, 150)
-    addTween("#sm10", bottomAnimation, '#contragents', 100, 150)
+    addTween("#sm8", bottomAnimation, '#contragents', 200, -100)
+    addTween("#sm9", bottomAnimation, '#contragents', 300, -100)
+    addTween("#sm10", bottomAnimation, '#contragents', 400, -50)
     addTween("#cool_img", bottomAnimation, '#contragents', 200, -50)
-/*     addTween("#bradley5", opacity1, '#contragents', 200, -100) */
-    addTween("#bradley6", opacity1, '#contragents', 250, -100)
-    addTween("#check_cells", opacity1, '#contragents', 200, -150)
-/*     addTween("#ilya_cells", opacity1, '#contragents', 250, -150) */
+/*  addTween("#bradley5", opacity1, '#contragents', 200, -100) */
+    addTween("#bradley6", opacity1, '#contragents', 500, 100)
+    addTween("#check_cells", opacity1, '#contragents', 700, -50)
+/*  addTween("#ilya_cells", opacity1, '#contragents', 250, -150) */
     addTween("#info_cadastral", translateX0, '#contragents', 250, 0)
 
+    /* экран "Справки и выписки в один клик" */
     // addTween("#sm11", bottomAnimation, '#references', 200, -50)
-    addTween("#sm12", bottomAnimation, '#references', 200, -50)
-    addTween("#sm13", bottomAnimation, '#references', 200, -50)
-    addTween("#clap_img", bottomAnimation, '#references', 300, 150)
+    addTween("#sm12", bottomAnimation, '#references', 400, -150)
+    addTween("#sm13", bottomAnimation, '#references', 400, -150)
+    addTween("#clap_img", bottomAnimation, '#references', 300, -50)
     addTween("#andrey_references", opacity1, '#references', 200, -50)
     addTween("#egrn", translateX0, '#references', 200, -50)
     addTween("#make_reference", translateX0, '#references', 200, 0)
     addTween("#references_img", translateX0, '#references', 200, 0)
 
+    /* экран "Актуальная юридическая информация" */
     // addTween("#sm14", bottomAnimation, '#actual_information', 200, -50)
-    addTween("#sm15", bottomAnimation, '#actual_information', 200, -75)
-    addTween("#sm16", bottomAnimation, '#actual_information', 200, -100)
+    addTween("#sm15", bottomAnimation, '#actual_information', 400, -150)
+    addTween("#sm16", bottomAnimation, '#actual_information', 400, -150)
     addTween("#juridical_info_img", bottomAnimation, '#actual_information', 300, 150)
     addTween("#regulations", translateX0, '#actual_information', 200, -50)
     addTween(".doc_animation_1", docAnimation, '#actual_information', 200, 20)
     addTween(".doc_animation_2", docAnimation, '#actual_information', 200, 40)
-/*     addTween(".doc_animation_3", docAnimation, '#actual_information', 200, 60)
+/*  addTween(".doc_animation_3", docAnimation, '#actual_information', 200, 60)
     addTween(".doc_animation_4", docAnimation, '#actual_information', 200, 80) */
 
+    /* экран "Проверки больше не будут внезапными" */
     // addTween("#sm17", bottomAnimation, '#checks', 200, -50)
-    addTween("#sm18", bottomAnimation, '#checks', 200, -75)
-    addTween("#sm19", bottomAnimation, '#checks', 200, -100)
-    addTween("#headblow_img", bottomAnimation, '#checks', 300, 150)
-    addTween("#sm20", scale1, '#checks', 150, 50)
-    addTween("#sm21", scale1, '#checks', 175, 100)
-    addTween("#sm22", scale1, '#checks', 200, 150)
+    addTween("#sm18", bottomAnimation, '#checks', 600, -150)
+    addTween("#sm19", bottomAnimation, '#checks', 600, -150)
+    addTween("#headblow_img", bottomAnimation, '#checks', 300, 100)
+    addTween("#sm20", scale1, '#checks', 150, 100)
+    addTween("#sm21", scale1, '#checks', 175, 150)
+    addTween("#sm22", scale1, '#checks', 200, 200)
     addTween("#lightning", scale1, '#checks', 300, 100)
 
-    addTween("#sm23", bottomAnimation, '#service_team', 300, -50)
-    addTween("#sm24", bottomAnimation, '#service_team', 300, 25)
-    addTween("#sm25", bottomAnimation, '#service_team', 300, 100)
-    addTween("#sm26", bottomAnimation, '#service_team', 300, 175)
-    addTween("#sm27", bottomAnimation, '#service_team', 300, 250)
-    addTween("#sm28", bottomAnimation, '#service_team', 300, 325)
-    addTween("#sm29", bottomAnimation, '#service_team', 300, 400)
+    /* экран "Один сервис - одна команда" */
+    addTween("#sm23", bottomAnimation, '#service_team', 300, -250)
+    addTween("#sm24", bottomAnimation, '#service_team', 300, 90)
+    addTween("#sm25", bottomAnimation, '#service_team', 300, 180)
+    addTween("#sm26", bottomAnimation, '#service_team', 300, 270)
+    addTween("#sm27", bottomAnimation, '#service_team', 300, 360)
+    addTween("#sm28", bottomAnimation, '#service_team', 300, 450)
+    addTween("#sm29", bottomAnimation, '#service_team', 300, 540)
 // build scene
 });
