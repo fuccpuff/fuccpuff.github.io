@@ -1129,7 +1129,11 @@ input {
 
 #references_img {
     position: absolute;
-    right: -280px;
+    /* right: -280px; */
+    left: 752px;
+    width: 154px;
+    height: 191px;
+    top: 440px;
 }
 
 #egrn .form_button {
@@ -1224,6 +1228,11 @@ input {
     width: 400px;
 }
 
+#actual_information .heading_info
+{
+    margin-left: 290px;
+}
+
 .info_doc {
     position: absolute;
     background: rgba(255, 255, 255, 0.4);
@@ -1254,7 +1263,9 @@ input {
 
 #juridical_info_img {
     position: absolute;
-    bottom: 50px;
+    bottom: 110px;
+    width: 192px;
+    height: 255px;
 }
 
 #regulations {
@@ -1387,6 +1398,10 @@ input {
     margin-top: 150px;
 }
 
+#checks .heading {
+    font-size: 100px;
+}
+
 #checks .label {
     width: 380px;
 }
@@ -1395,6 +1410,10 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#checks .right {
+    left: 167px;
 }
 
 #checks .check {
@@ -1434,16 +1453,17 @@ input {
 }
 
 #checks .check:nth-child(3) {
-    top: 480px;
-    right: 100px;
+    top: 500px;
+    left: 405px;
 }
+
 
 #headblow_img {
     position: absolute;
     width: 107px;
     height: 107px;
-    left: 600px;
-    top: -50px;
+    right: 255px;
+    top: 40px;
 }
 
 #service_team {
