@@ -226,7 +226,7 @@ header .links {
 }
 
 .site_example {
-    margin: -750px auto 0 auto;
+    margin: -680px auto 0 auto;
     border-radius: 16px;
     box-shadow: 0 4px 84px 0 rgba(0, 0, 0, 0.17);
     max-width: 100%;
@@ -239,7 +239,7 @@ header .links {
     text-align: center;
     margin-top: 200px;
     font-size: 40px;
-    width: 50vw;
+    width: 70vw;
     margin: 200px auto 0 auto;
 }
 
@@ -549,10 +549,15 @@ header .links {
     margin-top: 100px;
 }
 
+#objects_in_one_place .heading_info {
+    margin-left: 270px;
+    margin-top: 80px;
+}
+
 #objects_in_one_place #new_cases {
     width: 420px;
     height: 238px;
-    left: -99px;
+    left: -110px;
     top: -54px;
     background: linear-gradient(180deg, #3A87D3 0%, #7BB4EC 100%);
     box-shadow: 13px 21px 35px rgba(21, 30, 39, 0.11);
@@ -768,7 +773,7 @@ header .links {
 }
 
 #vector_img {
-    margin-top: 100px;
+    margin-top: -40px;
 }
 
 #objects_in_one_place .shadow {

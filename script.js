@@ -301,6 +301,6 @@ document.addEventListener('DOMContentLoaded', () => {
     addTween("#sm28", bottomAnimation, '#service_team', 300, 325, beforeBottomAnimation)
     addTween("#sm29", bottomAnimation, '#service_team', 300, 400, beforeBottomAnimation)
 
-    addTween('header', {backgroundColor: 'rgba(255, 255, 255, 1)'}, '#second_block', 0, 300, {backgroundColor: 'rgba(255, 255, 255, 0)'})
+    /* addTween('header', {backgroundColor: 'rgba(255, 255, 255, 1)'}, '#second_block', 0, 300, {backgroundColor: 'rgba(255, 255, 255, 0)'}) */
 // build scene
 });
