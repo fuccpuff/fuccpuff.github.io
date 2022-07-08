@@ -356,7 +356,7 @@ header .links {
 }
 
 #economy_block {
-    margin-top: -300px;
+/*     margin-top: -300px; */
 }
 
 .block_container {
@@ -488,6 +488,7 @@ header .links {
     height: 800px;
     position: relative;
     margin-top: 200px;
+    margin-left: 40px;
 }
 
 #economy_number_container {
@@ -785,6 +786,11 @@ header .links {
     margin-top: 100px;
 }
 
+#profit_analysis .heading_info {
+    margin-left: 125px;
+    margin-top: 80px;
+}
+
 #profit_rectangle {
     right: 50vw;
     top: -100px;
@@ -798,9 +804,13 @@ header .links {
 #profit_analysis #count_object {
     width: 847px;
     height: 650px;
-    left: -50px;
+    left: -13px;
     padding: 36px 0 36px 36px;
     overflow: hidden;
+}
+
+#profit_analysis .form_button {
+    border-radius: 20.155px;
 }
 
 input {
@@ -1021,6 +1031,17 @@ input {
     height: 96px;
 }
 
+#contragents .heading_info {
+    margin-top: 80px;
+    font-size: 26px;
+    line-height: 33px;
+    margin-left: 250px;
+}
+
+#contragents .form_button {
+    margin-top: 80px;
+}
+
 #cool_img {
     position: absolute;
     top: 30px;
@@ -1110,6 +1131,11 @@ input {
     max-width: 400px;
 }
 
+#references .heading_info
+{
+    margin-left: 340px;
+}
+
 #clap_img {
     position: absolute;
     top: 0;
@@ -1129,10 +1155,7 @@ input {
 
 #references_img {
     position: absolute;
-    /* right: -280px; */
-    left: 752px;
-    width: 154px;
-    height: 191px;
+    left: 852px;
     top: 440px;
 }
 
@@ -1185,10 +1208,10 @@ input {
 }
 
 #make_reference {
-    width: 500px;
-    height: 300px;
-    left: 450px;
-    top: -100px;
+    width: 490px;
+    height: 304px;
+    left: 473px;
+    top: -200px;
     padding: 60px;
 }
 
