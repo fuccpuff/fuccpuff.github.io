@@ -40,6 +40,16 @@ poss_elements.forEach((item, index) => {
     });
 });
 
+let service_team_elements = document.querySelectorAll('.member');
+service_team_elements.forEach((item, index) => {
+    item.addEventListener('mouseover', e => {
+        item.classList.add('hovered')
+    })
+    item.addEventListener("mouseleave", (e) => {
+        item.classList.remove('hovered')
+    });
+})
+
 function focus(elem, index) {
     let prev = index - 1;
     let prev1 = index - 2;
@@ -244,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
     addTween("#sm3", bottomAnimation, '#objects_in_one_place', 200, -50, beforeBottomAnimation)
     addTween(".windows_animation", bottomAnimation, '#objects_in_one_place', 200, -50, beforeBottomAnimation)
     addTween("#object_info", {transform: 'translateX(0)'}, '#objects_in_one_place', 200, -50, {transform: 'translateX(100vw)'})
-    addTween("#vector_img", bottomAnimation, '#objects_in_one_place', 300, -50, beforeBottomAnimation)
+    addTween("#vector_img", bottomAnimation, '#objects_in_one_place', 300, 250, beforeBottomAnimation)
 //
     addTween("#bradley1", opacity1, '#objects_in_one_place', 300, 400, opacity0)
     addTween("#cells_img_cadastral", opacity1, '#objects_in_one_place', 250, 300, opacity0)
@@ -300,6 +310,12 @@ document.addEventListener('DOMContentLoaded', () => {
     addTween("#sm27", bottomAnimation, '#service_team', 300, 250, beforeBottomAnimation)
     addTween("#sm28", bottomAnimation, '#service_team', 300, 325, beforeBottomAnimation)
     addTween("#sm29", bottomAnimation, '#service_team', 300, 400, beforeBottomAnimation)
+
+    addTween('#economy_office_spaces_static', {transform: 'translateX(0)'}, '#economy_block',220, 20, {transform: 'translateX(-100vw)'})
+    addTween('#warehouses_static', {transform: 'translateX(0)'}, '#economy_block',180, 80, {transform: 'translateX(-100vw)'})
+    addTween('#retail_space_static', {transform: 'translateX(0)'}, '#economy_block',140, 160, {transform: 'translateX(-100vw)'})
+
+    addTween('#economy', {transform: 'translateX(0)'}, '#economy_block', 200, 20, {transform: 'translateX(100vw)'})
 
     /* addTween('header', {backgroundColor: 'rgba(255, 255, 255, 1)'}, '#second_block', 0, 300, {backgroundColor: 'rgba(255, 255, 255, 0)'}) */
 // build scene

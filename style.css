@@ -329,7 +329,170 @@ header .links {
 
 .possibility_element.hovered #obligations img:nth-child(2) {
     transform: rotate(120deg) scale(0.72);
+}
 
+.possibility_element.hovered #rouble_img {
+    animation: wiggle_animation 1s;
+}
+
+#risks_img img {
+    height: 100px;
+}
+
+#risks_img img:nth-child(1) {
+    left: 16px;
+    top: -10px;
+}
+
+#risks_img img:nth-child(2) {
+    left: 40px;
+    top: 7px;
+}
+
+#changes_img img {
+    height: 80px;
+}
+
+#changes_img img:nth-child(1) {
+    left: -15px;
+    top: -13px;
+}
+
+#changes_img img:nth-child(2) {
+    left: 12px;
+    top: 15px;
+}
+
+#profit_analysis_img {
+    transform: scale(0.7);
+    margin-top: -55px;
+}
+
+#pe8 h3 {
+    margin-top: -15px;
+}
+
+#profit_analysis_img path {
+    transform: translateY(10px);
+    transition: 0.5s;
+}
+
+#deals_img img:nth-child(1) {
+    width: 90px;
+    left: 2px;
+    top: 6px;
+}
+
+#deals_img img:nth-child(2) {
+    width: 33px;
+    left: 27px;
+    top: 26px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#documents_img img:nth-child(1) {
+    width: 94px;
+}
+
+#documents_img img:nth-child(2) {
+    width: 50px;
+    top: 31px;
+    left: 15px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition-delay: 0s;
+}
+
+#documents_img img:nth-child(3) {
+    width: 50px;
+    top: 46px;
+    left: 15px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition-delay: 0.1s;
+}
+
+#documents_img img:nth-child(4) {
+    width: 50px;
+    top: 61px;
+    left: 15px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition-delay: 0.2s;
+}
+
+.possibility_element.hovered #documents_img img:nth-child(2) {
+    transform: scaleX(1);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.possibility_element.hovered #documents_img img:nth-child(3) {
+    transform: scaleX(1);
+    transition: 0.5s;
+    transition-delay: 0.1s;
+}
+
+.possibility_element.hovered #documents_img img:nth-child(4) {
+    transform: scaleX(1);
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+
+
+.possibility_element.hovered #deals_img img:nth-child(2) {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.possibility_element.hovered #profit_analysis_img path {
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+#profit_analysis_img path:nth-child(4) {
+    transition-delay: 0.1s;
+}
+
+#profit_analysis_img path:nth-child(3) {
+    transition-delay: 0.25s;
+}
+
+#profit_analysis_img path:nth-child(2) {
+    transition-delay: 0.4s;
+}
+
+#profit_analysis_img path:nth-child(1) {
+    transition-delay: 0.55s;
+}
+
+.possibility_element.hovered #profit_analysis_img path:nth-child(4) {
+    transition-delay: 0.1s;
+}
+
+.possibility_element.hovered #profit_analysis_img path:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.possibility_element.hovered #profit_analysis_img path:nth-child(2) {
+    transition-delay: 0.3s;
+}
+
+.possibility_element.hovered #profit_analysis_img path:nth-child(1) {
+    transition-delay: 0.4s;
+}
+
+.possibility_element.hovered #changes_img img:nth-child(1) {
+    left: -25px;
+    top: -23px;
+}
+
+.possibility_element.hovered #risks_img img:nth-child(1) {
+    left: 6px;
+    top: -20px;
 }
 
 .possibility_element span {
@@ -356,7 +519,7 @@ header .links {
 }
 
 #economy_block {
-/*     margin-top: -300px; */
+    /*     margin-top: -300px; */
 }
 
 .block_container {
@@ -754,7 +917,7 @@ header .links {
 }
 
 .heading {
-    font-size: 106px;
+    font-size: 95px;
     line-height: 93px;
     margin-top: 120px;
 }
@@ -1136,8 +1299,7 @@ input {
     max-width: 400px;
 }
 
-#references .heading_info
-{
+#references .heading_info {
     margin-left: 340px;
 }
 
@@ -1256,8 +1418,7 @@ input {
     width: 400px;
 }
 
-#actual_information .heading_info
-{
+#actual_information .heading_info {
     margin-left: 290px;
 }
 
@@ -1426,10 +1587,6 @@ input {
     margin-top: 150px;
 }
 
-#checks .heading {
-    font-size: 100px;
-}
-
 #checks .label {
     width: 380px;
 }
@@ -1504,6 +1661,125 @@ input {
 
 #service_team .heading {
     text-align: center;
+}
+
+.service_team_img {
+    position: relative;
+    width: 149px;
+    height: 166px;
+}
+
+.service_team_img img {
+    position: absolute;
+}
+
+.service_team_img .service_team_human {
+    top: 9px;
+    left: 19px;
+}
+
+.member.hovered #lawyer_img img:nth-child(3) {
+    transform: rotate(-34deg);
+    transition: 0.2s;
+}
+
+.member.hovered #lawyer_img img:nth-child(4) {
+    transform: translateY(5px);
+    transition: 0.2s;
+}
+
+#lawyer_img img:nth-child(3) {
+    top: 88px;
+    left: 83px;
+    transform-origin: 47px 67px;
+    transition: 0.5s;
+}
+
+#lawyer_img img:nth-child(4) {
+    top: 151px;
+    left: 68px;
+    transition: 0.2s;
+}
+
+#manager_img img:nth-child(3) {
+    top: 87px;
+    left: 95px;
+}
+
+.member.hovered #manager_img img:nth-child(3) {
+    animation: service_team_phone infinite 1.5s;
+}
+
+@keyframes service_team_phone {
+    0% {
+        transform: rotate(0);
+    }
+    15% {
+        transform: rotate(20deg);
+    }
+    30% {
+        transform: rotate(-20deg);
+    }
+    45% {
+        transform: rotate(20deg);
+    }
+    60% {
+        transform: rotate(-20deg);
+    }
+    75% {
+        transform: rotate(0);
+    }
+}
+
+#control_img img:nth-child(3) {
+    top: 90px;
+    left: 90px;
+}
+
+#control_img img:nth-child(4) {
+    top: 90px;
+    left: 120px;
+}
+
+.member.hovered #control_img img:nth-child(3) {
+    animation: service_team_arrow 0.5s infinite;
+    animation-delay: 0.1s;
+}
+
+.member.hovered #control_img img:nth-child(4) {
+    animation: service_team_arrow 0.5s infinite;
+}
+
+@keyframes service_team_arrow {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    40% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    41% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    80% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#financial_director_img img:nth-child(3) {
+    top: 90px;
+    left: 90px;
+}
+#financial_director_img img:nth-child(4) {
+    top: 113px;
+    left: 90px;
+}
+#financial_director_img img:nth-child(5) {
+    top: 130px;
+    left: 90px;
 }
 
 .team {
@@ -2199,7 +2475,6 @@ footer .footer_links a:nth-child(2) {
     }
 
     #start_link {
-        color: #FFF;
         margin-left: 20px;
     }
 
