@@ -288,6 +288,10 @@ header .links {
     transition: 0.5s;
 }
 
+#pizza_img {
+    filter: drop-shadow(5.50321px 4.40257px 15.409px rgba(0, 0, 0, 0.14));
+}
+
 #pizza_img img:nth-child(1) {
     transform: scaleX(0.677) scaleY(0.708);
     top: -18px;
@@ -329,6 +333,14 @@ header .links {
 
 .possibility_element.hovered #obligations img:nth-child(2) {
     transform: rotate(120deg) scale(0.72);
+}
+
+#rouble_img {
+    filter: drop-shadow(5.50321px 4.40257px 15.409px rgba(0, 0, 0, 0.14));
+}
+
+#obligations {
+    filter: drop-shadow(5.50321px 4.40257px 15.409px rgba(0, 0, 0, 0.14));
 }
 
 .possibility_element.hovered #rouble_img {
@@ -387,8 +399,8 @@ header .links {
     width: 33px;
     left: 27px;
     top: 26px;
-    transform: translateY(10px);
-    opacity: 0;
+    /*transform: translateY(10px);*/
+    /*opacity: 0;*/
     transition: 0.5s;
 }
 
@@ -400,7 +412,6 @@ header .links {
     width: 50px;
     top: 31px;
     left: 15px;
-    transform: scaleX(0);
     transform-origin: left;
     transition-delay: 0s;
 }
@@ -409,7 +420,6 @@ header .links {
     width: 50px;
     top: 46px;
     left: 15px;
-    transform: scaleX(0);
     transform-origin: left;
     transition-delay: 0.1s;
 }
@@ -418,34 +428,68 @@ header .links {
     width: 50px;
     top: 61px;
     left: 15px;
-    transform: scaleX(0);
     transform-origin: left;
     transition-delay: 0.2s;
 }
 
 .possibility_element.hovered #documents_img img:nth-child(2) {
-    transform: scaleX(1);
-    transition: 0.5s;
-    transition-delay: 0s;
+    animation: documents_animation 0.5s;
 }
 
 .possibility_element.hovered #documents_img img:nth-child(3) {
-    transform: scaleX(1);
-    transition: 0.5s;
-    transition-delay: 0.1s;
+    animation: documents_animation_2 0.5s;
 }
 
 .possibility_element.hovered #documents_img img:nth-child(4) {
-    transform: scaleX(1);
-    transition: 0.5s;
-    transition-delay: 0.2s;
+    animation: documents_animation_3 0.5s;
 }
 
+@keyframes documents_animation {
+    0% {
+        transform: scaleX(0);
+    }
+    60% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes documents_animation_2 {
+    0% {
+        transform: scaleX(0);
+    }
+    20% {
+        transform: scaleX(0);
+    }
+    80% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes documents_animation_3 {
+    0% {
+        transform: scaleX(0);
+    }
+    40% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
 
 .possibility_element.hovered #deals_img img:nth-child(2) {
-    transform: translateY(0);
-    opacity: 1;
-    transition: 0.5s;
+    animation: deals_animation 0.5s;
+}
+
+@keyframes deals_animation {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .possibility_element.hovered #profit_analysis_img path {
@@ -1688,6 +1732,59 @@ input {
     transition: 0.2s;
 }
 
+.member.hovered #financial_director_img img:nth-child(5) {
+    transform: translateY(-12px);
+    transition: 0.2s;
+}
+
+.member.hovered #financial_director_img img:nth-child(4) {
+    transform: translateY(-12px);
+    transition: 0.2s;
+    transition-delay: 0.1s;
+}
+
+.member.hovered #financial_director_img img:nth-child(3) {
+    transform: translateY(-12px);
+    transition: 0.2s;
+    transition-delay: 0.2s;
+}
+
+#sm24 #yellow_box {
+    position: absolute;
+    width: 37px;
+    height: 29px;
+    background-color: yellow;
+    top: 108px;
+    left: 155px;
+    z-index: -1;
+    box-shadow: 0px 10px 10px 3px yellow;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.member.hovered #yellow_box {
+    opacity: 1 !important;
+    transition: 0.5s;
+}
+
+#accountant_img img:nth-child(3) {
+    top: 90px;
+    left: 94px;
+}
+
+.member.hovered #accountant_img img:nth-child(3) {
+    animation: wiggle_animation 0.5s;
+}
+
+#team_owner_img img:nth-child(3) {
+    top: 90px;
+    left: 90px;
+}
+
+#financial_director_img img {
+    transition: 0.1s;
+}
+
 #lawyer_img img:nth-child(3) {
     top: 88px;
     left: 83px;
@@ -1773,10 +1870,12 @@ input {
     top: 90px;
     left: 90px;
 }
+
 #financial_director_img img:nth-child(4) {
     top: 113px;
     left: 90px;
 }
+
 #financial_director_img img:nth-child(5) {
     top: 130px;
     left: 90px;
