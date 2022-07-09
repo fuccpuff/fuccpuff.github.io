@@ -186,9 +186,9 @@ header .links {
 }
 
 #main_block_left .form_button {
-    width: 320px;
-    height: 94px;
-    font-size: 31px;
+    width: 357px;
+    height: 104px;
+    font-size: 34px;
     margin-top: 100px;
 }
 
@@ -240,13 +240,13 @@ header .links {
     margin-top: 200px;
     font-size: 40px;
     width: 70vw;
-    margin: 200px auto 0 auto;
+    margin: 20px auto 0 auto;
 }
 
 #possibility_block {
     display: flex;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 210px;
     width: auto;
 }
 
@@ -753,7 +753,7 @@ header .links {
 }
 
 #objects_in_one_place {
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 #objects_in_one_place .heading_info {
@@ -980,7 +980,7 @@ header .links {
 }
 
 #vector_img {
-    margin-top: -40px;
+    margin-top: 10px;
 }
 
 #objects_in_one_place .shadow {
@@ -994,8 +994,12 @@ header .links {
     margin-top: 30px;
 }
 
+#objects_in_one_place .block_left {
+    min-width: 820px;
+}
+
 #profit_analysis {
-    margin-top: 100px;
+    margin-top: 400px;
 }
 
 #profit_analysis .heading_info {
@@ -1168,6 +1172,7 @@ input {
 
 #references .block_left {
     padding-left: 170px;
+    min-width: 763px;
 }
 
 .block_right {
@@ -1222,6 +1227,19 @@ input {
 
 #profit_analysis .heading {
     position: relative;
+}
+
+#contragents {
+    z-index: 3;
+    margin-top: 100px;
+}
+
+#contragents .block_left {
+    min-width: 820px;
+}
+
+#actual_information .block_left {
+    z-index: 3;
 }
 
 #contragents #info_cadastral {
@@ -1617,18 +1635,16 @@ input {
     position: absolute;
     left: 0;
     z-index: -1;
-    top: -200px;
 }
 
 #team_rects_right {
     position: absolute;
     right: 0;
     z-index: -1;
-    top: -200px;
 }
 
 #checks {
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
 #checks .label {
@@ -2351,7 +2367,34 @@ footer .footer_links a:nth-child(2) {
     z-index: 3;
 }
 
+@media screen and (max-width: 1730px) {
+    #economy_block .right {
+        min-width: 700px;
+    }
+
+    #economy_block .right h1 {
+        font-size: 70px;
+        line-height: initial;
+    }
+
+    #economy_block .block_left {
+        padding-left: 0;
+    }
+
+    #economy_block .right {
+        padding-left: 80px;
+    }
+}
+
 @media screen and (max-width: 1690px) {
+    .heading_info {
+        margin-left: 100px;
+    }
+
+    #objects_in_one_place .heading_info {
+        margin-left: 100px;
+    }
+
     #building {
         left: 55vw;
     }
@@ -2359,6 +2402,81 @@ footer .footer_links a:nth-child(2) {
     #main_block_left h1 {
         font-size: 60px;
         line-height: 60px;
+    }
+}
+
+@media screen and (max-width: 1540px) {
+    #economy_block #economy_number {
+        font-size: 500px;
+        top: 180px;
+    }
+
+    #economy_block #economy_percent {
+        font-size: 150px;
+        left: 485px;
+        top: 305px;
+    }
+
+    #economy_block #economy_info {
+        top: 602px;
+        font-size: 20px;
+    }
+
+    #economy_elements_container {
+        margin-top: 50px !important;
+    }
+}
+
+@media screen and (max-width: 1520px) {
+    #objects_in_one_place .heading {
+        width: 600px;
+    }
+
+    .block_left {
+        padding-left: 80px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    #economy img {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .economy_element {
+        transform: scale(0.8)
+    }
+
+    #economy_block .block_left {
+        padding-left: 0;
+        min-width: 500px;
+    }
+
+    #economy img {
+        width: 600px;
+    }
+
+    #economy {
+        margin-top: 350px;
+    }
+
+    #economy_block .right {
+        min-width: 600px;
+    }
+
+    #possibility_block_header {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #economy img {
+        width: 500px;
+    }
+
+    #economy {
+        margin-top: 413px;
     }
 }
 
@@ -2377,6 +2495,10 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 1024px) {
+    #main_block_left .right_block {
+        justify-content: initial;
+    }
+
     .block {
         flex-direction: column;
         height: auto;
@@ -2555,6 +2677,14 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 768px) {
+    #main_block_left .right_block {
+        align-self: initial;
+    }
+
+    #main_block_left {
+        align-items: initial;
+    }
+
     header {
         padding: 20px 15px;
     }
@@ -2651,10 +2781,19 @@ footer .footer_links a:nth-child(2) {
 
     #vector_img {
         width: 90px;
+        bottom: -91px;
+        right: initial;
     }
 
     #objects_in_one_place .shadow {
-        right: 30px;
+        /*right: 30px;*/
+        bottom: -125px;
+        left: -32px;
+        right: initial;
+    }
+
+    #objects_in_one_place .block_right {
+        margin-top: 60px;
     }
 
     #profit_analysis #count_object {
@@ -2694,6 +2833,12 @@ footer .footer_links a:nth-child(2) {
 
     #actual_information .block_right {
         transform: scale(0.7);
+        transform-origin: left;
+    }
+
+    .heading_info {
+        margin-left: 0 !important;
+        margin-top: 50px !important;
     }
 }
 
@@ -2713,7 +2858,7 @@ footer .footer_links a:nth-child(2) {
     }
 
     .heading_info {
-        font-size: 15px
+        font-size: 15px;
     }
 
     .label {
@@ -2776,107 +2921,6 @@ footer .footer_links a:nth-child(2) {
     #economy_elements_container {
         justify-content: center !important;
         transform: scale(0.8);
-    }
-
-    #vector_img {
-        bottom: -91px;
-        right: initial;
-    }
-
-    .shadow {
-        bottom: -125px;
-        left: -32px;
-        right: initial;
-    }
-}
-
-@media screen and (max-width: 1520px) {
-    #objects_in_one_place .heading {
-        width: 600px;
-    }
-}
-
-@media screen and (max-width: 1730px) {
-    #economy_block .right {
-        min-width: 700px;
-    }
-
-    #economy_block .right h1 {
-        font-size: 70px;
-        line-height: initial;
-    }
-
-    #economy_block .block_left {
-        padding-left: 0;
-    }
-
-    #economy_block .right {
-        padding-left: 80px;
-    }
-}
-
-@media screen and (max-width: 1540px) {
-    #economy_block #economy_number {
-        font-size: 500px;
-        top: 180px;
-    }
-
-    #economy_block #economy_percent {
-        font-size: 150px;
-        left: 485px;
-        top: 305px;
-    }
-
-    #economy_block #economy_info {
-        top: 602px;
-        font-size: 20px;
-    }
-
-    #economy_elements_container {
-        margin-top: 50px !important;
-    }
-}
-
-@media screen and (max-width: 1500px) {
-    #economy img {
-        width: 700px;
-    }
-}
-
-@media screen and (max-width: 1400px) {
-    .economy_element {
-        transform: scale(0.8)
-    }
-
-    #economy_block .block_left {
-        padding-left: 0;
-        min-width: 500px;
-    }
-
-    #economy img {
-        width: 600px;
-    }
-
-    #economy {
-        margin-top: 350px;
-    }
-
-    #economy_block .right {
-        min-width: 600px;
-    }
-
-    #possibility_block_header {
-        font-size: 30px;
-    }
-}
-
-@media screen and (max-width: 1300px) {
-    #economy img {
-        width: 500px;
-    }
-
-    #economy {
-        margin-top: 413px;
     }
 }
 
