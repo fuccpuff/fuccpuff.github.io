@@ -339,7 +339,7 @@ document.addEventListener('DOMContentLoaded', () => {
     addTween('#actual_information .heading_info', {opacity: 0}, '#actual_information', 50, 850, {opacity: 1})
     addTween('#juridical_info_img', {transform: 'translateX(-100vw)'}, '#juridical_info_img', 200, 400, {transform: 'translateX(0)'})
     addTween('#checks #sm21', {transform: 'translateX(-100vw)'}, '#checks #sm21', 200, 400, {transform: 'translateX(0)'})
-    addTween('#count_object', {transform: 'translateX(-100vw)'}, '#count_object', 200, 400, {transform: 'translateX(0)'})
+    addTween('#count_object', {transform: 'translateX(-100vw)'}, '#count_object', 200, 400, {})
     addTween('#references .block_right', {transform: 'translateX(-100vw)'}, '#references .block_right', 700, 400, {transform: 'translateX(0)'})
     //addTween('.site_example', {transform: 'translateX(-100vw)'}, '.site_example', 200, 400, {transform: 'translateX(0)'})
 
