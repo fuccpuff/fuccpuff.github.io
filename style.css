@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "Journal Sans New";
+    font-family: "Journal";
     font-weight: 500;
     src: url("fonts/JournalSansNew.ttf") format("opentype");
 }
 
 @font-face {
-    font-family: "Journal Sans New";
+    font-family: "Journal";
     font-weight: 700;
     src: url("fonts/JournalSansNew-Bold.ttf") format("opentype");
 }
@@ -69,13 +69,17 @@ html, body {
 
 body {
     position: relative;
-    font-family: "Journal Sans New", sans-serif;
+    font-family: "Journal", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-kerning: normal;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /*font-style: normal;*/
 }
 
 a {
@@ -832,7 +836,7 @@ header .links {
 #object_info .cadastral, #object_info .name {
     font-size: 30px;
     color: #6989AC;
-    font-family: "Journal Sans New", sans-serif;
+    font-family: "Journal", sans-serif;
 }
 
 #object_info .cadastral {
@@ -1240,6 +1244,7 @@ input {
 
 #actual_information .block_left {
     z-index: 3;
+    min-width: 885px;
 }
 
 #contragents #info_cadastral {
@@ -1247,12 +1252,12 @@ input {
     width: 1000px;
     height: 650px;
     padding: 48px 64px;
-    font-family: "Geometria", "Journal Sans New", sans-serif !important;
+    font-family: "Geometria", "Journal", sans-serif !important;
     font-weight: bold;
 }
 
 #cadastral_number {
-    font-family: "Journal Sans New", sans-serif;
+    font-family: "Journal", sans-serif;
     font-weight: bold;
 }
 
@@ -1550,7 +1555,7 @@ input {
     box-shadow: 12px 20px 33px rgba(0, 0, 0, 0.11);
     padding: 30px;
     color: #FFF;
-    font-family: "Geometria", "Journal Sans New", sans-serif;
+    font-family: "Geometria", "Journal", sans-serif;
     font-size: 13px;
     line-height: 16px;
 }
@@ -1594,7 +1599,7 @@ input {
     width: 100%;
     overflow: hidden;
     left: 0;
-    font-family: "Geometria", "Journal Sans New", sans-serif;
+    font-family: "Geometria", "Journal", sans-serif;
 }
 
 .normative_acts_bottom:after {
@@ -1990,19 +1995,19 @@ input {
 #get_access input::placeholder, #get_access textarea::placeholder {
     color: #FFF;
     font-size: 22px;
-    font-family: 'Journal Sans New', sans-serif;
+    font-family: 'Journal', sans-serif;
 }
 
 #get_access input::placeholder, #get_access textarea::-moz-placeholder {
     color: #FFF;
     font-size: 22px;
-    font-family: 'Journal Sans New', sans-serif;
+    font-family: 'Journal', sans-serif;
 }
 
 #get_access input::placeholder, #get_access textarea::-webkit-input-placeholder {
     color: #FFF;
     font-size: 22px;
-    font-family: 'Journal Sans New', sans-serif;
+    font-family: 'Journal', sans-serif;
 }
 
 .form_button {
@@ -2017,7 +2022,7 @@ input {
     padding: 16px;
     border-radius: 10px;
     transition: 0.5s;
-    font-family: "Journal Sans New", sans-serif;
+    font-family: "Journal", sans-serif;
 }
 
 .form_button:hover {
