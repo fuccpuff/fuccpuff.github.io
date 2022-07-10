@@ -329,7 +329,7 @@ document.addEventListener('DOMContentLoaded', () => {
     addTween('#possibility_block_header', {opacity: 0}, '#possibility_block_header', 50, 500, {opacity: 1})
     addTween('#objects_in_one_place .heading', {opacity: 0}, '#objects_in_one_place', 50, 550, {opacity: 1})
     addTween('#objects_in_one_place .heading_info', {opacity: 0}, '#objects_in_one_place', 50, 790, {opacity: 1})
-    addTween('#vector_img', {opacity: 0}, '#objects_in_one_place', 50, 900, {opacity: 1})
+    addTween('#vector_img',  {transform: 'translateX(-100vw)'}, '#vector_img', 200, 400, {transform: 'translateX(0)'})
     addTween('.shadow', {opacity: 0}, '#objects_in_one_place', 50, 900, {opacity: 1})
     addTween('#economy_block .heading', {opacity: 0}, '#economy_block', 50, 700, {opacity: 1})
     addTween('#economy_block .economy_element:nth-child(1)', {opacity: 0}, '#economy_block', 50, 1000, {opacity: 1})
@@ -342,7 +342,7 @@ document.addEventListener('DOMContentLoaded', () => {
     addTween('#checks .block_right', {transform: 'translateX(-100vw)'}, '#checks .block_right', 200, 500, {transform: 'translateX(0)'})
     addTween('#count_object', {transform: 'translateX(-100vw)'}, '#count_object', 200, 400, {transform: 'translateX(0)'})
     addTween('#references .block_right', {transform: 'translateX(-100vw)'}, '#references .block_right', 200, 200, {transform: 'translateX(0)'})
-    addTween('.site_example', {transform: 'translateX(-100vw)'}, '.site_example', 200, 400, {transform: 'translateX(0)'})
+    // addTween('.site_example', {transform: 'translateX(-100vw)'}, '.site_example', 200, 400, {transform: 'translateX(0)'})
 
 
 
