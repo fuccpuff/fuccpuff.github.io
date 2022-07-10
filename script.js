@@ -227,7 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let tween = new TweenMax.fromTo(element, 1, from, animation);
         new ScrollMagic.Scene({triggerElement: triggerElement, duration: duration, offset: offset})
             .setTween(tween)
-           .addIndicators({name: "tween css class"}) // add indicators (requires plugin)
+            .addIndicators({name: "tween css class"}) // add indicators (requires plugin)
             .addTo(controller);
     }
 
@@ -325,7 +325,7 @@ document.addEventListener('DOMContentLoaded', () => {
     addTween('#economy', {transform: 'translateX(0)'}, '#economy_block', 200, 20, {transform: 'translateX(100vw)'})
 
 
-    addTween('#main_block_left .heading', {opacity: 0}, '#main_block', 50, 550, {opacity: 1})
+    addTween('#main_block_left .heading', {opacity: 0}, '#main_block_left .heading', 50, 500, {opacity: 1})
     addTween('#possibility_block_header', {opacity: 0}, '#possibility_block_header', 50, 500, {opacity: 1})
     addTween('#objects_in_one_place .heading', {opacity: 0}, '#objects_in_one_place', 50, 550, {opacity: 1})
     addTween('#objects_in_one_place .heading_info', {opacity: 0}, '#objects_in_one_place', 50, 790, {opacity: 1})
@@ -339,7 +339,11 @@ document.addEventListener('DOMContentLoaded', () => {
     addTween('#actual_information .heading', {opacity: 0}, '#actual_information', 50, 550, {opacity: 1})
     addTween('#actual_information .heading_info', {opacity: 0}, '#actual_information', 50, 850, {opacity: 1})
     addTween('#juridical_info_img', {opacity: 0}, '#juridical_info_img', 50, 400, {opacity: 1})
-    addTween('#checks .block_right', {opacity: 0}, '#checks .block_right', 50, 500, {opacity: 1})
+    addTween('#checks .block_right', {transform: 'translateX(-100vw)'}, '#checks .block_right', 200, 500, {transform: 'translateX(0)'})
+    addTween('#count_object', {transform: 'translateX(-100vw)'}, '#count_object', 200, 400, {transform: 'translateX(0)'})
+    addTween('#references .block_right', {transform: 'translateX(-100vw)'}, '#references .block_right', 200, 200, {transform: 'translateX(0)'})
+    addTween('.site_example', {transform: 'translateX(-100vw)'}, '.site_example', 200, 400, {transform: 'translateX(0)'})
+
 
 
     /* addTween('header', {backgroundColor: 'rgba(255, 255, 255, 1)'}, '#second_block', 0, 300, {backgroundColor: 'rgba(255, 255, 255, 0)'}) */

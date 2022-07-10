@@ -2025,6 +2025,10 @@ input {
     font-family: "Journal", sans-serif;
 }
 
+#references .block_left {
+    z-index: 0;
+}
+
 .form_button:hover {
     background-color: #FFF;
     color: #FF4D00;
