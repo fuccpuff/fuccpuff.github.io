@@ -254,9 +254,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Экран: "Экономьте на управлении и содержании"
     addTween("#economy_number", scale1, '#economy_block', 600, -150, scale0)
     addTween("#economy_percent", scale1, '#economy_block', 600, -150, scale0)
-    addTween("#warehouses_top", {transform: 'translateX(-24px) translateY(0)'}, '#economy_block', 500, -50, {transform: 'translateX(-24px) translateY(-200px)'})
-    addTween("#retail_space_cart", {transform: 'translateX(0)'}, '#economy_block', 500, -50, {transform: 'translateX(-100vw)'})
-    addTween("#economy_office", {transform: 'translateX(0)'}, '#economy_block', 450, 0, {transform: 'translateX(-100vw)'})
+    addTween("#warehouses_top", {transform: 'translateX(-24px) translateY(0)'}, '#economy_block', 500, 50, {transform: 'translateX(-24px) translateY(-200px)'})
+    addTween("#retail_space_cart", {transform: 'translateY(0)'}, '#economy_block', 500, 50, {transform: 'translateY(-200px)'})
+    addTween("#economy_office", {transform: 'translateY(0)'}, '#economy_block', 450, 0, {transform: 'translateY(-200px)'})
     addTween("#economy_info", scale1, '#economy_block', 450, 0, scale0)
 
     // Экран: "Все объекты в одном месте"
