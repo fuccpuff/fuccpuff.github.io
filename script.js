@@ -351,7 +351,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // addTweenTriggerZero('#checks #sm21', {transform: 'translateX(-100vw)'}, '#checks #sm21', 200, -100, {transform: 'translateX(0)'})
     addTweenTriggerZero('#checks #sm21', {opacity: 0}, '#checks #sm21', 200, 0, {opacity: 1})
     addTweenTriggerZero('#count_object', {transform: 'translateX(-100vw)'}, '#count_object', 200, -100, {})
-    // addTweenTriggerZero('#references .block_right', {transform: 'translateX(-100vw)'}, '#references .block_right', 700, -100, {transform: 'translateX(0)'})
+    addTweenTriggerZero('#references .block_right', {opacity: 0}, '#references .block_right', 300, -200, {opacity: 1})
     addTween('.site_example', {transform: 'scale(1)'}, '.site_example', 1000, -800, {transform: 'scale(0)'})
 
 
