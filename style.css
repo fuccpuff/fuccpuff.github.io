@@ -2849,7 +2849,7 @@ footer .footer_links a:nth-child(2) {
     }
 
     #second_block {
-        margin-top: -100px;
+        margin-top: -300px;
     }
 
     .heading {
@@ -2916,7 +2916,7 @@ footer .footer_links a:nth-child(2) {
     }
 
     #main_block {
-        height: 825px;
+        height: 100vh;
     }
 
     #objects_in_one_place {
@@ -3070,6 +3070,7 @@ footer .footer_links a:nth-child(2) {
     #main_block .heading {
         font-size: 36px;
         line-height: 36px;
+        margin-top: 120px !important;
     }
 
     .economy_element {
