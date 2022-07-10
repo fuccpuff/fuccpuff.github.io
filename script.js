@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let tween = new TweenMax.fromTo(element, 1, from, animation);
         new ScrollMagic.Scene({triggerElement: triggerElement, duration: duration, offset: offset, triggerHook: 0})
             .setTween(tween)
-            // .addIndicators({name: "tween css class"}) // add indicators (requires plugin)
+             .addIndicators({name: "tween css class"}) // add indicators (requires plugin)
             .addTo(controller);
     }
 
@@ -332,6 +332,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     addTween('#economy', {transform: 'translateX(0)'}, '#economy_block', 200, 20, {transform: 'translateX(100vw)'})
 
+
+// Реверсивная анимация
+
     // Первый экран
         // заголовок
     addTweenTriggerZero('#main_block_left .heading', {opacity: 0}, '#main_block_left .heading', 300, -50, {opacity: 1})
@@ -354,12 +357,12 @@ document.addEventListener('DOMContentLoaded', () => {
     addTweenTriggerZero('#vector_img',  {opacity: 0}, '#vector_img', 300, 0, {opacity: 1})
         // клетка и надпись
     addTweenTriggerZero("#bradley1", {transform: 'translateX(100vw)'}, '#bradley1', 250, 0, {transform: 'translateX(0)'})
-    addTweenTriggerZero("#cells_img_cadastral", {transform: 'translateX(100vw)'}, '#cells_img_cadastral', 300, 0, {transform: 'translateX(0)'})
-    addTweenTriggerZero("#cells_img_important", {transform: 'translateX(100vw)'}, '#cells_img_important', 200, 0, {transform: 'translateX(0)'})
+    addTweenTriggerZero("#cells_img_cadastral", {transform: 'translateX(100vw)'}, '#cells_img_cadastral', 300, 50, {transform: 'translateX(0)'})
+    addTweenTriggerZero("#cells_img_important", {transform: 'translateX(100vw)'}, '#cells_img_important', 200, 50, {transform: 'translateX(0)'})
         // уведомление
-    addTweenTriggerZero(".windows_animation", {transform: 'translateX(100vw)'}, '#object_info', 600, 0, {transform: 'translateX(0)'})
+    addTweenTriggerZero(".windows_animation", {transform: 'translateX(100vw)'}, '#object_info', 500, 200, {transform: 'translateX(0)'})
         // основное окно
-    addTweenTriggerZero("#object_info", {transform: 'translateX(100vw)'}, '#object_info', 900, 0, {transform: 'translateX(0)'})
+    addTweenTriggerZero("#object_info", {transform: 'translateX(100vw)'}, '#object_info', 900, 300, {transform: 'translateX(0)'})
 
     // Экран с 25%
         // заголовок
@@ -376,14 +379,14 @@ document.addEventListener('DOMContentLoaded', () => {
     addTweenTriggerZero('#profit_analysis .heading', {opacity: 0}, '#profit_analysis .heading', 300, -50, {opacity1})
     addTweenTriggerZero('#profit_analysis .heading_info', {opacity: 0}, '#profit_analysis .heading_info', 300, -50, {opacity1})
         // окошко
-    addTweenTriggerZero('#count_object', {transform: 'translateX(-100vw)'}, '#count_object', 900, 0, {})
+    addTweenTriggerZero('#count_object', {transform: 'translateX(-100vw)'}, '#count_object', 900, 400, {})
     
     // Экран "Проверка контрагентов"
         // заголовок и подзаголовок
     addTweenTriggerZero('#contragents .heading', {opacity: 0}, '#contragents', 300, 50, {opacity: 1})
     addTweenTriggerZero('#contragents .heading_info', {opacity: 0}, '#contragents', 300, 250, {opacity: 1})
         // окошко
-    addTweenTriggerZero("#contragents .right", {transform: 'translateX(100vw)'}, '#contragents .right', 900, 0, {transform: 'translateX(0)'})
+    addTweenTriggerZero("#contragents .right", {transform: 'translateX(100vw)'}, '#contragents .right', 900, 400, {transform: 'translateX(0)'})
 
     // Экран "Справки и выписки в один клик"
         // заголовок и подзаголовок
@@ -394,7 +397,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // попап окно
     addTweenTriggerZero('#references #make_reference', {transform: 'translateX(-100vw)'}, '#references #make_reference', 900, 50, {})
         // окно
-    addTweenTriggerZero('#references #egrn', {transform: 'translateX(-100vw)'}, '#references #egrn', 900, 50, {})
+    addTweenTriggerZero('#references #egrn', {transform: 'translateX(-100vw)'}, '#references #egrn', 900, 400, {})
         // надписи
     addTweenTriggerZero("#bradley6", {transform: 'translateX(100vw)'}, '#bradley6', 250, 0, {transform: 'translateX(0)'})
 
