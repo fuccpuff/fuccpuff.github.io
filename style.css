@@ -1009,6 +1009,7 @@ header .links {
 #profit_analysis .heading_info {
     margin-left: 125px;
     margin-top: 80px;
+    width: initial;
 }
 
 #profit_rectangle {
@@ -1239,7 +1240,7 @@ input {
 }
 
 #contragents .block_left {
-    min-width: 820px;
+    min-width: 950px;
 }
 
 #actual_information .block_left {
@@ -1730,8 +1731,9 @@ input {
 
 .service_team_img {
     position: relative;
-    width: 149px;
-    height: 166px;
+    min-width: 149px;
+    min-height: 166px;
+    flex: 1;
 }
 
 .service_team_img img {
@@ -1775,8 +1777,8 @@ input {
     width: 37px;
     height: 29px;
     background-color: yellow;
-    top: 108px;
-    left: 155px;
+    top: 88px;
+    left: 95px;
     z-index: -1;
     box-shadow: 0px 10px 10px 3px yellow;
     opacity: 0;
@@ -1903,13 +1905,17 @@ input {
 }
 
 .team {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 200px;
+    grid-row-gap: 40px;
     margin-top: 100px;
 }
 
 .team .member {
     width: 270px;
-    margin: 0 110px;
+    /*margin: 0 110px;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1921,6 +1927,7 @@ input {
     color: #000000;
     margin-top: 40px;
     text-align: center;
+    flex: 1;
 }
 
 .member span {
@@ -1929,6 +1936,7 @@ input {
     transition: 0.5s;
     font-size: 16px;
     text-align: center;
+    flex: 1;
 }
 
 #get_access {
@@ -1972,7 +1980,9 @@ input {
 #get_access .inputs {
     display: flex;
     flex-direction: column;
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 30px;
     box-sizing: border-box;
     margin-top: 50px;
 }
@@ -2400,10 +2410,6 @@ footer .footer_links a:nth-child(2) {
         margin-left: 100px;
     }
 
-    #objects_in_one_place .heading_info {
-        margin-left: 100px;
-    }
-
     #building {
         left: 55vw;
     }
@@ -2453,6 +2459,10 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 1400px) {
+    #team_rects_right {
+        display: none;
+    }
+
     .economy_element {
         transform: scale(0.8)
     }
@@ -2487,11 +2497,19 @@ footer .footer_links a:nth-child(2) {
     #economy {
         margin-top: 413px;
     }
+
+    .team {
+        grid-column-gap: 100px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
+    .heading_info {
+        margin-left: 0 !important;
+    }
+
     .heading {
-        font-size: 80px;
+        font-size: 80px !important;
     }
 
     #main_block_left .form_button {
@@ -2501,9 +2519,45 @@ footer .footer_links a:nth-child(2) {
         margin-top: 100px;
         padding: 0;
     }
+
+    #cool_img {
+        left: 430px;
+    }
+
+    #contragents .block_left {
+        min-width: 703px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
+
+
+    .team {
+        grid-column-gap: 60px;
+    }
+
+    .team .member {
+        width: 200px;
+    }
+
+    .service_team_img {
+        transform: scale(0.8);
+    }
+
+    .member h4 {
+        margin-top: 0;
+    }
+
+    #checks .right {
+        margin-left: -186px;
+        min-height: 850px;
+        margin-top: 50px;
+    }
+
+    #actual_information .block_left {
+        z-index: 2;
+    }
+
     #main_block_left .right_block {
         justify-content: initial;
     }
@@ -2601,11 +2655,27 @@ footer .footer_links a:nth-child(2) {
 
     #contragents .block_right {
         min-height: 737px;
+        margin-top: 140px;
+    }
+
+    #contragents #info_cadastral {
+        left: initial;
+        right: 60px;
+    }
+
+    #check_asap_text {
+        left: initial;
+        right: 20px;
+    }
+
+    #check_cells {
+        left: initial;
+        right: -200px;
     }
 
     #references .block_right {
         min-height: 696px;
-        margin-top: 160px;
+        margin-top: 240px;
         z-index: 2;
     }
 
@@ -2660,10 +2730,6 @@ footer .footer_links a:nth-child(2) {
         font-size: 20px !important;
     }
 
-    #economy_elements_container {
-        width: 95%;
-    }
-
     #regulations {
         right: 244px;
     }
@@ -2683,9 +2749,44 @@ footer .footer_links a:nth-child(2) {
     .act:nth-child(3) {
         margin-left: 286px;
     }
+
+    #economy_block .right #economy_elements_container {
+        width: 95%;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    #headblow_img {
+        right: 60px;
+        width: 65px;
+        height: 65px;
+    }
+
+    .team {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 60px;
+    }
+
+    #checks .check {
+        width: 250px;
+        height: 200px;
+        font-size: 12px;
+    }
+
+    .check .bell {
+        height: 100px;
+    }
+
+    #checks .check:nth-child(3) {
+        top: 455px;
+        left: 363px;
+    }
+
+    #lightning {
+        height: 400px;
+    }
+
     #main_block_left .right_block {
         align-self: initial;
     }
@@ -2703,7 +2804,7 @@ footer .footer_links a:nth-child(2) {
     }
 
     #building {
-        left: -160px;;
+        left: -15px;;
         top: 300px;
     }
 
@@ -2752,12 +2853,12 @@ footer .footer_links a:nth-child(2) {
     }
 
     .heading {
-        font-size: 60px;
-        line-height: 60px;
+        font-size: 60px !important;
+        line-height: 60px !important;
     }
 
     .heading_info {
-        font-size: 22px;
+        font-size: 22px !important;
     }
 
     .label {
@@ -2810,11 +2911,39 @@ footer .footer_links a:nth-child(2) {
     }
 
     #economy_block .right h1 {
+        margin-top: 0;
         font-size: 36px !important;
+    }
+
+    #main_block {
+        height: 825px;
+    }
+
+    #objects_in_one_place {
+        margin-top: 100px;
+    }
+
+    #economy {
+        margin-left: 0px;
+        padding: 0 10px;
+    }
+
+    #profit_analysis {
+        margin-top: 100px;
+    }
+
+    #contragents {
+        margin-top: -100px;
     }
 }
 
 @media screen and (max-width: 600px) {
+    #checks .right {
+        margin-left: -240px;
+        transform: scale(0.8);
+        margin-top: -65px;
+    }
+
     #objects_in_one_place #new_cases {
         right: 31px;
     }
@@ -2830,6 +2959,11 @@ footer .footer_links a:nth-child(2) {
 
     #count_scroll_img {
         right: -135px;
+    }
+
+    #building {
+        left: -150px;;
+        top: 300px;
     }
 
     #vector_img {
@@ -2849,11 +2983,33 @@ footer .footer_links a:nth-child(2) {
         margin-left: 0 !important;
         margin-top: 50px !important;
     }
+
+    #regulations {
+        right: 320px;
+    }
 }
 
 @media screen and (max-width: 480px) {
+    .member h4 {
+        font-size: 16px;
+        margin-top: -16px;
+    }
+
+    .member span {
+        margin-top: 0;
+        font-size: 14px;
+    }
+
     .logo {
         transform: scale(0.7);
+    }
+
+    .team {
+        grid-column-gap: 15px;
+    }
+
+    .service_team_img {
+        transform: scale(0.6);
     }
 
     header .links {
@@ -2861,13 +3017,14 @@ footer .footer_links a:nth-child(2) {
     }
 
     .heading {
-        font-size: 45px;
-        line-height: 37px;
-        margin-top: 60px;
+        font-size: 38px !important;
+        line-height: 37px !important;
+        margin-top: 60px !important;
     }
 
     .heading_info {
-        font-size: 15px;
+        font-size: 15px !important;
+        line-height: initial !important;
     }
 
     .label {
@@ -2921,6 +3078,14 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 400px) {
+    .team .member {
+        width: 150px;
+    }
+
+    .member h4 {
+        flex: initial;
+    }
+
     .economy_element {
         width: 120px;
         transform: scale(0.5);
@@ -2936,6 +3101,12 @@ footer .footer_links a:nth-child(2) {
 @media screen and (max-width: 380px) {
     #objects_in_one_place .heading_info {
 
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .team .member {
+        width: 120px;
     }
 }
 

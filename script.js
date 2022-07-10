@@ -231,6 +231,14 @@ document.addEventListener('DOMContentLoaded', () => {
             .addTo(controller);
     }
 
+    function addTweenTriggerZero(element, animation, triggerElement, duration, offset, from) {
+        let tween = new TweenMax.fromTo(element, 1, from, animation);
+        new ScrollMagic.Scene({triggerElement: triggerElement, duration: duration, offset: offset, triggerHook: 0})
+            .setTween(tween)
+           // .addIndicators({name: "tween css class"}) // add indicators (requires plugin)
+            .addTo(controller);
+    }
+
     let scale1 = {transform: 'scale(1)'}
     let translateX0 = {transform: 'translateX(0)'}
     let bottomAnimation = {transform: 'translateY(0)', opacity: 1}
@@ -324,23 +332,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     addTween('#economy', {transform: 'translateX(0)'}, '#economy_block', 200, 20, {transform: 'translateX(100vw)'})
 
-    addTween('#main_block_left .heading', {opacity: 0}, '#main_block_left .heading', 50, 500, {opacity: 1})
-    addTween('#possibility_block_header', {opacity: 0}, '#possibility_block_header', 50, 500, {opacity: 1})
-    addTween('#objects_in_one_place .heading', {opacity: 0}, '#objects_in_one_place', 50, 550, {opacity: 1})
-    addTween('#objects_in_one_place .heading_info', {opacity: 0}, '#objects_in_one_place', 50, 790, {opacity: 1})
-    addTween('#vector_img',  {transform: 'translateX(-100vw)'}, '#vector_img', 200, 400, {transform: 'translateX(0)'})
-    addTween('.shadow', {opacity: 0}, '#objects_in_one_place', 50, 900, {opacity: 1})
-    addTween('#economy_block .heading', {opacity: 0}, '#economy_block', 50, 700, {opacity: 1})
-    addTween('#economy_block .economy_element:nth-child(1)', {opacity: 0}, '#economy_block', 50, 1000, {opacity: 1})
+    addTweenTriggerZero('#main_block_left .heading', {opacity: 0}, '#main_block_left .heading', 50, -50, {opacity: 1})
+    addTweenTriggerZero('#possibility_block_header', {opacity: 0}, '#possibility_block_header', 50, -50, {opacity: 1})
+    addTweenTriggerZero('#objects_in_one_place .heading', {opacity: 0}, '#objects_in_one_place', 50, 0, {opacity: 1})
+    addTweenTriggerZero('#objects_in_one_place .heading_info', {opacity: 0}, '#objects_in_one_place', 50, 240, {opacity: 1})
+    addTweenTriggerZero('#vector_img',  {transform: 'translateX(-100vw)'}, '#vector_img', 200, -100, {transform: 'translateX(0)'})
+    addTweenTriggerZero('.shadow', {opacity: 0}, '#objects_in_one_place', 50, 400, {opacity: 1})
+    addTweenTriggerZero('#economy_block .heading', {opacity: 0}, '#economy_block .heading', 50, -50, {opacity: 1})
+    addTweenTriggerZero('#economy_block .economy_element:nth-child(1)', {opacity: 0}, '#economy_block .economy_element:nth-child(1)', 50, -50, {opacity: 1})
 
-    addTween('#contragents .heading', {opacity: 0}, '#contragents', 50, 550, {opacity: 1})
-    addTween('#contragents .heading_info', {opacity: 0}, '#contragents', 50, 750, {opacity: 1})
-    addTween('#actual_information .heading', {opacity: 0}, '#actual_information', 50, 550, {opacity: 1})
-    addTween('#actual_information .heading_info', {opacity: 0}, '#actual_information', 50, 850, {opacity: 1})
-    addTween('#juridical_info_img', {transform: 'translateX(-100vw)'}, '#juridical_info_img', 200, 400, {transform: 'translateX(0)'})
-    addTween('#checks #sm21', {transform: 'translateX(-100vw)'}, '#checks #sm21', 200, 400, {transform: 'translateX(0)'})
-    addTween('#count_object', {transform: 'translateX(-100vw)'}, '#count_object', 200, 400, {})
-    addTween('#references .block_right', {transform: 'translateX(-100vw)'}, '#references .block_right', 700, 400, {transform: 'translateX(0)'})
+    addTweenTriggerZero('#contragents .heading', {opacity: 0}, '#contragents', 50, 50, {opacity: 1})
+    addTweenTriggerZero('#contragents .heading_info', {opacity: 0}, '#contragents', 50, 250, {opacity: 1})
+    addTweenTriggerZero('#actual_information .heading', {opacity: 0}, '#actual_information', 50, 50, {opacity: 1})
+    addTweenTriggerZero('#actual_information .heading_info', {opacity: 0}, '#actual_information', 50, 350, {opacity: 1})
+    addTweenTriggerZero('#juridical_info_img', {transform: 'translateX(-100vw)'}, '#juridical_info_img', 200, -100, {transform: 'translateX(0)'})
+    addTweenTriggerZero('#checks #sm21', {transform: 'translateX(-100vw)'}, '#checks #sm21', 200, -100, {transform: 'translateX(0)'})
+    addTweenTriggerZero('#count_object', {transform: 'translateX(-100vw)'}, '#count_object', 200, -100, {})
+    // addTweenTriggerZero('#references .block_right', {transform: 'translateX(-100vw)'}, '#references .block_right', 700, -100, {transform: 'translateX(0)'})
     //addTween('.site_example', {transform: 'translateX(-100vw)'}, '.site_example', 200, 400, {transform: 'translateX(0)'})
 
 
