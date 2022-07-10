@@ -244,7 +244,7 @@ header .links {
     margin-top: 200px;
     font-size: 40px;
     width: 70vw;
-    margin: 20px auto 0 auto;
+    margin: 120px auto 0 auto;
 }
 
 #possibility_block {
@@ -1932,7 +1932,7 @@ input {
 }
 
 #get_access {
-    margin-top: 400px;
+    margin-top: 210px;
     background: linear-gradient(279.21deg, #91C2F4 18%, #6FA7DE 88.3%);
     height: 1300px;
     padding-top: 90px;
