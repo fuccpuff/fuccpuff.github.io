@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let tween = new TweenMax.fromTo(element, 1, from, animation);
         new ScrollMagic.Scene({triggerElement: triggerElement, duration: duration, offset: offset})
             .setTween(tween)
-            // .addIndicators({name: "tween css class"}) // add indicators (requires plugin)
+            .addIndicators({name: "tween css class"}) // add indicators (requires plugin)
             .addTo(controller);
     }
 
