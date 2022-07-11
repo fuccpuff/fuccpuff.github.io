@@ -1268,7 +1268,7 @@ input {
 
 #contragents {
     z-index: 3;
-    margin-top: 300px;
+    margin-top: 390px;
     /*height: 760px;*/
 }
 
@@ -1523,7 +1523,7 @@ input {
 }
 
 #actual_information {
-    margin-top: 280px;
+    margin-top: 310px;
 }
 
 #actual_information .label {
