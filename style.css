@@ -2579,6 +2579,27 @@ footer .footer_links a:nth-child(2) {
     #economy img {
         width: 700px;
     }
+
+    .heading_info {
+        font-size: 21px;
+    }
+
+    .heading {
+        font-size: 88px;
+    }
+
+    .possibility_block_header {
+        font-size: 38px;
+    }
+
+    .site_example {
+        margin: -800px auto 0 auto;
+        border-radius: 16px;
+        box-shadow: 0 4px 84px 0 rgba(0, 0, 0, 0.17);
+        max-width: 100%;
+        height: auto;
+    }
+
 }
 
 @media screen and (max-width: 1400px) {
@@ -2635,6 +2656,11 @@ footer .footer_links a:nth-child(2) {
     #checks .block_left {
         min-width: 635px;
     }
+
+    #contragents .heading_info {
+        font-size: 21px;
+    }
+    
 
     #checks .right {
         transform: scale(0.8);
