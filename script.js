@@ -362,9 +362,9 @@ document.addEventListener('DOMContentLoaded', () => {
     addTweenTriggerZero("#cells_img_cadastral", {opacity: 0}, '#cells_img_cadastral', 800, 50, {opacity: 1})
     // addTweenTriggerZero("#cells_img_important", {transform: 'translateX(100vw)'}, '#cells_img_important', 1400, 50, {transform: 'translateX(0)'})
         // уведомление
-    addTweenTriggerZero(".windows_animation", {transform: 'translateX(100vw)'}, '#object_info', 800, 200, {transform: 'translateX(0)'})
+    addTweenTriggerZero(".windows_animation", {transform: 'translateX(100vw)'}, '#object_info', 800, 200, {})
         // основное окно
-    addTweenTriggerZero("#object_info", {transform: 'translateX(100vw)'}, '#object_info', 1600, 300, {transform: 'translateX(0)'})
+    addTweenTriggerZero("#object_info", {transform: 'translateX(100vw)'}, '#object_info', 1600, 300, {})
 
     // Экран с 25%
         // заголовок
@@ -374,7 +374,7 @@ document.addEventListener('DOMContentLoaded', () => {
     addTweenTriggerZero('#economy_block .economy_element:nth-child(2)', {opacity: 0}, '#economy_block .economy_element:nth-child(2)', 300, -50, {opacity: 1})
     addTweenTriggerZero('#economy_block .economy_element:nth-child(3)', {opacity: 0}, '#economy_block .economy_element:nth-child(3)', 300, -50, {opacity: 1})
         // 25%
-    addTweenTriggerZero('#economy_block .left', {transform: 'translateX(100vw)'}, '#economy_block .left', 900, 400, {transform: 'translateX(0)'})
+    addTweenTriggerZero('#economy_block .left', {transform: 'translateX(100vw)'}, '#economy_block .left', 900, 400, {})
 
     // Экран "Анализ доходности"
         // заголовок и подзаголовок
@@ -388,7 +388,7 @@ document.addEventListener('DOMContentLoaded', () => {
     addTweenTriggerZero('#contragents .heading', {opacity: 0}, '#contragents', 600, 50, {opacity: 1})
     addTweenTriggerZero('#contragents .heading_info', {opacity: 0}, '#contragents', 800, 250, {opacity: 1})
         // окошко
-    addTweenTriggerZero("#contragents .right", {transform: 'translateX(100vw)'}, '#contragents .right', 900, 400, {transform: 'translateX(0)'})
+    addTweenTriggerZero("#contragents .right", {transform: 'translateX(100vw)'}, '#contragents .right', 900, 400, {})
         // кнопка
     addTweenTriggerZero('#contragents .form_button', {opacity: 0}, '#contragents .form_button', 300, 0, {opacity: 1})
 
@@ -403,7 +403,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // окно
     addTweenTriggerZero('#references #egrn', {transform: 'translateX(-100vw)'}, '#references #egrn', 1300, 400, {})
         // надписи
-    addTweenTriggerZero("#bradley6", {transform: 'translateX(100vw)'}, '#bradley6', 250, 0, {transform: 'translateX(0)'})
+    addTweenTriggerZero("#bradley6", {transform: 'translateX(100vw)'}, '#bradley6', 250, 0, {})
 
     // Экран "Актуальная юридическая информация"
         // заголовок и подзаголовок
@@ -412,7 +412,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // иконка
     addTweenTriggerZero('#juridical_info_img',  {opacity: 0}, '#juridical_info_img', 300, 0, {opacity: 1})
         // документы
-    addTweenTriggerZero('#actual_information .right',{transform: 'translateX(100vw)'}, '#actual_information .right', 900, 500, {transform: 'translateX(0)'})
+    addTweenTriggerZero('#actual_information .right',{transform: 'translateX(100vw)'}, '#actual_information .right', 900, 500, {})
 
     // Экран "Проверки больше не будут внезапными"\
         // заголовок и подзаголовок
