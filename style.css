@@ -242,7 +242,7 @@ header .links {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: -100px;
+    margin-top: 200px;
     font-size: 40px;
     width: 70vw;
     margin: 120px auto 0 auto;
@@ -251,7 +251,7 @@ header .links {
 #possibility_block {
     display: flex;
     justify-content: center;
-    margin-top: 210px;
+    margin-top: -50px;
     width: auto;
     height: 460px;
     transition: 0.5s;
