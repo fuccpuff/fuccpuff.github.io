@@ -32,10 +32,11 @@ poss_elements.forEach((item, index) => {
         focus(item, index);
     })
     item.addEventListener("mouseleave", (e) => {
+        document.querySelector('#possibility_block').style.marginLeft = '0'
         poss_elements.forEach((item) => {
             item.classList.remove('hovered')
             item.style.transform = "scale(1) translateY(0px)";
-            item.style.margin = '0 10px';
+            item.style.margin = '100px 10px';
         });
     });
 });
@@ -57,9 +58,13 @@ function focus(elem, index) {
     let next2 = index + 2;
 
     elem.style.transform = "scale(1.7)";
+    elem.style.margin = "100px 80px"
+
+    if (index != 0)
+        document.querySelector('#possibility_block').style.marginLeft = '-100px'
     try {
         poss_elements[prev].style.transform = "scale(1.3)";
-        poss_elements[prev].style.margin = '0 40px';
+        poss_elements[prev].style.margin = '100px 40px';
     } catch {
     }
     try {
@@ -68,7 +73,7 @@ function focus(elem, index) {
     }
     try {
         poss_elements[next].style.transform = "scale(1.3)";
-        poss_elements[next].style.margin = '0 40px';
+        poss_elements[next].style.margin = '100px 40px';
     } catch {
     }
     try {
@@ -428,4 +433,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // addTweenTriggerZero('#references .block_right', {transform: 'translateX(-100vw)'}, '#references .block_right', 700, -100, {transform: 'translateX(0)'})
     // addTween('header', {backgroundColor: 'rgba(255, 255, 255, 1)'}, '#second_block', 0, 300, {backgroundColor: 'rgba(255, 255, 255, 0)'})
 // build scene
+});
+
+document.addEventListener( 'DOMContentLoaded', function() {
+    var splide = new Splide( '.splide', {perPage: 3, arrows: false, pagination: false})
+    splide.mount();
 });

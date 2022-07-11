@@ -253,6 +253,8 @@ header .links {
     justify-content: center;
     margin-top: 210px;
     width: auto;
+    height: 460px;
+    transition: 0.5s;
 }
 
 .possibility_element {
@@ -264,13 +266,20 @@ header .links {
     max-width: 180px;
     height: 265px;
     background-color: #FFF;
-    margin: 0 10px;
+    margin: 100px 10px;
     transition: 0.5s;
     border-radius: 10px;
     box-shadow: 0px 4px 41px 0px rgba(0, 0, 0, 0.11);
     z-index: 100;
     padding: 15px;
+}
 
+#possibility_block .splide__slide {
+    margin: 100px 10px;
+}
+
+#possibility_block .splide__list {
+    padding: 0 40px !important;
 }
 
 .possibility_element h3 {
@@ -566,7 +575,7 @@ header .links {
 }
 
 .possibility_element:hover {
-    margin: 0 70px !important;
+    /*margin: 0 70px !important;*/
     border: 0.5px solid #000000;
 }
 

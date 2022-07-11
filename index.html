@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link type="image/x-icon" href="static/favicon.ico" rel="shortcut icon">
     <link type="Image/x-icon" href="static/favicon.ico" rel="icon">
     <title>Главная страница | OWNEX</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
     <script src="https://app.getreview.io/tags/VuoMjJ06zp6R5AF8/sdk.js" async></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
@@ -17,53 +19,177 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
-        integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+            integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
 
 </head>
-
 <body>
-    <div id="trigger" class="spacer s0"></div>
-    <header class="animated_block">
-        <div class="container">
-            <div class="logo">
-                <img src="static/logo_left.png" alt=""><img src="static/logo_w.png" alt="" id="logo_w_left"><img
-                    src="static/logo_w.png" alt="" id="logo_w_right"><img src="static/logo_right.png" alt="">
-            </div>
-            <div class="links">
-                <a href="support.html" id="faq_link">FAQ</a>
-                <a href="auth.html" id="start_link">ВОЙТИ<img src="static/login.svg" alt=""></a>
-            </div>
+<div id="trigger" class="spacer s0"></div>
+<header class="animated_block">
+    <div class="container">
+        <div class="logo">
+            <img src="static/logo_left.png" alt=""><img src="static/logo_w.png" alt="" id="logo_w_left"><img
+                src="static/logo_w.png" alt="" id="logo_w_right"><img src="static/logo_right.png" alt="">
         </div>
-    </header>
-    <div id="main_block" class="animated_block">
-        <div id="main_block_left">
-            <h1 class="heading">Сервис по управлению</br>коммерческой</br>недвижимостью</h1>
-            <div class="right_block">
-                <!--             <h2 class="animation">Помогает контроллировать все<br> операционные задачи
-                            и состояние объектов</h2> -->
-                <button class="form_button">приступить</button>
-            </div>
-        </div>
-        <div class="blue_rectangle"></div>
-        <img src="static/building.png" alt="" id="building">
-    </div>
-    <div id="second_block" class="animated_block" data-block-delay="400">
-        <!--    <img src="static/el1.svg" alt="" id="el1" class="animation slide_from_left" data-delay="200">-->
-        <div id="screen1_container">
-            <img class="site_example" src="static/1screen.png">
+        <div class="links">
+            <a href="support.html" id="faq_link">FAQ</a>
+            <a href="auth.html" id="start_link">ВОЙТИ<img src="static/login.svg" alt=""></a>
         </div>
     </div>
-    <div id="possibility_block_header" style=>
-        <h1>Контролируйте задачи</br>по состоянию и эксплуатации</br>объектов</h1>
+</header>
+<div id="main_block" class="animated_block">
+    <div id="main_block_left">
+        <h1 class="heading">Сервис по управлению</br>коммерческой</br>недвижимостью</h1>
+        <div class="right_block">
+            <!--             <h2 class="animation">Помогает контроллировать все<br> операционные задачи
+                        и состояние объектов</h2> -->
+            <button class="form_button">приступить</button>
+        </div>
     </div>
-    <div style="max-width: 100vw; overflow-x: hidden; padding-bottom: 160px;">
-        <div id="possibility_block" class="animated_block" data-block-delay="200">
-            <div class="possibility_element animation bottom_animation" data-delay="50" id="pe1">
+    <div class="blue_rectangle"></div>
+    <img src="static/building.png" alt="" id="building">
+</div>
+<div id="second_block" class="animated_block" data-block-delay="400">
+    <!--    <img src="static/el1.svg" alt="" id="el1" class="animation slide_from_left" data-delay="200">-->
+    <div id="screen1_container">
+        <img class="site_example" src="static/1screen.png">
+    </div>
+</div>
+<div id="possibility_block_header" style=>
+    <h1>Контролируйте задачи</br>по состоянию и эксплуатации</br>объектов</h1>
+</div>
+<div style="max-width: 100vw; overflow-x: hidden; padding-bottom: 160px;">
+<!--    <div id="possibility_block" class="animated_block" data-block-delay="200">-->
+<!--        <div class="possibility_element animation bottom_animation" data-delay="50" id="pe1">-->
+<!--            <img src="static/rouble.svg" alt="" id="rouble_img">-->
+<!--            <h3>Ведите</br>финансовый</br>учет</h3>-->
+<!--            <span>Чтобы ничего не упустить</span>-->
+<!--        </div>-->
+<!--        <div class="possibility_element animation bottom_animation" data-delay="100" id="pe2">-->
+<!--            <div class="possibility_img" id="risks_img">-->
+<!--                <img src="static/risks_left.png" alt="">-->
+<!--                <img src="static/risks_right.png" alt="">-->
+<!--            </div>-->
+<!--            &lt;!&ndash;            <img src="static/risks.svg" alt="">&ndash;&gt;-->
+<!--            <h3>Управляйте</br>рисками</h3>-->
+<!--            <span>Избегайте негативных последствий</span>-->
+<!--        </div>-->
+<!--        <div class="possibility_element animation bottom_animation" data-delay="150" id="pe3">-->
+<!--            <div class="possibility_img" id="deals_img">-->
+<!--                <img src="static/deals_bg.svg" alt="">-->
+<!--                <img src="static/deals_center.svg" alt="">-->
+<!--            </div>-->
+<!--            &lt;!&ndash;            <img src="static/deals.svg" alt="">&ndash;&gt;-->
+<!--            <h3>Контролируйте</br>сделки</h3>-->
+<!--            <span>Проверяйте надежность партнеров</span>-->
+<!--        </div>-->
+<!--        <div class="possibility_element animation bottom_animation" data-delay="200" id="pe4">-->
+<!--            <div class="possibility_img" id="documents_img">-->
+<!--                <img src="static/documents_bg.svg" alt="">-->
+<!--                <img src="static/documents_inner.svg" alt="">-->
+<!--                <img src="static/documents_inner.svg" alt="">-->
+<!--                <img src="static/documents_inner.svg" alt="">-->
+<!--            </div>-->
+<!--            &lt;!&ndash;            <img src="static/documents.svg" alt="">&ndash;&gt;-->
+<!--            <h3>Храните</br>документы и акты</h3>-->
+<!--            <span>Чтобы они всегда были под рукой</span>-->
+<!--        </div>-->
+<!--        <div class="possibility_element animation bottom_animation" data-delay="250" id="pe5">-->
+<!--            <div class="possibility_img" id="pizza_img">-->
+<!--                <img src="static/report1.svg" alt="">-->
+<!--                <img src="static/report2.svg" alt="">-->
+<!--                <img src="static/report3.svg" alt="">-->
+<!--            </div>-->
+<!--            <h3>Создавайте</br>отчеты</h3>-->
+<!--            <span>И отслеживайте результаты вашей работы</span>-->
+<!--        </div>-->
+<!--        <div class="possibility_element animation bottom_animation" data-delay="300" id="pe6">-->
+<!--            <div class="possibility_img" id="changes_img">-->
+<!--                <img src="static/changes_left.svg" alt="">-->
+<!--                <img src="static/changes_right.svg" alt="">-->
+<!--            </div>-->
+<!--            &lt;!&ndash;            <img src="static/changes.svg" alt="">&ndash;&gt;-->
+<!--            <h3>Отслеживайте</br>изменения</br>в законах</h3>-->
+<!--            <span>Не покидая сервис</span>-->
+<!--        </div>-->
+<!--        <div class="possibility_element animation bottom_animation" data-delay="350" id="pe7">-->
+<!--            <div class="possibility_img" id="obligations">-->
+<!--                <img src="static/obligations_center.svg" alt="">-->
+<!--                <img src="static/obligations_rays.svg" alt="">-->
+<!--            </div>-->
+<!--            <h3>Рассчитывайте</br>финансовые</br>обязательства</h3>-->
+<!--            <span>С помощью онлайн-калькулятора</span>-->
+<!--        </div>-->
+<!--        <div class="possibility_element animation bottom_animation" data-delay="400" id="pe8">-->
+<!--            <svg xmlns="http://www.w3.org/2000/svg" width="137" height="153" viewBox="0 0 137 153" fill="none"-->
+<!--                 id="profit_analysis_img">-->
+<!--                <g filter="url(#filter0_d_900_1229)">-->
+<!--                    <path-->
+<!--                            d="M114.565 31.8124C114.565 42.7965 90.872 51.7008 61.6451 51.7008C32.4181 51.7008 8.725 42.7965 8.725 31.8124C8.725 20.8284 32.4181 11.9241 61.6451 11.9241C90.872 11.9241 114.565 20.8284 114.565 31.8124Z"-->
+<!--                            fill="url(#paint3_linear_900_1229)"/>-->
+<!--                    <path-->
+<!--                            d="M106.734 48.129C97.4186 53.812 80.709 57.6005 61.6448 57.6005C42.5807 57.6005 25.8711 53.812 16.5555 48.129C11.5895 51.1585 8.72478 54.7265 8.72478 58.5458C8.72478 69.5299 32.4179 78.4342 61.6448 78.4342C90.8718 78.4342 114.565 69.5299 114.565 58.5458C114.565 54.7265 111.7 51.1585 106.734 48.129Z"-->
+<!--                            fill="url(#paint0_linear_900_1229)"/>-->
+<!--                    <path-->
+<!--                            d="M106.735 74.8634C97.4192 80.5466 80.7093 84.3352 61.6448 84.3352C42.5804 84.3352 25.8705 80.5466 16.555 74.8634C11.5893 77.8929 8.72478 81.4607 8.72478 85.28C8.72478 96.264 32.4179 105.168 61.6448 105.168C90.8718 105.168 114.565 96.264 114.565 85.28C114.565 81.4607 111.7 77.8929 106.735 74.8634Z"-->
+<!--                            fill="url(#paint1_linear_900_1229)"/>-->
+<!--                    <path-->
+<!--                            d="M106.735 103.695C97.4192 109.379 80.7093 113.167 61.6448 113.167C42.5804 113.167 25.8705 109.379 16.555 103.695C11.5893 106.725 8.72478 110.293 8.72478 114.112C8.72478 125.096 32.4179 134 61.6448 134C90.8718 134 114.565 125.096 114.565 114.112C114.565 110.293 111.7 106.725 106.735 103.695Z"-->
+<!--                            fill="url(#paint2_linear_900_1229)"/>-->
+<!--                </g>-->
+<!--                <defs>-->
+<!--                    <filter id="filter0_d_900_1229" x="0.724609" y="0.541016" width="135.841" height="152.459"-->
+<!--                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">-->
+<!--                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>-->
+<!--                        <feColorMatrix in="SourceAlpha" type="matrix"-->
+<!--                                       values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>-->
+<!--                        <feOffset dx="7" dy="0"/>-->
+<!--                        <feGaussianBlur stdDeviation="7.5"/>-->
+<!--                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.17 0"/>-->
+<!--                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_900_1229"/>-->
+<!--                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_900_1229"-->
+<!--                                 result="shape"/>-->
+<!--                    </filter>-->
+<!--                    <linearGradient id="paint0_linear_900_1229" x1="32.904" y1="15.6902" x2="45.5529" y2="75.6157"-->
+<!--                                    gradientUnits="userSpaceOnUse">-->
+<!--                        <stop stop-color="#6FA7DE"/>-->
+<!--                        <stop offset="1" stop-color="#ACD4FC"/>-->
+<!--                    </linearGradient>-->
+<!--                    <linearGradient id="paint1_linear_900_1229" x1="32.904" y1="15.6902" x2="45.5529" y2="75.6157"-->
+<!--                                    gradientUnits="userSpaceOnUse">-->
+<!--                        <stop stop-color="#6FA7DE"/>-->
+<!--                        <stop offset="1" stop-color="#ACD4FC"/>-->
+<!--                    </linearGradient>-->
+<!--                    <linearGradient id="paint2_linear_900_1229" x1="32.904" y1="15.6902" x2="45.5529" y2="75.6157"-->
+<!--                                    gradientUnits="userSpaceOnUse">-->
+<!--                        <stop stop-color="#6FA7DE"/>-->
+<!--                        <stop offset="1" stop-color="#ACD4FC"/>-->
+<!--                    </linearGradient>-->
+<!--                    <linearGradient id="paint3_linear_900_1229" x1="32.904" y1="15.6902" x2="45.5529" y2="75.6157"-->
+<!--                                    gradientUnits="userSpaceOnUse">-->
+<!--                        <stop stop-color="#6FA7DE"/>-->
+<!--                        <stop offset="1" stop-color="#ACD4FC"/>-->
+<!--                    </linearGradient>-->
+<!--                    <linearGradient id="paint4_linear_900_1229" x1="32.904" y1="15.6902" x2="45.5529" y2="75.6157"-->
+<!--                                    gradientUnits="userSpaceOnUse">-->
+<!--                        <stop stop-color="#6FA7DE"/>-->
+<!--                        <stop offset="1" stop-color="#ACD4FC"/>-->
+<!--                    </linearGradient>-->
+<!--                </defs>-->
+<!--            </svg>-->
+<!--            <h3>Анализируйте</br>доходность</br>объектов</h3>-->
+<!--            <span>И управляйте прибылью</span>-->
+<!--        </div>-->
+<!--    </div>-->
+</div>
+<div class="splide" role="group" aria-label="Splide Basic HTML Example" id="possibility_block">
+    <div class="splide__track">
+        <ul class="splide__list">
+            <div class="possibility_element splide__slide" data-delay="50" id="pe1">
                 <img src="static/rouble.svg" alt="" id="rouble_img">
                 <h3>Ведите</br>финансовый</br>учет</h3>
                 <span>Чтобы ничего не упустить</span>
             </div>
-            <div class="possibility_element animation bottom_animation" data-delay="100" id="pe2">
+            <div class="possibility_element splide__slide" data-delay="100" id="pe2">
                 <div class="possibility_img" id="risks_img">
                     <img src="static/risks_left.png" alt="">
                     <img src="static/risks_right.png" alt="">
@@ -72,7 +198,7 @@
                 <h3>Управляйте</br>рисками</h3>
                 <span>Избегайте негативных последствий</span>
             </div>
-            <div class="possibility_element animation bottom_animation" data-delay="150" id="pe3">
+            <div class="possibility_element splide__slide" data-delay="150" id="pe3">
                 <div class="possibility_img" id="deals_img">
                     <img src="static/deals_bg.svg" alt="">
                     <img src="static/deals_center.svg" alt="">
@@ -81,7 +207,7 @@
                 <h3>Контролируйте</br>сделки</h3>
                 <span>Проверяйте надежность партнеров</span>
             </div>
-            <div class="possibility_element animation bottom_animation" data-delay="200" id="pe4">
+            <div class="possibility_element splide__slide" data-delay="200" id="pe4">
                 <div class="possibility_img" id="documents_img">
                     <img src="static/documents_bg.svg" alt="">
                     <img src="static/documents_inner.svg" alt="">
@@ -92,7 +218,7 @@
                 <h3>Храните</br>документы и акты</h3>
                 <span>Чтобы они всегда были под рукой</span>
             </div>
-            <div class="possibility_element animation bottom_animation" data-delay="250" id="pe5">
+            <div class="possibility_element splide__slide" data-delay="250" id="pe5">
                 <div class="possibility_img" id="pizza_img">
                     <img src="static/report1.svg" alt="">
                     <img src="static/report2.svg" alt="">
@@ -101,7 +227,7 @@
                 <h3>Создавайте</br>отчеты</h3>
                 <span>И отслеживайте результаты вашей работы</span>
             </div>
-            <div class="possibility_element animation bottom_animation" data-delay="300" id="pe6">
+            <div class="possibility_element splide__slide" data-delay="300" id="pe6">
                 <div class="possibility_img" id="changes_img">
                     <img src="static/changes_left.svg" alt="">
                     <img src="static/changes_right.svg" alt="">
@@ -110,7 +236,7 @@
                 <h3>Отслеживайте</br>изменения</br>в законах</h3>
                 <span>Не покидая сервис</span>
             </div>
-            <div class="possibility_element animation bottom_animation" data-delay="350" id="pe7">
+            <div class="possibility_element splide__slide" data-delay="350" id="pe7">
                 <div class="possibility_img" id="obligations">
                     <img src="static/obligations_center.svg" alt="">
                     <img src="static/obligations_rays.svg" alt="">
@@ -118,649 +244,649 @@
                 <h3>Рассчитывайте</br>финансовые</br>обязательства</h3>
                 <span>С помощью онлайн-калькулятора</span>
             </div>
-            <div class="possibility_element animation bottom_animation" data-delay="400" id="pe8">
+            <div class="possibility_element splide__slide" data-delay="400" id="pe8">
                 <svg xmlns="http://www.w3.org/2000/svg" width="137" height="153" viewBox="0 0 137 153" fill="none"
-                    id="profit_analysis_img">
+                     id="profit_analysis_img">
                     <g filter="url(#filter0_d_900_1229)">
                         <path
-                            d="M114.565 31.8124C114.565 42.7965 90.872 51.7008 61.6451 51.7008C32.4181 51.7008 8.725 42.7965 8.725 31.8124C8.725 20.8284 32.4181 11.9241 61.6451 11.9241C90.872 11.9241 114.565 20.8284 114.565 31.8124Z"
-                            fill="url(#paint3_linear_900_1229)" />
+                                d="M114.565 31.8124C114.565 42.7965 90.872 51.7008 61.6451 51.7008C32.4181 51.7008 8.725 42.7965 8.725 31.8124C8.725 20.8284 32.4181 11.9241 61.6451 11.9241C90.872 11.9241 114.565 20.8284 114.565 31.8124Z"
+                                fill="url(#paint3_linear_900_1229)"/>
                         <path
-                            d="M106.734 48.129C97.4186 53.812 80.709 57.6005 61.6448 57.6005C42.5807 57.6005 25.8711 53.812 16.5555 48.129C11.5895 51.1585 8.72478 54.7265 8.72478 58.5458C8.72478 69.5299 32.4179 78.4342 61.6448 78.4342C90.8718 78.4342 114.565 69.5299 114.565 58.5458C114.565 54.7265 111.7 51.1585 106.734 48.129Z"
-                            fill="url(#paint0_linear_900_1229)" />
+                                d="M106.734 48.129C97.4186 53.812 80.709 57.6005 61.6448 57.6005C42.5807 57.6005 25.8711 53.812 16.5555 48.129C11.5895 51.1585 8.72478 54.7265 8.72478 58.5458C8.72478 69.5299 32.4179 78.4342 61.6448 78.4342C90.8718 78.4342 114.565 69.5299 114.565 58.5458C114.565 54.7265 111.7 51.1585 106.734 48.129Z"
+                                fill="url(#paint0_linear_900_1229)"/>
                         <path
-                            d="M106.735 74.8634C97.4192 80.5466 80.7093 84.3352 61.6448 84.3352C42.5804 84.3352 25.8705 80.5466 16.555 74.8634C11.5893 77.8929 8.72478 81.4607 8.72478 85.28C8.72478 96.264 32.4179 105.168 61.6448 105.168C90.8718 105.168 114.565 96.264 114.565 85.28C114.565 81.4607 111.7 77.8929 106.735 74.8634Z"
-                            fill="url(#paint1_linear_900_1229)" />
+                                d="M106.735 74.8634C97.4192 80.5466 80.7093 84.3352 61.6448 84.3352C42.5804 84.3352 25.8705 80.5466 16.555 74.8634C11.5893 77.8929 8.72478 81.4607 8.72478 85.28C8.72478 96.264 32.4179 105.168 61.6448 105.168C90.8718 105.168 114.565 96.264 114.565 85.28C114.565 81.4607 111.7 77.8929 106.735 74.8634Z"
+                                fill="url(#paint1_linear_900_1229)"/>
                         <path
-                            d="M106.735 103.695C97.4192 109.379 80.7093 113.167 61.6448 113.167C42.5804 113.167 25.8705 109.379 16.555 103.695C11.5893 106.725 8.72478 110.293 8.72478 114.112C8.72478 125.096 32.4179 134 61.6448 134C90.8718 134 114.565 125.096 114.565 114.112C114.565 110.293 111.7 106.725 106.735 103.695Z"
-                            fill="url(#paint2_linear_900_1229)" />
+                                d="M106.735 103.695C97.4192 109.379 80.7093 113.167 61.6448 113.167C42.5804 113.167 25.8705 109.379 16.555 103.695C11.5893 106.725 8.72478 110.293 8.72478 114.112C8.72478 125.096 32.4179 134 61.6448 134C90.8718 134 114.565 125.096 114.565 114.112C114.565 110.293 111.7 106.725 106.735 103.695Z"
+                                fill="url(#paint2_linear_900_1229)"/>
                     </g>
                     <defs>
                         <filter id="filter0_d_900_1229" x="0.724609" y="0.541016" width="135.841" height="152.459"
-                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
                             <feColorMatrix in="SourceAlpha" type="matrix"
-                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                            <feOffset dx="7" dy="0" />
-                            <feGaussianBlur stdDeviation="7.5" />
-                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.17 0" />
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_900_1229" />
+                                           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dx="7" dy="0"/>
+                            <feGaussianBlur stdDeviation="7.5"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.17 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_900_1229"/>
                             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_900_1229"
-                                result="shape" />
+                                     result="shape"/>
                         </filter>
                         <linearGradient id="paint0_linear_900_1229" x1="32.904" y1="15.6902" x2="45.5529" y2="75.6157"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#6FA7DE" />
-                            <stop offset="1" stop-color="#ACD4FC" />
+                                        gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#6FA7DE"/>
+                            <stop offset="1" stop-color="#ACD4FC"/>
                         </linearGradient>
                         <linearGradient id="paint1_linear_900_1229" x1="32.904" y1="15.6902" x2="45.5529" y2="75.6157"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#6FA7DE" />
-                            <stop offset="1" stop-color="#ACD4FC" />
+                                        gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#6FA7DE"/>
+                            <stop offset="1" stop-color="#ACD4FC"/>
                         </linearGradient>
                         <linearGradient id="paint2_linear_900_1229" x1="32.904" y1="15.6902" x2="45.5529" y2="75.6157"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#6FA7DE" />
-                            <stop offset="1" stop-color="#ACD4FC" />
+                                        gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#6FA7DE"/>
+                            <stop offset="1" stop-color="#ACD4FC"/>
                         </linearGradient>
                         <linearGradient id="paint3_linear_900_1229" x1="32.904" y1="15.6902" x2="45.5529" y2="75.6157"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#6FA7DE" />
-                            <stop offset="1" stop-color="#ACD4FC" />
+                                        gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#6FA7DE"/>
+                            <stop offset="1" stop-color="#ACD4FC"/>
                         </linearGradient>
                         <linearGradient id="paint4_linear_900_1229" x1="32.904" y1="15.6902" x2="45.5529" y2="75.6157"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#6FA7DE" />
-                            <stop offset="1" stop-color="#ACD4FC" />
+                                        gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#6FA7DE"/>
+                            <stop offset="1" stop-color="#ACD4FC"/>
                         </linearGradient>
                     </defs>
                 </svg>
                 <h3>Анализируйте</br>доходность</br>объектов</h3>
                 <span>И управляйте прибылью</span>
             </div>
-        </div>
+        </ul>
     </div>
-    <div class="block_container">
-
-        <div class="block animated_block" id="objects_in_one_place" data-block-delay="700">
-            <div class="left block_left">
-                <h1 class="heading" id="sm2">Все объекты<br>в одном месте</h1>
-                <div class="label" id="sm1">Фокусируйтесь на главном</div>
-                <div class="heading_info" id="sm3">В панели управления OWNEX все</br>ключевые
-                    характеристики объектов</br>собраны в одном
-                    окне, чтобы вы</br>оперативно реагировали на изменения.
-                </div>
-                <img src="static/vector.svg" alt="" id="vector_img" class="">
-                <div class="shadow"></div>
+</div>
+<div class="block_container">
+    <div class="block animated_block" id="objects_in_one_place" data-block-delay="700">
+        <div class="left block_left">
+            <h1 class="heading" id="sm2">Все объекты<br>в одном месте</h1>
+            <div class="label" id="sm1">Фокусируйтесь на главном</div>
+            <div class="heading_info" id="sm3">В панели управления OWNEX все</br>ключевые
+                характеристики объектов</br>собраны в одном
+                окне, чтобы вы</br>оперативно реагировали на изменения.
             </div>
-            <div class="right block_right">
-                <div id="new_cases" class="example windows_animation">
-                    <img src="static/exclamation_point.svg" alt="" id="exclamation_new_cases">
-                    <img src="static/x.svg" id="close_new_cases" alt="X" onclick="closeNewCases()">
-                    <div id="new_cases_content">
-                        <h1>ОБРАТИТЕ</br>ВНИМАНИЕ</h1>
-                        <h4>Появились кейсы, связанные</br>с изменением данного параметра:</h4>
-                        <!--                     <div id="cases">
-                                            <div class="case"><h1>1</h1><h4>кейс</h4></div>
-                                            <div class="case"><h1>2</h1><h4>кейс</h4></div>
-                                            <div class="case"><h1>3</h1><h4>кейс</h4></div>
-                                        </div> -->
-                    </div>
-                </div>
-                <div id="object_info" class="example">
-                    <div class="header">
-                        <h1 class="cadastral">77:01:0001001:1234</h1>
-                        <h1 class="name">Наименование объекта</h1>
-                    </div>
-                    <div>
-                        <div class="object_features">
-                            <div class="feature">
-                                <h4>Площадь объекта</h4>
-                                <div>1000000</div>
-                                <div id="feature_exclamation_mark">!</div>
-                            </div>
-                            <div class="feature">
-                                <h4>Тип объекта</h4>
-                                <div>Здание (тест)</div>
-                            </div>
-                            <div class="feature" id="address_feature">
-                                <h4>Адрес</h4>
-                                <div>Московская область, г.Москва, ул. Карла маркса, д.144/2а, корп. 10, кв. 246</div>
-                            </div>
-                        </div>
-                        <div class="object_features">
-                            <div class="feature">
-                                <h4>Кадастровая</br>стоимость</h4>
-                                <div>1 200 000 ₽</div>
-                            </div>
-                            <div class="feature">
-                                <h4>Кадастровый</br>номер</h4>
-                                <div>77:03:0003006:1026</div>
-                            </div>
-                            <div class="feature">
-                                <h4>Год завершенного строительства</h4>
-                                <div>1991</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <img src="static/cells.png" id="cells_img_cadastral" alt="">
-                <!--             <img src="static/cells.png" id="cells_img_important" alt=""> -->
-                <div class="bradley_container" id="bradley1">
-                    <div id="check_cadastral_cost" class="bradley_font">
-                        проверить<br>&nbsp;&nbsp;&nbsp;кадастровую<br>&nbsp;стоимость!!!
-                    </div>
-                </div>
-            </div>
+            <img src="static/vector.svg" alt="" id="vector_img" class="">
+            <div class="shadow"></div>
         </div>
-        <!--    <div class="block block_reverse animated_block" id="economy_block" data-block-delay="1000">-->
-        <!--        <div class="gray_rectangle" id="economy_rectangle"></div>-->
-        <!--        <div id="economy">-->
-        <!--            <div id="economy_number_container">-->
-        <!--                <div id="economy_number_stroke">25</div>-->
-        <!--                <div id="economy_number">25</div>-->
-        <!--                <div id="economy_percent">%</div>-->
-        <!--                <div id="economy_info">Ownex поможет сэкономить до 25%</br>-->
-        <!--                    расходов на управление и содержание</br>объектов-->
-        <!--                    коммерческой недвижимости-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!--        <div id="economy_left_container">-->
-        <!--            <div class="left">-->
-        <!--                <div class="economy_element">-->
-        <!--                    <div class="economy_img">-->
-        <!--                        <img src="static/economy_bg.svg" alt="">-->
-        <!--                        <div class="economy_img_dynamic">-->
-        <!--                            <div class="economy_img_animation_hover economy_animation_element">-->
-        <!--                                <img src="static/warehouses_top.svg" alt="" id="warehouses_top"-->
-        <!--                                     style="position: absolute; left: 50%;">-->
-        <!--                                <img src="static/warehouses_bottom.svg" alt="" id="warehouses_static"-->
-        <!--                                     style="position: absolute; bottom: 0">-->
-        <!--                            </div>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                    &lt;!&ndash;                    <img src="static/warehouses.svg" alt="" class="animation slide_from_left_small_elem" data-delay="0">&ndash;&gt;-->
-        <!--                    <h4 class="animation opacity_animation" data-delay="300">складские</br>помещения</h4>-->
-        <!--                </div>-->
-        <!--                <div class="economy_element">-->
-        <!--                    <div class="economy_img">-->
-        <!--                        <img src="static/economy_bg.svg" alt="">-->
-        <!--                        <div class="economy_img_dynamic">-->
-        <!--                            <div class="economy_img_animation_hover economy_animation_element">-->
-        <!--                                <img src="static/retail_space_dynamic.svg" alt="" id="retail_space_cart"-->
-        <!--                                     style="position: absolute; bottom: 0; left: 0">-->
-        <!--                                <img src="static/retail_space_static.svg" alt=""-->
-        <!--                                     style="position: absolute; top: 0; right: 0">-->
-        <!--                            </div>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                    &lt;!&ndash;                    <img src="static/retail_space.svg" alt="" class="animation slide_from_left_small_elem" data-delay="150">&ndash;&gt;-->
-        <!--                    <h4 class="animation opacity_animation" data-delay="450">торговые</br>площади</h4>-->
-        <!--                </div>-->
-        <!--                <div class="economy_element">-->
-        <!--                    <div class="economy_img">-->
-        <!--                        <img src="static/economy_bg.svg" alt="">-->
-        <!--                        <div class="economy_img_dynamic">-->
-        <!--                            <div class="economy_img_animation_hover economy_animation_element">-->
-        <!--                                <img src="static/economy_office_spaces_dynamic.svg" alt="" id="economy_office">-->
-        <!--                                <img src="static/economy_office_spaces_static.svg" alt=""-->
-        <!--                                     id="economy_office_spaces_static">-->
-        <!--                            </div>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                    &lt;!&ndash;                    <img src="static/office_spaces.svg" alt="" class="animation slide_from_left_small_elem" data-delay="300">&ndash;&gt;-->
-        <!--                    <h4 class="animation opacity_animation" data-delay="600">офисные</br>пространства</h4>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!--    </div>-->
-        <div id="economy_block" class="block block_reverse animated_block">
-            <div class="gray_rectangle" id="economy_rectangle"></div>
-            <div class="left block_left">
-                <div id="economy">
-                    <img src="static/minus25.png" alt="">
+        <div class="right block_right">
+            <div id="new_cases" class="example windows_animation">
+                <img src="static/exclamation_point.svg" alt="" id="exclamation_new_cases">
+                <img src="static/x.svg" id="close_new_cases" alt="X" onclick="closeNewCases()">
+                <div id="new_cases_content">
+                    <h1>ОБРАТИТЕ</br>ВНИМАНИЕ</h1>
+                    <h4>Появились кейсы, связанные</br>с изменением данного параметра:</h4>
+                    <!--                     <div id="cases">
+                                        <div class="case"><h1>1</h1><h4>кейс</h4></div>
+                                        <div class="case"><h1>2</h1><h4>кейс</h4></div>
+                                        <div class="case"><h1>3</h1><h4>кейс</h4></div>
+                                    </div> -->
                 </div>
             </div>
-            <div class="right block_right">
-                <h1 class="heading" style="margin-top: 0px;">Экономьте</br>на управлении</br>и содержании</h1>
-                <div id="economy_elements_container">
-                    <div class="economy_element">
-                        <div class="economy_img">
-                            <img src="static/economy_bg.svg" alt="">
-                            <div class="economy_img_dynamic">
-                                <div class="economy_img_animation_hover economy_animation_element">
-                                    <img src="static/retail_space_dynamic.svg" alt="" id="retail_space_cart"
-                                        style="position: absolute; bottom: 0; left: 0">
-                                    <img src="static/retail_space_static.svg" alt="" id="retail_space_static"
-                                        style="position: absolute; top: 0; right: 0">
-                                </div>
-                            </div>
+            <div id="object_info" class="example">
+                <div class="header">
+                    <h1 class="cadastral">77:01:0001001:1234</h1>
+                    <h1 class="name">Наименование объекта</h1>
+                </div>
+                <div>
+                    <div class="object_features">
+                        <div class="feature">
+                            <h4>Площадь объекта</h4>
+                            <div>1000000</div>
+                            <div id="feature_exclamation_mark">!</div>
                         </div>
-                        <!--                    <img src="static/retail_space.svg" alt="" class="animation slide_from_left_small_elem" data-delay="150">-->
-                        <h4 class="animation opacity_animation" data-delay="450">торговые</br>площади</h4>
+                        <div class="feature">
+                            <h4>Тип объекта</h4>
+                            <div>Здание (тест)</div>
+                        </div>
+                        <div class="feature" id="address_feature">
+                            <h4>Адрес</h4>
+                            <div>Московская область, г.Москва, ул. Карла маркса, д.144/2а, корп. 10, кв. 246</div>
+                        </div>
                     </div>
-                    <div class="economy_element">
-                        <div class="economy_img">
-                            <img src="static/economy_bg.svg" alt="">
-                            <div class="economy_img_dynamic">
-                                <div class="economy_img_animation_hover economy_animation_element">
-                                    <img src="static/warehouses_top.svg" alt="" id="warehouses_top"
-                                        style="position: absolute; left: 50%;">
-                                    <img src="static/warehouses_bottom.svg" alt="" id="warehouses_static"
-                                        style="position: absolute; bottom: 0">
-                                </div>
-                            </div>
+                    <div class="object_features">
+                        <div class="feature">
+                            <h4>Кадастровая</br>стоимость</h4>
+                            <div>1 200 000 ₽</div>
                         </div>
-                        <!--                    <img src="static/warehouses.svg" alt="" class="animation slide_from_left_small_elem" data-delay="0">-->
-                        <h4 class="animation opacity_animation" data-delay="300">складские</br>помещения</h4>
-                    </div>
-                    <div class="economy_element">
-                        <div class="economy_img">
-                            <img src="static/economy_bg.svg" alt="">
-                            <div class="economy_img_dynamic">
-                                <div class="economy_img_animation_hover economy_animation_element">
-                                    <img src="static/economy_office_spaces_dynamic.svg" alt="" id="economy_office">
-                                    <img src="static/economy_office_spaces_static.svg" alt=""
-                                        id="economy_office_spaces_static">
-                                </div>
-                            </div>
+                        <div class="feature">
+                            <h4>Кадастровый</br>номер</h4>
+                            <div>77:03:0003006:1026</div>
                         </div>
-                        <!--                    <img src="static/office_spaces.svg" alt="" class="animation slide_from_left_small_elem" data-delay="300">-->
-                        <h4 class="animation opacity_animation" data-delay="600">офисные</br>пространства</h4>
+                        <div class="feature">
+                            <h4>Год завершенного строительства</h4>
+                            <div>1991</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="block block_reverse animated_block" id="profit_analysis" data-block-delay="600">
-            <div class="left block_left">
-                <h1 class="heading animation bottom_animation" data-delay="100" id="sm5">Анализ</br>доходности</h1>
-                <div class="label" data-delay="200" id="sm4">Используйте инструменты сервиса и управляйте
-                    финансовыми рисками
+            <img src="static/cells.png" id="cells_img_cadastral" alt="">
+            <!--             <img src="static/cells.png" id="cells_img_important" alt=""> -->
+            <div class="bradley_container" id="bradley1">
+                <div id="check_cadastral_cost" class="bradley_font">
+                    проверить<br>&nbsp;&nbsp;&nbsp;кадастровую<br>&nbsp;стоимость!!!
                 </div>
-                <div class="heading_info animation bottom_animation" data-delay="250" id="sm6">Подготавливайте договоры,
-                    выставляйте
-                    счета, отслеживайте дебиторскую
-                    задолженность, составляйте финансовые отчеты, а еще ведите</br>учет арендаторов и поступлений
-                    арендных
-                    платежей.
-                </div>
-                <div class="gray_rectangle" id="profit_rectangle"></div>
-            </div>
-            <div class="right block_right">
-                <div id="count_object_container">
-                    <div id="count_object" class="example">
-                        <div class="count_content">
-                            <div class="count_left">
-                                <div>Период</div>
-                                <div>Доля в праве</div>
-                                <div>Величина для базы</div>
-                                <div>Ставка</div>
-                                <div>Льгота для базы</div>
-                            </div>
-                            <div class="count_right">
-                                <div class="period">
-                                    <a href="" class="period_control">добавить период</a>
-                                    <input type="text" value="01.01.2021 - 01.01.2022" disabled>
-                                    <div class="right_share">
-                                        <input type="text" value="1257" disabled>
-                                        <div>/</div>
-                                        <input type="text" value="10000" disabled>
-                                    </div>
-                                    <input type="text" value="1 258 552 012,26" disabled>
-                                    <input type="text" value="1,9%" disabled>
-                                    <input type="text" value="0" disabled>
-                                </div>
-                                <div class="period">
-                                    <a href="" class="period_control">удалить период</a>
-                                    <input type="text" disabled>
-                                    <div class="right_share">
-                                        <input type="text" disabled>
-                                        <div>/</div>
-                                        <input type="text" disabled>
-                                    </div>
-                                    <input type="text" disabled>
-                                    <input type="text" disabled>
-                                    <input type="text" disabled>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="static/scroll.png" alt="" id="count_scroll_img">
-                        <div class="count_down">
-                            <div class="count_left">
-                                <div>Сумма налога</div>
-                                <div>Льгота для суммы</div>
-                            </div>
-                            <div class="count_right">
-                                <div class="inputs_count">
-                                    <input type="text" value="10 000 000" disabled>
-                                    <input type="text" value="0" disabled>
-                                </div>
-                            </div>
-                            <div id="count_tax">Итого земельный</br>налог</div>
-                        </div>
-                        <button id="count_btn" class="form_button">Рассчитать</button>
-                    </div>
-                </div>
-                <!--             <img src="static/cells.png" alt="" id="cells_count_1" class="opacity0">
-                        <img src="static/cells.png" alt="" id="cells_count_2" class="opacity0"> -->
-                <!--             <div class="bradley_container smanimation" data-delay="250" id="bradley3">
-                            <div class="bradley_font" id="count_1">Н = (Н1 - Н2) x К<br>+ Н2</div>
-                        </div>
-                        <div class="bradley_container smanimation" data-delay="450" id="bradley4">
-                            <div class="bradley_font" id="count_2">1 258 552<br>&nbsp;&nbsp;&nbsp;012,26*1,9%=<br>=???????</div>
-                        </div> -->
-            </div>
-        </div>
-        <div class="block animated_block" id="contragents" data-block-delay="600">
-            <div class="left block_left">
-                <h1 class="heading" id="sm8">Проверка</br>контрагентов</h1>
-                <div class="label" id="sm7">Будьте уверены в тех,</br>с кем сотрудничаете</div>
-                <div class="heading_info" id="sm9">Оцените риски сотрудничества: для
-                    этого</br>сервис подготовит отчет по каждому</br>из
-                    ваших партнеров, проверит ИНН</br>и другие реквизиты.<br>
-                    <button class="form_button" id="sm10">начать
-                    </button>
-                </div>
-                <img src="static/cool.png" alt="" id="cool_img">
-            </div>
-            <div class="right block_right">
-                <img src="static/cells.png" id="check_cells" alt="">
-                <!-- <img src="static/cells.png" id="ilya_cells" alt="" class="opacity0"> -->
-                <!--  <div class="bradley_container opacity0" id="bradley5">
-                 <div id="ilya_text" class="bradley_font">Илья,<br> а это кто?</div>
-             </div> -->
-                <div class="bradley_container" id="bradley6">
-                    <div id="check_asap_text" class="bradley_font">срочно проверить!!!</div>
-                </div>
-                <div id="info_cadastral" class="example">
-                    <div class="header" id="cadastral_number">77:01:0001001:1234</div>
-                    <div id="cadastral_nav">
-                        <div class="nav_el chosen">Общая</br>информация</div>
-                        <div class="nav_el">Информация об органе</br>контроля</div>
-                        <div class="nav_el">Информация об органе</br>прокуратуры</div>
-                    </div>
-                    <div class="header second_header">Общий состав атрибутов<br>паспорта КНМ</div>
-                    <div id="attributes">
-                        <div class="attribute">Учетный номер КНМ в соответствии с постановлением<br>Правительства РФ от
-                            28
-                            апреля 2015 г. N 415 "О Правилах<br>формирования и ведения единого реестра проверок"
-                        </div>
-                        <div class="attribute">Тип КНМ</div>
-                        <div class="attribute">Федеральный закон, в соответствии с которым проводится КНМ</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="block block_reverse animated_block" id="references" data-block-delay="600">
-            <div class="left block_left">
-                <h1 class="heading" id="sm12">Справки</br>и выписки</br>в один клик</h1>
-                <div class="label" id="sm11">Экономьте время на поиске документов и
-                    справок
-                </div>
-                <div class="heading_info" id="sm13">Заказывайте выписки из ЕГРН</br>и
-                    проверяйте контрагентов</br>с помощью OWNEX.
-                </div>
-                <img src="static/clap.png" alt="" id="clap_img">
-                <div class="gray_rectangle"></div>
-            </div>
-            <div class="right block_right">
-                <div class="bradley_container animation opacity_animation" data-delay="450">
-                    <div class="bradley_font" id="andrey_references">Андрей, где<br>выписки??</div>
-                </div>
-                <div id="egrn" class="example">
-                    <div class="header">Заказ выписок ЕГРН</div>
-                    <div id="email_label_egrn">Введите e-mail, на который будут отправлены выписки</div>
-                    <form>
-                        <div class="first_row">
-                            <input type="email" class="form_input">
-                            <select name="" class="form_input">
-                                <option value="">Тип выписки</option>
-                            </select>
-                        </div>
-                        <textarea class="form_input" name="" cols="30" rows="10"
-                            disabled>77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026</textarea>
-                        <button class="form_button">Заказать выписку</button>
-                    </form>
-
-                </div>
-                <img src="static/references.svg" alt="" id="references_img">
-                <div id="make_reference" class="example">
-                    <div class="header">Заказать выписку</div>
-                    <div id="date_of_extract">Дата выписки</div>
-                    <form>
-                        <input type="date" class="form_input">
-                        <a href="">Заказать</a>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="block animated_block" id="actual_information" data-block-delay="600">
-            <div class="left block_left">
-                <h1 class="heading" id="sm15">Актуальная</br>юридическая</br>информация</h1>
-                <div class="label" id="sm14">Узнавайте первыми обо всех изменениях</div>
-                <div class="heading_info" id="sm16">Система информирует вас</br>
-                    об изменениях в законодательстве,</br>
-                    формирующейся судебной практике</br>и налоговых резервах.
-                </div>
-                <img src="static/tworects.svg" alt="" id="tworects">
-                <img src="static/juridical_info.svg" alt="" id="juridical_info_img">
-            </div>
-            <div class="right block_right">
-                <img src="static/doc1.png" alt="" class="info_doc doc_animation_1 doc_animation">
-                <img src="static/doc2.png" alt="" class="info_doc doc_animation_2 doc_animation">
-                <img src="static/doc3.png" alt="" class="info_doc doc_animation_2 doc_animation">
-                <!-- <img src="static/doc4.png" alt="" class="info_doc doc_animation_2 doc_animation"> -->
-                <div id="regulations" class="example">
-                    <h1 class="header">НОРМАТИВНЫЕ АКТЫ</h1>
-                    <div id="acts">
-                        <div class="act">
-                            <div>
-                                Наименование Нормативного акта №1
-                            </div>
-                            <div>02.06.2021</div>
-                        </div>
-                        <div class="act">
-                            <div>
-                                Наименование Нормативного акта №2
-                            </div>
-                            <div>02.06.2021</div>
-                        </div>
-                        <div class="act">
-                            <div>
-                                Наименование Нормативного акта №3
-                            </div>
-                            <div>02.06.2021</div>
-                        </div>
-                    </div>
-                    <div class="blank"></div>
-                    <div class="normative_acts_bottom">
-                        <div class="normative_act_bottom">Наименование Нормативного акта№1</div>
-                        <div class="normative_act_bottom nab2">Наименование Нормативного акта №2</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="block block_reverse animated_block" id="checks" data-block-delay="600">
-            <div class="left block_left">
-                <h1 class="heading" id="sm18">Проверки<br>больше не будут<br>внезапными</h1>
-                <div class="label" id="sm17">Исключите правовые риски заранее</div>
-                <div class="heading_info" id="sm19">OWNEX своевременно оповещает</br>о
-                    плановых проверках и предлагает</br>механизмы и
-                    варианты реагирования.
-                </div>
-                <img src="static/headblow.gif" alt="" id="headblow_img" class="animation">
-            </div>
-            <div class="right block_right">
-                <div class="check example" id="sm20">
-                    <div class="text">
-                        <b>В сентябре 2022 года</b><br>Роспотребнадзор начинает серию проверок. Узнайте, как
-                        подготовиться
-                    </div>
-                    <u><b>подробнее</b></u>
-                    <img src="static/bell.svg" alt="" class="bell">
-                </div>
-                <div class="check example" id="sm21">
-                    <div class="text">
-                        <b>С 20 по 30 октября</b><br>на один из ваших <u>объектов</u> планируется выездная проверка.
-                        Будьте
-                        готовы!
-                    </div>
-                    <u><b>подробнее</b></u>
-                    <img src="static/bell.svg" alt="" class="bell">
-                </div>
-                <div class="check example" id="sm22">
-                    <div class="text">
-                        Пришло время плановой проверки от МЧС
-                    </div>
-                    <u><b>подробнее</b></u>
-                    <img src="static/bell.svg" alt="" class="bell">
-                </div>
-                <img src="static/lightning.svg" alt="" id="lightning">
             </div>
         </div>
     </div>
-    <div id="service_team">
-        <div class="animated_block" data-block-delay="500">
-            <h1 class="heading" id="sm23">Один сервис —<br>одна команда </h1>
+    <!--    <div class="block block_reverse animated_block" id="economy_block" data-block-delay="1000">-->
+    <!--        <div class="gray_rectangle" id="economy_rectangle"></div>-->
+    <!--        <div id="economy">-->
+    <!--            <div id="economy_number_container">-->
+    <!--                <div id="economy_number_stroke">25</div>-->
+    <!--                <div id="economy_number">25</div>-->
+    <!--                <div id="economy_percent">%</div>-->
+    <!--                <div id="economy_info">Ownex поможет сэкономить до 25%</br>-->
+    <!--                    расходов на управление и содержание</br>объектов-->
+    <!--                    коммерческой недвижимости-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--        <div id="economy_left_container">-->
+    <!--            <div class="left">-->
+    <!--                <div class="economy_element">-->
+    <!--                    <div class="economy_img">-->
+    <!--                        <img src="static/economy_bg.svg" alt="">-->
+    <!--                        <div class="economy_img_dynamic">-->
+    <!--                            <div class="economy_img_animation_hover economy_animation_element">-->
+    <!--                                <img src="static/warehouses_top.svg" alt="" id="warehouses_top"-->
+    <!--                                     style="position: absolute; left: 50%;">-->
+    <!--                                <img src="static/warehouses_bottom.svg" alt="" id="warehouses_static"-->
+    <!--                                     style="position: absolute; bottom: 0">-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                    &lt;!&ndash;                    <img src="static/warehouses.svg" alt="" class="animation slide_from_left_small_elem" data-delay="0">&ndash;&gt;-->
+    <!--                    <h4 class="animation opacity_animation" data-delay="300">складские</br>помещения</h4>-->
+    <!--                </div>-->
+    <!--                <div class="economy_element">-->
+    <!--                    <div class="economy_img">-->
+    <!--                        <img src="static/economy_bg.svg" alt="">-->
+    <!--                        <div class="economy_img_dynamic">-->
+    <!--                            <div class="economy_img_animation_hover economy_animation_element">-->
+    <!--                                <img src="static/retail_space_dynamic.svg" alt="" id="retail_space_cart"-->
+    <!--                                     style="position: absolute; bottom: 0; left: 0">-->
+    <!--                                <img src="static/retail_space_static.svg" alt=""-->
+    <!--                                     style="position: absolute; top: 0; right: 0">-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                    &lt;!&ndash;                    <img src="static/retail_space.svg" alt="" class="animation slide_from_left_small_elem" data-delay="150">&ndash;&gt;-->
+    <!--                    <h4 class="animation opacity_animation" data-delay="450">торговые</br>площади</h4>-->
+    <!--                </div>-->
+    <!--                <div class="economy_element">-->
+    <!--                    <div class="economy_img">-->
+    <!--                        <img src="static/economy_bg.svg" alt="">-->
+    <!--                        <div class="economy_img_dynamic">-->
+    <!--                            <div class="economy_img_animation_hover economy_animation_element">-->
+    <!--                                <img src="static/economy_office_spaces_dynamic.svg" alt="" id="economy_office">-->
+    <!--                                <img src="static/economy_office_spaces_static.svg" alt=""-->
+    <!--                                     id="economy_office_spaces_static">-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                    &lt;!&ndash;                    <img src="static/office_spaces.svg" alt="" class="animation slide_from_left_small_elem" data-delay="300">&ndash;&gt;-->
+    <!--                    <h4 class="animation opacity_animation" data-delay="600">офисные</br>пространства</h4>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <div id="economy_block" class="block block_reverse animated_block">
+        <div class="gray_rectangle" id="economy_rectangle"></div>
+        <div class="left block_left">
+            <div id="economy">
+                <img src="static/minus25.png" alt="">
+            </div>
         </div>
-        <img src="static/team_left.svg" alt="" id="team_rects_left">
-        <img src="static/team_right.svg" alt="" id="team_rects_right">
-        <div class="team">
-            <div class="member" id="sm24">
-                <div class="service_team_img" id="team_owner_img">
-                    <img src="static/service_team_bg.svg" alt="" class="service_team_bg">
-                    <img src="static/team_human.svg" alt="" class="service_team_human">
-                    <img src="static/team_owner_building.svg" alt="">
-                    <div id="yellow_box"></div>
+        <div class="right block_right">
+            <h1 class="heading" style="margin-top: 0px;">Экономьте</br>на управлении</br>и содержании</h1>
+            <div id="economy_elements_container">
+                <div class="economy_element">
+                    <div class="economy_img">
+                        <img src="static/economy_bg.svg" alt="">
+                        <div class="economy_img_dynamic">
+                            <div class="economy_img_animation_hover economy_animation_element">
+                                <img src="static/retail_space_dynamic.svg" alt="" id="retail_space_cart"
+                                     style="position: absolute; bottom: 0; left: 0">
+                                <img src="static/retail_space_static.svg" alt="" id="retail_space_static"
+                                     style="position: absolute; top: 0; right: 0">
+                            </div>
+                        </div>
+                    </div>
+                    <!--                    <img src="static/retail_space.svg" alt="" class="animation slide_from_left_small_elem" data-delay="150">-->
+                    <h4 class="animation opacity_animation" data-delay="450">торговые</br>площади</h4>
                 </div>
-                <!--            <img src="static/team_owner.svg" alt="">-->
-                <h4>собственник</h4>
-                <span>получает структурированную информацию по всем объектам</span>
-            </div>
-            <div class="member" id="sm25">
-                <div class="service_team_img" id="control_img">
-                    <img src="static/service_team_bg.svg" alt="" class="service_team_bg">
-                    <img src="static/team_human.svg" alt="" class="service_team_human">
-                    <img src="static/service_team_arrow.svg" alt="">
-                    <img src="static/service_team_arrow.svg" alt="">
+                <div class="economy_element">
+                    <div class="economy_img">
+                        <img src="static/economy_bg.svg" alt="">
+                        <div class="economy_img_dynamic">
+                            <div class="economy_img_animation_hover economy_animation_element">
+                                <img src="static/warehouses_top.svg" alt="" id="warehouses_top"
+                                     style="position: absolute; left: 50%;">
+                                <img src="static/warehouses_bottom.svg" alt="" id="warehouses_static"
+                                     style="position: absolute; bottom: 0">
+                            </div>
+                        </div>
+                    </div>
+                    <!--                    <img src="static/warehouses.svg" alt="" class="animation slide_from_left_small_elem" data-delay="0">-->
+                    <h4 class="animation opacity_animation" data-delay="300">складские</br>помещения</h4>
                 </div>
-                <!--            <img src="static/control.svg" alt="">-->
-                <h4>управляющий</h4>
-                <span>удаленно следит за операционной работой, не занимается рутиной</span>
-            </div>
-            <div class="member" id="sm26">
-                <div class="service_team_img" id="financial_director_img">
-                    <img src="static/service_team_bg.svg" alt="" class="service_team_bg">
-                    <img src="static/team_human.svg" alt="" class="service_team_human">
-                    <img src="static/service_team_coin_top.svg" alt="">
-                    <img src="static/service_team_coin_bottom.svg" alt="">
-                    <img src="static/service_team_coin_bottom.svg" alt="">
+                <div class="economy_element">
+                    <div class="economy_img">
+                        <img src="static/economy_bg.svg" alt="">
+                        <div class="economy_img_dynamic">
+                            <div class="economy_img_animation_hover economy_animation_element">
+                                <img src="static/economy_office_spaces_dynamic.svg" alt="" id="economy_office">
+                                <img src="static/economy_office_spaces_static.svg" alt=""
+                                     id="economy_office_spaces_static">
+                            </div>
+                        </div>
+                    </div>
+                    <!--                    <img src="static/office_spaces.svg" alt="" class="animation slide_from_left_small_elem" data-delay="300">-->
+                    <h4 class="animation opacity_animation" data-delay="600">офисные</br>пространства</h4>
                 </div>
-                <!--            <img src="static/financial_director.svg" alt="">-->
-                <h4>финансовый директор</h4>
-                <span>управляет прибыльностью объектов на основе детализированных отчетов</span>
-            </div>
-            <div class="member" id="sm27">
-                <div class="service_team_img" id="accountant_img">
-                    <img src="static/service_team_bg.svg" alt="" class="service_team_bg">
-                    <img src="static/team_human.svg" alt="" class="service_team_human">
-                    <img src="static/accountant_counts.svg" alt="">
-                </div>
-                <!--            <img src="static/accountant.svg" alt="">-->
-                <h4>бухгалтер</h4>
-                <span>рассчитывает арендные и налоговые платежи на онлайн-калькуляторе</span>
-            </div>
-            <div class="member" id="sm28">
-                <div class="service_team_img" id="lawyer_img">
-                    <img src="static/service_team_bg.svg" alt="" class="service_team_bg">
-                    <img src="static/team_human.svg" alt="" class="service_team_human">
-                    <img src="static/hammer.svg" alt="">
-                    <img src="static/hammer_stand.svg" alt="">
-                </div>
-                <!--            <img src="static/lawyer.svg" alt="">-->
-                <h4>юрист</h4>
-                <span>благодаря новостной ленте оперативно реагирует на изменения в законодательстве</span>
-            </div>
-            <div class="member" id="sm29">
-                <div class="service_team_img" id="manager_img">
-                    <img src="static/service_team_bg.svg" alt="" class="service_team_bg">
-                    <img src="static/team_human.svg" alt="" class="service_team_human">
-                    <img src="static/service_team_phone.svg" alt="">
-                </div>
-                <!--            <img src="static/manager.svg" alt="">-->
-                <h4>менеджер</h4>
-                <span>cтавит задачи и контролирует</br>их выполнение прямо в сервисе</span>
             </div>
         </div>
     </div>
-    <div id="start_button_block">
-        <a href="" class="form_button" style="width: 270px; font-size: 21px; border-radius: 23.1236px;">начать</a>
-    </div>
-    <div id="get_access">
-        <div id="get_access_content">
-            <h1 class="heading">Остались вопросы<br> или нужна помощь?</h1>
-            <div class="inputs">
-                <input type="text" placeholder="Введите почту или телефон">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Введите текст обращения"></textarea>
-                <div class="checkboxes">
-                    <div class="checkbox_container">
-                        <input type="checkbox" id="persdata" class="checkbox" checked>
-                        <label for="persdata">я согласен на обработку персональных данных</label>
+    <div class="block block_reverse animated_block" id="profit_analysis" data-block-delay="600">
+        <div class="left block_left">
+            <h1 class="heading animation bottom_animation" data-delay="100" id="sm5">Анализ</br>доходности</h1>
+            <div class="label" data-delay="200" id="sm4">Используйте инструменты сервиса и управляйте
+                финансовыми рисками
+            </div>
+            <div class="heading_info animation bottom_animation" data-delay="250" id="sm6">Подготавливайте договоры,
+                выставляйте
+                счета, отслеживайте дебиторскую
+                задолженность, составляйте финансовые отчеты, а еще ведите</br>учет арендаторов и поступлений
+                арендных
+                платежей.
+            </div>
+            <div class="gray_rectangle" id="profit_rectangle"></div>
+        </div>
+        <div class="right block_right">
+            <div id="count_object_container">
+                <div id="count_object" class="example">
+                    <div class="count_content">
+                        <div class="count_left">
+                            <div>Период</div>
+                            <div>Доля в праве</div>
+                            <div>Величина для базы</div>
+                            <div>Ставка</div>
+                            <div>Льгота для базы</div>
+                        </div>
+                        <div class="count_right">
+                            <div class="period">
+                                <a href="" class="period_control">добавить период</a>
+                                <input type="text" value="01.01.2021 - 01.01.2022" disabled>
+                                <div class="right_share">
+                                    <input type="text" value="1257" disabled>
+                                    <div>/</div>
+                                    <input type="text" value="10000" disabled>
+                                </div>
+                                <input type="text" value="1 258 552 012,26" disabled>
+                                <input type="text" value="1,9%" disabled>
+                                <input type="text" value="0" disabled>
+                            </div>
+                            <div class="period">
+                                <a href="" class="period_control">удалить период</a>
+                                <input type="text" disabled>
+                                <div class="right_share">
+                                    <input type="text" disabled>
+                                    <div>/</div>
+                                    <input type="text" disabled>
+                                </div>
+                                <input type="text" disabled>
+                                <input type="text" disabled>
+                                <input type="text" disabled>
+                            </div>
+                        </div>
                     </div>
-                    <div class="checkbox_container">
-                        <input type="checkbox" id="mailing_list" class="checkbox">
-                        <label for="mailing_list">я согласен получать рассылку</label>
+                    <img src="static/scroll.png" alt="" id="count_scroll_img">
+                    <div class="count_down">
+                        <div class="count_left">
+                            <div>Сумма налога</div>
+                            <div>Льгота для суммы</div>
+                        </div>
+                        <div class="count_right">
+                            <div class="inputs_count">
+                                <input type="text" value="10 000 000" disabled>
+                                <input type="text" value="0" disabled>
+                            </div>
+                        </div>
+                        <div id="count_tax">Итого земельный</br>налог</div>
                     </div>
+                    <button id="count_btn" class="form_button">Рассчитать</button>
                 </div>
-                <button class="form_button" style="width: 270px; font-size: 21px;border-radius: 23.1236px;">отправить
+            </div>
+            <!--             <img src="static/cells.png" alt="" id="cells_count_1" class="opacity0">
+                    <img src="static/cells.png" alt="" id="cells_count_2" class="opacity0"> -->
+            <!--             <div class="bradley_container smanimation" data-delay="250" id="bradley3">
+                        <div class="bradley_font" id="count_1">Н = (Н1 - Н2) x К<br>+ Н2</div>
+                    </div>
+                    <div class="bradley_container smanimation" data-delay="450" id="bradley4">
+                        <div class="bradley_font" id="count_2">1 258 552<br>&nbsp;&nbsp;&nbsp;012,26*1,9%=<br>=???????</div>
+                    </div> -->
+        </div>
+    </div>
+    <div class="block animated_block" id="contragents" data-block-delay="600">
+        <div class="left block_left">
+            <h1 class="heading" id="sm8">Проверка</br>контрагентов</h1>
+            <div class="label" id="sm7">Будьте уверены в тех,</br>с кем сотрудничаете</div>
+            <div class="heading_info" id="sm9">Оцените риски сотрудничества: для
+                этого</br>сервис подготовит отчет по каждому</br>из
+                ваших партнеров, проверит ИНН</br>и другие реквизиты.<br>
+                <button class="form_button" id="sm10">начать
                 </button>
-                <!--            <a href="" id="get_access_ask_question">задать вопрос</a>-->
+            </div>
+            <img src="static/cool.png" alt="" id="cool_img">
+        </div>
+        <div class="right block_right">
+            <img src="static/cells.png" id="check_cells" alt="">
+            <!-- <img src="static/cells.png" id="ilya_cells" alt="" class="opacity0"> -->
+            <!--  <div class="bradley_container opacity0" id="bradley5">
+             <div id="ilya_text" class="bradley_font">Илья,<br> а это кто?</div>
+         </div> -->
+            <div class="bradley_container" id="bradley6">
+                <div id="check_asap_text" class="bradley_font">срочно проверить!!!</div>
+            </div>
+            <div id="info_cadastral" class="example">
+                <div class="header" id="cadastral_number">77:01:0001001:1234</div>
+                <div id="cadastral_nav">
+                    <div class="nav_el chosen">Общая</br>информация</div>
+                    <div class="nav_el">Информация об органе</br>контроля</div>
+                    <div class="nav_el">Информация об органе</br>прокуратуры</div>
+                </div>
+                <div class="header second_header">Общий состав атрибутов<br>паспорта КНМ</div>
+                <div id="attributes">
+                    <div class="attribute">Учетный номер КНМ в соответствии с постановлением<br>Правительства РФ от
+                        28
+                        апреля 2015 г. N 415 "О Правилах<br>формирования и ведения единого реестра проверок"
+                    </div>
+                    <div class="attribute">Тип КНМ</div>
+                    <div class="attribute">Федеральный закон, в соответствии с которым проводится КНМ</div>
+                </div>
             </div>
         </div>
-        <footer>
-            <div class="footer_links">
-                <a href="">пользовательское соглашение</a>
-                <a href="">файлы Cookie</a>
-            </div>
-            <img src="static/gray_logo.svg" alt="" id="logo_bottom">
-        </footer>
-        <img src="static/rects3.svg" alt="" id="rects3">
-        <img src="static/rects4.svg" alt="" id="rects4">
     </div>
-    <script src="rellax.min.js"></script>
-    <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+    <div class="block block_reverse animated_block" id="references" data-block-delay="600">
+        <div class="left block_left">
+            <h1 class="heading" id="sm12">Справки</br>и выписки</br>в один клик</h1>
+            <div class="label" id="sm11">Экономьте время на поиске документов и
+                справок
+            </div>
+            <div class="heading_info" id="sm13">Заказывайте выписки из ЕГРН</br>и
+                проверяйте контрагентов</br>с помощью OWNEX.
+            </div>
+            <img src="static/clap.png" alt="" id="clap_img">
+            <div class="gray_rectangle"></div>
+        </div>
+        <div class="right block_right">
+            <div class="bradley_container animation opacity_animation" data-delay="450">
+                <div class="bradley_font" id="andrey_references">Андрей, где<br>выписки??</div>
+            </div>
+            <div id="egrn" class="example">
+                <div class="header">Заказ выписок ЕГРН</div>
+                <div id="email_label_egrn">Введите e-mail, на который будут отправлены выписки</div>
+                <form>
+                    <div class="first_row">
+                        <input type="email" class="form_input">
+                        <select name="" class="form_input">
+                            <option value="">Тип выписки</option>
+                        </select>
+                    </div>
+                    <textarea class="form_input" name="" cols="30" rows="10"
+                              disabled>77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026, 77:03:0003006:1026</textarea>
+                    <button class="form_button">Заказать выписку</button>
+                </form>
+
+            </div>
+            <img src="static/references.svg" alt="" id="references_img">
+            <div id="make_reference" class="example">
+                <div class="header">Заказать выписку</div>
+                <div id="date_of_extract">Дата выписки</div>
+                <form>
+                    <input type="date" class="form_input">
+                    <a href="">Заказать</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="block animated_block" id="actual_information" data-block-delay="600">
+        <div class="left block_left">
+            <h1 class="heading" id="sm15">Актуальная</br>юридическая</br>информация</h1>
+            <div class="label" id="sm14">Узнавайте первыми обо всех изменениях</div>
+            <div class="heading_info" id="sm16">Система информирует вас</br>
+                об изменениях в законодательстве,</br>
+                формирующейся судебной практике</br>и налоговых резервах.
+            </div>
+            <img src="static/tworects.svg" alt="" id="tworects">
+            <img src="static/juridical_info.svg" alt="" id="juridical_info_img">
+        </div>
+        <div class="right block_right">
+            <img src="static/doc1.png" alt="" class="info_doc doc_animation_1 doc_animation">
+            <img src="static/doc2.png" alt="" class="info_doc doc_animation_2 doc_animation">
+            <img src="static/doc3.png" alt="" class="info_doc doc_animation_2 doc_animation">
+            <!-- <img src="static/doc4.png" alt="" class="info_doc doc_animation_2 doc_animation"> -->
+            <div id="regulations" class="example">
+                <h1 class="header">НОРМАТИВНЫЕ АКТЫ</h1>
+                <div id="acts">
+                    <div class="act">
+                        <div>
+                            Наименование Нормативного акта №1
+                        </div>
+                        <div>02.06.2021</div>
+                    </div>
+                    <div class="act">
+                        <div>
+                            Наименование Нормативного акта №2
+                        </div>
+                        <div>02.06.2021</div>
+                    </div>
+                    <div class="act">
+                        <div>
+                            Наименование Нормативного акта №3
+                        </div>
+                        <div>02.06.2021</div>
+                    </div>
+                </div>
+                <div class="blank"></div>
+                <div class="normative_acts_bottom">
+                    <div class="normative_act_bottom">Наименование Нормативного акта№1</div>
+                    <div class="normative_act_bottom nab2">Наименование Нормативного акта №2</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block block_reverse animated_block" id="checks" data-block-delay="600">
+        <div class="left block_left">
+            <h1 class="heading" id="sm18">Проверки<br>больше не будут<br>внезапными</h1>
+            <div class="label" id="sm17">Исключите правовые риски заранее</div>
+            <div class="heading_info" id="sm19">OWNEX своевременно оповещает</br>о
+                плановых проверках и предлагает</br>механизмы и
+                варианты реагирования.
+            </div>
+            <img src="static/headblow.gif" alt="" id="headblow_img" class="animation">
+        </div>
+        <div class="right block_right">
+            <div class="check example" id="sm20">
+                <div class="text">
+                    <b>В сентябре 2022 года</b><br>Роспотребнадзор начинает серию проверок. Узнайте, как
+                    подготовиться
+                </div>
+                <u><b>подробнее</b></u>
+                <img src="static/bell.svg" alt="" class="bell">
+            </div>
+            <div class="check example" id="sm21">
+                <div class="text">
+                    <b>С 20 по 30 октября</b><br>на один из ваших <u>объектов</u> планируется выездная проверка.
+                    Будьте
+                    готовы!
+                </div>
+                <u><b>подробнее</b></u>
+                <img src="static/bell.svg" alt="" class="bell">
+            </div>
+            <div class="check example" id="sm22">
+                <div class="text">
+                    Пришло время плановой проверки от МЧС
+                </div>
+                <u><b>подробнее</b></u>
+                <img src="static/bell.svg" alt="" class="bell">
+            </div>
+            <img src="static/lightning.svg" alt="" id="lightning">
+        </div>
+    </div>
+</div>
+<div id="service_team">
+    <div class="animated_block" data-block-delay="500">
+        <h1 class="heading" id="sm23">Один сервис —<br>одна команда </h1>
+    </div>
+    <img src="static/team_left.svg" alt="" id="team_rects_left">
+    <img src="static/team_right.svg" alt="" id="team_rects_right">
+    <div class="team">
+        <div class="member" id="sm24">
+            <div class="service_team_img" id="team_owner_img">
+                <img src="static/service_team_bg.svg" alt="" class="service_team_bg">
+                <img src="static/team_human.svg" alt="" class="service_team_human">
+                <img src="static/team_owner_building.svg" alt="">
+                <div id="yellow_box"></div>
+            </div>
+            <!--            <img src="static/team_owner.svg" alt="">-->
+            <h4>собственник</h4>
+            <span>получает структурированную информацию по всем объектам</span>
+        </div>
+        <div class="member" id="sm25">
+            <div class="service_team_img" id="control_img">
+                <img src="static/service_team_bg.svg" alt="" class="service_team_bg">
+                <img src="static/team_human.svg" alt="" class="service_team_human">
+                <img src="static/service_team_arrow.svg" alt="">
+                <img src="static/service_team_arrow.svg" alt="">
+            </div>
+            <!--            <img src="static/control.svg" alt="">-->
+            <h4>управляющий</h4>
+            <span>удаленно следит за операционной работой, не занимается рутиной</span>
+        </div>
+        <div class="member" id="sm26">
+            <div class="service_team_img" id="financial_director_img">
+                <img src="static/service_team_bg.svg" alt="" class="service_team_bg">
+                <img src="static/team_human.svg" alt="" class="service_team_human">
+                <img src="static/service_team_coin_top.svg" alt="">
+                <img src="static/service_team_coin_bottom.svg" alt="">
+                <img src="static/service_team_coin_bottom.svg" alt="">
+            </div>
+            <!--            <img src="static/financial_director.svg" alt="">-->
+            <h4>финансовый директор</h4>
+            <span>управляет прибыльностью объектов на основе детализированных отчетов</span>
+        </div>
+        <div class="member" id="sm27">
+            <div class="service_team_img" id="accountant_img">
+                <img src="static/service_team_bg.svg" alt="" class="service_team_bg">
+                <img src="static/team_human.svg" alt="" class="service_team_human">
+                <img src="static/accountant_counts.svg" alt="">
+            </div>
+            <!--            <img src="static/accountant.svg" alt="">-->
+            <h4>бухгалтер</h4>
+            <span>рассчитывает арендные и налоговые платежи на онлайн-калькуляторе</span>
+        </div>
+        <div class="member" id="sm28">
+            <div class="service_team_img" id="lawyer_img">
+                <img src="static/service_team_bg.svg" alt="" class="service_team_bg">
+                <img src="static/team_human.svg" alt="" class="service_team_human">
+                <img src="static/hammer.svg" alt="">
+                <img src="static/hammer_stand.svg" alt="">
+            </div>
+            <!--            <img src="static/lawyer.svg" alt="">-->
+            <h4>юрист</h4>
+            <span>благодаря новостной ленте оперативно реагирует на изменения в законодательстве</span>
+        </div>
+        <div class="member" id="sm29">
+            <div class="service_team_img" id="manager_img">
+                <img src="static/service_team_bg.svg" alt="" class="service_team_bg">
+                <img src="static/team_human.svg" alt="" class="service_team_human">
+                <img src="static/service_team_phone.svg" alt="">
+            </div>
+            <!--            <img src="static/manager.svg" alt="">-->
+            <h4>менеджер</h4>
+            <span>cтавит задачи и контролирует</br>их выполнение прямо в сервисе</span>
+        </div>
+    </div>
+</div>
+<div id="start_button_block">
+    <a href="" class="form_button" style="width: 270px; font-size: 21px; border-radius: 23.1236px;">начать</a>
+</div>
+<div id="get_access">
+    <div id="get_access_content">
+        <h1 class="heading">Остались вопросы<br> или нужна помощь?</h1>
+        <div class="inputs">
+            <input type="text" placeholder="Введите почту или телефон">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Введите текст обращения"></textarea>
+            <div class="checkboxes">
+                <div class="checkbox_container">
+                    <input type="checkbox" id="persdata" class="checkbox" checked>
+                    <label for="persdata">я согласен на обработку персональных данных</label>
+                </div>
+                <div class="checkbox_container">
+                    <input type="checkbox" id="mailing_list" class="checkbox">
+                    <label for="mailing_list">я согласен получать рассылку</label>
+                </div>
+            </div>
+            <button class="form_button" style="width: 270px; font-size: 21px;border-radius: 23.1236px;">отправить
+            </button>
+            <!--            <a href="" id="get_access_ask_question">задать вопрос</a>-->
+        </div>
+    </div>
+    <footer>
+        <div class="footer_links">
+            <a href="">пользовательское соглашение</a>
+            <a href="">файлы Cookie</a>
+        </div>
+        <img src="static/gray_logo.svg" alt="" id="logo_bottom">
+    </footer>
+    <img src="static/rects3.svg" alt="" id="rects3">
+    <img src="static/rects4.svg" alt="" id="rects4">
+</div>
+<script src="rellax.min.js"></script>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
         integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
-    <script>
-        SmoothScroll({
-            // Время скролла 400 = 0.4 секунды
-            animationTime: 1000,
-            // Размер шага в пикселях
-            stepSize: 25,
+<script>
+    SmoothScroll({
+        // Время скролла 400 = 0.4 секунды
+        animationTime: 1000,
+        // Размер шага в пикселях
+        stepSize: 25,
 
-            // Дополнительные настройки:
+        // Дополнительные настройки:
 
-            // Ускорение
-            accelerationDelta: 30,
-            // Максимальное ускорение
-            accelerationMax: 2,
+        // Ускорение
+        accelerationDelta: 30,
+        // Максимальное ускорение
+        accelerationMax: 2,
 
-            // Поддержка клавиатуры
-            keyboardSupport: true,
-            // Шаг скролла стрелками на клавиатуре в пикселях
-            arrowScroll: 50,
+        // Поддержка клавиатуры
+        keyboardSupport: true,
+        // Шаг скролла стрелками на клавиатуре в пикселях
+        arrowScroll: 50,
 
-            // Pulse (less tweakable)
-            // ratio of "tail" to "acceleration"
-            pulseAlgorithm: true,
-            pulseScale: 4,
-            pulseNormalize: 1,
+        // Pulse (less tweakable)
+        // ratio of "tail" to "acceleration"
+        pulseAlgorithm: true,
+        pulseScale: 4,
+        pulseNormalize: 1,
 
-            // Поддержка тачпада
-            touchpadSupport: true,
-        })
-    </script>
+        // Поддержка тачпада
+        touchpadSupport: true,
+    })
+</script>
 </body>
 
 </html>
