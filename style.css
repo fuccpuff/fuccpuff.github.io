@@ -185,15 +185,16 @@ header .links {
 }
 
 #main_block_left h1 {
-    font-size: 82px;
+    font-size: 95px;
     font-weight: bold;
-    line-height: 84px;
+    line-height: 109px;
+    margin-left: 80px;
 }
 
 #main_block_left .form_button {
     width: 357px;
     height: 104px;
-    font-size: 34px;
+    font-size: 26px;
     margin-top: 100px;
 }
 
@@ -468,6 +469,24 @@ header .links {
         transform: scaleX(1);
     }
 }
+
+/* @keyframes img_jump {
+    0% { transform: translate(-50%, -50%) scale(1.25, 0.75); }
+    50% { transform: translate(-50%, -150%) scale(1, 1); }
+    55% { transform: translate(-50%, -150%) rotate(15deg); }
+    60% { transform: translate(-50%, -150%) rotate(-15deg); }
+    65% { transform: translate(-50%, -150%) rotate(15deg); }
+    70% { transform: translate(-50%, -150%) rotate(-15deg); }
+    100% { transform: translate(-50%, -50%) scale(1.25, 0.75); }
+}
+
+#parcel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: img_jump 1.2s infinite;
+} */
 
 @keyframes documents_animation_2 {
     0% {
@@ -1445,7 +1464,9 @@ input {
 #egrn .form_button {
     margin-top: 10px;
     align-self: flex-end;
+    font-size: 13px;
 }
+
 
 #egrn {
     width: 700px;
@@ -2094,11 +2115,11 @@ input {
     background-color: #FF4D00;
     border: 3px solid #FF4D00;
     color: #FFF;
-    font-size: 15px;
+    font-size: 26px;
     font-weight: bold;
     margin-top: 40px;
     padding: 16px;
-    border-radius: 10px;
+    border-radius: 19px;
     transition: 0.5s;
     font-family: "Journal", sans-serif;
 }
@@ -2114,7 +2135,7 @@ input {
 }
 
 #get_access .form_button {
-    font-size: 20px;
+    font-size: 26px;
     border-radius: 21px;
     padding: 20px;
     width: 250px;
@@ -3008,6 +3029,7 @@ footer .footer_links a:nth-child(2) {
 
     #main_block .heading {
         margin-top: 180px;
+        margin-left: 0px;
     }
 
     #el1 {
@@ -3268,6 +3290,7 @@ footer .footer_links a:nth-child(2) {
         font-size: 36px;
         line-height: 36px;
         margin-top: 120px !important;
+        margin-left: 0px;
     }
 
     .economy_element {

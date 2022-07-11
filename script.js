@@ -253,6 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let scale0 = {transform: 'scale(0)'}
     let beforeBottomAnimation = {transform: 'translateY(50px)', opacity: 0}
     let opacity0 = {opacity: 0}
+    
 
     // addTween("#screen1_container", scale1, '#second_block', 550, -50, scale0)
 
@@ -269,10 +270,10 @@ document.addEventListener('DOMContentLoaded', () => {
     addTween("#sm3", bottomAnimation, '#objects_in_one_place', 800, -300, beforeBottomAnimation)
     addTween(".windows_animation", bottomAnimation, '#objects_in_one_place', 400, -50, beforeBottomAnimation)
     addTween("#object_info", {transform: 'translateX(0)'}, '#objects_in_one_place', 200, -200, {transform: 'translateX(100vw)'})
-    addTween("#vector_img", bottomAnimation, '#objects_in_one_place', 300, 0, beforeBottomAnimation)
-    addTween("#bradley1", opacity1, '#objects_in_one_place', 300, 100, opacity0)
-    addTween("#cells_img_cadastral", opacity1, '#objects_in_one_place', 250, 50, opacity0)
-    addTween("#cells_img_important", opacity1, '#objects_in_one_place', 200, 200, opacity0)
+    addTween("#vector_img", {transform: 'translateY(0)'}, '#objects_in_one_place', 400, 0, {transform: 'translateY(100vw)'})
+    addTween("#bradley1", opacity1, '#objects_in_one_place', 300, -100, opacity0)
+    addTween("#cells_img_cadastral", opacity1, '#objects_in_one_place', 250, -150, opacity0)
+//  addTween("#cells_img_important", opacity1, '#objects_in_one_place', 200, 200, opacity0)
 
     // Экран: "Анализ доходности"
     addTween("#sm5", bottomAnimation, '#profit_analysis', 650, -400, beforeBottomAnimation)
@@ -301,12 +302,12 @@ document.addEventListener('DOMContentLoaded', () => {
     addTween("#andrey_references", opacity1, '#references', 350, -150, {opacity: 0})
     addTween("#egrn", {transform: 'translateX(0)'}, '#references', 300, -100, {transform: 'translateX(-100vw)'})
     addTween("#make_reference", {transform: 'translateX(0)'}, '#references', 150, 50, {transform: 'translateX(-100vw)'})
-    addTween("#references_img", {transform: 'translateX(0)'}, '#references', 150, 50, {transform: 'translateX(-100vw)'})
+    addTween("#references_img", {transform: 'translateY(0)'}, '#references', 400, -160, {transform: 'translateY(100vw)'})
 
     // Экран: "Актуальная юридическая информация"
     addTween("#sm15", bottomAnimation, '#actual_information', 700, -300, beforeBottomAnimation)
     addTween("#sm16", bottomAnimation, '#actual_information', 650, -250, beforeBottomAnimation)
-    addTween("#juridical_info_img", bottomAnimation, '#actual_information', 250, 150, beforeBottomAnimation)
+    addTween("#juridical_info_img", {transform: 'translateY(0)'}, '#actual_information', 600, -50, {transform: 'translateY(100vw)'})
     addTween("#regulations", {transform: 'translateX(0)'}, '#actual_information', 550, -150, {transform: 'translateX(100vw)'})
     addTween(".doc_animation_1", docAnimation, '#actual_information', 400, 0, {transform: 'scale(0) rotate(-21.62deg)'})
     addTween(".doc_animation_2", docAnimation, '#actual_information', 400, 0, {transform: 'scale(0) rotate(-27.57deg)'})
@@ -363,8 +364,8 @@ document.addEventListener('DOMContentLoaded', () => {
     addTweenTriggerZero('.shadow', {opacity: 0}, '#objects_in_one_place', 50, 400, {opacity: 1})
     addTweenTriggerZero('#vector_img',  {opacity: 0}, '#vector_img', 300, 0, {opacity: 1})
         // клетка и надпись
-    addTweenTriggerZero("#bradley1", {opacity: 0}, '#bradley1', 700, 50, {opacity: 1})
-    addTweenTriggerZero("#cells_img_cadastral", {opacity: 0}, '#cells_img_cadastral', 800, 50, {opacity: 1})
+    addTweenTriggerZero("#bradley1", {opacity: 0}, '#bradley1', 200, 50, {opacity: 1})
+    addTweenTriggerZero("#cells_img_cadastral", {opacity: 0}, '#cells_img_cadastral', 150, 50, {opacity: 1})
     // addTweenTriggerZero("#cells_img_important", {transform: 'translateX(100vw)'}, '#cells_img_important', 1400, 50, {transform: 'translateX(0)'})
         // уведомление
     addTweenTriggerZero(".windows_animation", {transform: 'translateX(100vw)'}, '#object_info', 800, 200, {})
