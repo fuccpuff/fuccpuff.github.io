@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let tween = new TweenMax.fromTo(element, 1, from, animation);
         new ScrollMagic.Scene({triggerElement: triggerElement, duration: duration, offset: offset})
             .setTween(tween)
-            .addIndicators({name: "tween css class"}) // add indicators (requires plugin)
+            // .addIndicators({name: "tween css class"}) // add indicators (requires plugin)
             .addTo(controller);
     }
 
@@ -240,7 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let tween = new TweenMax.fromTo(element, 1, from, animation);
         new ScrollMagic.Scene({triggerElement: triggerElement, duration: duration, offset: offset, triggerHook: 0})
             .setTween(tween)
-            .addIndicators({name: "tween css class"}) // add indicators (requires plugin)
+            // .addIndicators({name: "tween css class"}) // add indicators (requires plugin)
             .addTo(controller);
     }
 
@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let scale0 = {transform: 'scale(0)'}
     let beforeBottomAnimation = {transform: 'translateY(50px)', opacity: 0}
     let opacity0 = {opacity: 0}
-    
+
 
     // addTween("#screen1_container", scale1, '#second_block', 550, -50, scale0)
 
@@ -271,6 +271,22 @@ document.addEventListener('DOMContentLoaded', () => {
     addTween(".windows_animation", bottomAnimation, '#objects_in_one_place', 400, -50, beforeBottomAnimation)
     addTween("#object_info", {transform: 'translateX(0)'}, '#objects_in_one_place', 200, -200, {transform: 'translateX(100vw)'})
     addTween("#vector_img", {transform: 'translateY(0)'}, '#objects_in_one_place', 400, 0, {transform: 'translateY(100vw)'})
+
+    // addTween('#vector_img', {transform: 'rotate(0)'}, '#objects_in_one_place', 0, 400, {transform: 'rotate(20deg)'})
+
+    function newWiggle(element, triggerElement, offset) {
+        let wiggleTween = new TimelineMax()
+            .to(element, 0.2, {transform: 'rotate(20deg)'})
+            .to(element, 0.2, {transform: 'rotate(-20deg)'})
+            .to(element, 0.2, {transform: 'rotate(0)'})
+
+        new ScrollMagic.Scene({triggerElement: triggerElement, offset: offset})
+            .setTween(wiggleTween)
+            .addTo(controller)
+    }
+
+    newWiggle('#vector_img', '#objects_in_one_place', 400)
+
     addTween("#bradley1", opacity1, '#objects_in_one_place', 300, -100, opacity0)
     addTween("#cells_img_cadastral", opacity1, '#objects_in_one_place', 250, -150, opacity0)
 //  addTween("#cells_img_important", opacity1, '#objects_in_one_place', 200, 200, opacity0)
@@ -293,7 +309,7 @@ document.addEventListener('DOMContentLoaded', () => {
     addTween("#bradley6", opacity1, '#contragents', 450, -100, {opacity: 0})
     addTween("#check_cells", opacity1, '#contragents', 500, -150, {opacity: 0})
 //  addTween("#ilya_cells", opacity1, '#contragents', 250, -150)
-    addTween("#info_cadastral", {transform: 'translateX(0)'}, '#contragents', 350, 0, {transform: 'translateX(100vw)'})
+    addTween("#info_cadastral_container", {transform: 'translateX(0)'}, '#contragents', 350, 0, {transform: 'translateX(100vw)'})
 
     // Экран "Справки и выписки в один клик"
     addTween("#sm12", bottomAnimation, '#references', 500, -300, beforeBottomAnimation)
@@ -304,10 +320,15 @@ document.addEventListener('DOMContentLoaded', () => {
     addTween("#make_reference", {transform: 'translateX(0)'}, '#references', 150, 50, {transform: 'translateX(-100vw)'})
     addTween("#references_img", {transform: 'translateY(0)'}, '#references', 400, -160, {transform: 'translateY(100vw)'})
 
+    newWiggle('#references_img', '#references', 240)
+
     // Экран: "Актуальная юридическая информация"
     addTween("#sm15", bottomAnimation, '#actual_information', 700, -300, beforeBottomAnimation)
     addTween("#sm16", bottomAnimation, '#actual_information', 650, -250, beforeBottomAnimation)
     addTween("#juridical_info_img", {transform: 'translateY(0)'}, '#actual_information', 600, -50, {transform: 'translateY(100vw)'})
+
+    newWiggle('#juridical_info_img', '#actual_information', 550)
+
     addTween("#regulations", {transform: 'translateX(0)'}, '#actual_information', 550, -150, {transform: 'translateX(100vw)'})
     addTween(".doc_animation_1", docAnimation, '#actual_information', 400, 0, {transform: 'scale(0) rotate(-21.62deg)'})
     addTween(".doc_animation_2", docAnimation, '#actual_information', 400, 0, {transform: 'scale(0) rotate(-27.57deg)'})
@@ -332,9 +353,9 @@ document.addEventListener('DOMContentLoaded', () => {
     addTween("#sm28", bottomAnimation, '#service_team', 300, 325, beforeBottomAnimation)
     addTween("#sm29", bottomAnimation, '#service_team', 300, 400, beforeBottomAnimation)
 
-    addTween('#economy_office_spaces_static', {transform: 'translateX(0)'}, '#economy_block',220, 20, {transform: 'translateX(-100vw)'})
-    addTween('#warehouses_static', {transform: 'translateX(0)'}, '#economy_block',180, 80, {transform: 'translateX(-100vw)'})
-    addTween('#retail_space_static', {transform: 'translateX(0)'}, '#economy_block',140, 160, {transform: 'translateX(-100vw)'})
+    addTween('#economy_office_spaces_static', {transform: 'translateX(0)'}, '#economy_block', 220, 20, {transform: 'translateX(-100vw)'})
+    addTween('#warehouses_static', {transform: 'translateX(0)'}, '#economy_block', 180, 80, {transform: 'translateX(-100vw)'})
+    addTween('#retail_space_static', {transform: 'translateX(0)'}, '#economy_block', 140, 160, {transform: 'translateX(-100vw)'})
 
     addTween('#economy', {transform: 'translateX(0)'}, '#economy_block', 200, 20, {transform: 'translateX(100vw)'})
 
@@ -344,99 +365,99 @@ document.addEventListener('DOMContentLoaded', () => {
 // Реверсивная анимация
 
     // Первый экран
-        // заголовок
+    // заголовок
     addTweenTriggerZero('#main_block_left .heading', {opacity: 0}, '#main_block_left .heading', 300, -50, {opacity: 1})
 
     // Экран со скриншотом
-    addTween('.site_example', {transform: 'scale(1)'}, '.site_example', 1000, -800, {transform: 'scale(0)'})
+    addTween('.site_example', {transform: 'scale(1)'}, '.site_example', 3000, -1900, {transform: 'scale(0)'})
 
     // Экран со сценариями
-        // заголовок
+    // заголовок
     addTweenTriggerZero('#possibility_block_header', {opacity: 0}, '#possibility_block_header', 350, -50, {opacity: 1})
-        // сценарии
+    // сценарии
     addTweenTriggerZero('#possibility_block', {opacity: 0}, '#possibility_block', 350, -50, {opacity: 1})
 
     // Экран "Все объекты в одном месте"
-        // заголовок и подзаголовок
+    // заголовок и подзаголовок
     addTweenTriggerZero('#objects_in_one_place .heading', {opacity: 0}, '#objects_in_one_place', 300, 0, {opacity: 1})
     addTweenTriggerZero('#objects_in_one_place .heading_info', {opacity: 0}, '#objects_in_one_place', 300, 240, {opacity: 1})
-        // значок гео
+    // значок гео
     addTweenTriggerZero('.shadow', {opacity: 0}, '#objects_in_one_place', 50, 400, {opacity: 1})
-    addTweenTriggerZero('#vector_img',  {opacity: 0}, '#vector_img', 300, 0, {opacity: 1})
-        // клетка и надпись
+    addTweenTriggerZero('#vector_img', {opacity: 0}, '#vector_img', 300, 0, {opacity: 1})
+    // клетка и надпись
     addTweenTriggerZero("#bradley1", {opacity: 0}, '#bradley1', 200, 50, {opacity: 1})
     addTweenTriggerZero("#cells_img_cadastral", {opacity: 0}, '#cells_img_cadastral', 150, 50, {opacity: 1})
     // addTweenTriggerZero("#cells_img_important", {transform: 'translateX(100vw)'}, '#cells_img_important', 1400, 50, {transform: 'translateX(0)'})
-        // уведомление
+    // уведомление
     addTweenTriggerZero(".windows_animation", {transform: 'translateX(100vw)'}, '#object_info', 800, 200, {})
-        // основное окно
+    // основное окно
     addTweenTriggerZero("#object_info", {transform: 'translateX(100vw)'}, '#object_info', 1600, 300, {})
 
     // Экран с 25%
-        // заголовок
+    // заголовок
     addTweenTriggerZero('#economy_block .heading', {opacity: 0}, '#economy_block .heading', 300, -50, {opacity: 1})
-        // иконки
+    // иконки
     addTweenTriggerZero('#economy_block .economy_element:nth-child(1)', {opacity: 0}, '#economy_block .economy_element:nth-child(1)', 300, -50, {opacity: 1})
     addTweenTriggerZero('#economy_block .economy_element:nth-child(2)', {opacity: 0}, '#economy_block .economy_element:nth-child(2)', 300, -50, {opacity: 1})
     addTweenTriggerZero('#economy_block .economy_element:nth-child(3)', {opacity: 0}, '#economy_block .economy_element:nth-child(3)', 300, -50, {opacity: 1})
-        // 25%
+    // 25%
     addTweenTriggerZero('#economy_block .left', {transform: 'translateX(100vw)'}, '#economy_block .left', 900, 400, {})
 
     // Экран "Анализ доходности"
-        // заголовок и подзаголовок
+    // заголовок и подзаголовок
     addTweenTriggerZero('#profit_analysis .heading', {opacity: 0}, '#profit_analysis .heading', 300, -50, {opacity1})
     addTweenTriggerZero('#profit_analysis .heading_info', {opacity: 0}, '#profit_analysis .heading_info', 300, -50, {opacity1})
-        // окошко
+    // окошко
     addTweenTriggerZero('#count_object', {transform: 'translateX(-100vw)'}, '#count_object', 1500, 0, {})
-    
+
     // Экран "Проверка контрагентов"
-        // заголовок и подзаголовок
+    // заголовок и подзаголовок
     addTweenTriggerZero('#contragents .heading', {opacity: 0}, '#contragents', 600, 50, {opacity: 1})
     addTweenTriggerZero('#contragents .heading_info', {opacity: 0}, '#contragents', 800, 250, {opacity: 1})
-        // окошко
+    // окошко
     addTweenTriggerZero("#contragents .right", {transform: 'translateX(100vw)'}, '#contragents .right', 900, 400, {})
-        // кнопка
+    // кнопка
     addTweenTriggerZero('#contragents .form_button', {opacity: 0}, '#contragents .form_button', 300, 0, {opacity: 1})
 
     // Экран "Справки и выписки в один клик"
-        // заголовок и подзаголовок
+    // заголовок и подзаголовок
     addTweenTriggerZero('#references .heading', {opacity: 0}, '#references', 300, 0, {opacity: 1})
     addTweenTriggerZero('#references .heading_info', {opacity: 0}, '#references', 600, 50, {opacity: 1})
-        // иконка
-    addTweenTriggerZero('#references_img',  {opacity: 0}, '#references_img', 300, 0, {opacity: 1})
-        // попап окно
+    // иконка
+    addTweenTriggerZero('#references_img', {opacity: 0}, '#references_img', 300, 0, {opacity: 1})
+    // попап окно
     addTweenTriggerZero('#references #make_reference', {transform: 'translateX(-100vw)'}, '#references #make_reference', 600, 350, {})
-        // окно
+    // окно
     addTweenTriggerZero('#references #egrn', {transform: 'translateX(-100vw)'}, '#references #egrn', 1300, 400, {})
-        // надписи
+    // надписи
     addTweenTriggerZero("#bradley6", {transform: 'translateX(100vw)'}, '#bradley6', 250, 0, {})
 
     // Экран "Актуальная юридическая информация"
-        // заголовок и подзаголовок
+    // заголовок и подзаголовок
     addTweenTriggerZero('#actual_information .heading', {opacity: 0}, '#actual_information', 300, 50, {opacity: 1})
     addTweenTriggerZero('#actual_information .heading_info', {opacity: 0}, '#actual_information', 300, 350, {opacity: 1})
-        // иконка
-    addTweenTriggerZero('#juridical_info_img',  {opacity: 0}, '#juridical_info_img', 300, 0, {opacity: 1})
-        // документы
-    addTweenTriggerZero('#actual_information .right',{transform: 'translateX(100vw)'}, '#actual_information .right', 900, 500, {})
+    // иконка
+    addTweenTriggerZero('#juridical_info_img', {opacity: 0}, '#juridical_info_img', 300, 0, {opacity: 1})
+    // документы
+    addTweenTriggerZero('#actual_information_right_container', {transform: 'translateX(100vw)'}, '#actual_information_right_container', 900, 500, {})
 
     // Экран "Проверки больше не будут внезапными"\
-        // заголовок и подзаголовок
+    // заголовок и подзаголовок
     addTweenTriggerZero('#checks .heading', {opacity: 0}, '#checks', 300, 50, {opacity: 1})
     addTweenTriggerZero('#checks .heading_info', {opacity: 0}, '#checks', 300, 350, {opacity: 1})
-        // уведомления
+    // уведомления
     addTweenTriggerZero('#checks #sm20', {opacity: 0}, '#checks #sm20', 200, -50, {opacity: 1})
     addTweenTriggerZero('#checks #sm21', {opacity: 0}, '#checks #sm21', 200, 0, {opacity: 1})
     addTweenTriggerZero('#checks #sm22', {opacity: 0}, '#checks #sm22', 200, 0, {opacity: 1})
-        // молния
-    addTweenTriggerZero('#checks #lightning',  {opacity: 0}, '#checks #lightning', 1500, -350, {opacity: 1})
+    // молния
+    addTweenTriggerZero('#checks #lightning', {opacity: 0}, '#checks #lightning', 1500, -350, {opacity: 1})
 
     // addTweenTriggerZero('#references .block_right', {transform: 'translateX(-100vw)'}, '#references .block_right', 700, -100, {transform: 'translateX(0)'})
     // addTween('header', {backgroundColor: 'rgba(255, 255, 255, 1)'}, '#second_block', 0, 300, {backgroundColor: 'rgba(255, 255, 255, 0)'})
 // build scene
 });
 
-document.addEventListener( 'DOMContentLoaded', function() {
-    var splide = new Splide( '.splide', {perPage: 3, arrows: false, pagination: false})
+document.addEventListener('DOMContentLoaded', function () {
+    var splide = new Splide('.splide', {perPage: 3, arrows: false, pagination: false})
     splide.mount();
 });

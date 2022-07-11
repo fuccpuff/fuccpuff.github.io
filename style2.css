@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Journal Sans New";
     src: url("fonts/JournalSansNew.ttf") format("opentype"),
-         url("fonts/JournalSansNew-Bold.ttf") format("opentype");
+    url("fonts/JournalSansNew-Bold.ttf") format("opentype");
 }
 
 * {
@@ -16,16 +16,12 @@
     margin: 0 auto;
 }
 
-header a {
-    text-decoration: none;
-    font-size: 25px;
-}
-
 header {
-    position: absolute;
+    position: fixed;
     padding: 24px 72px;
     width: 100%;
-    z-index: 1;
+    z-index: 999;
+    background-color: #FFF;
 }
 
 header .container {
@@ -36,16 +32,37 @@ header .container {
 
 header .links {
     display: flex;
+    align-items: baseline;
+    font-size: 18px;
+    color: #3D3C3C;
+}
+
+.logo {
+    display: flex;
     align-items: center;
-    font-weight: bold;
+    transition: 0.5s;
 }
 
-.blue_links_header a {
-    color: #3B89D7 !important;
+.logo.hovered #logo_w_left {
+    transform: rotateY(180deg);
+    transition: 0.5s;
 }
 
-#faq_link {
-    color: white;
+.logo.hovered #logo_w_right {
+    transform: rotateY(180deg);
+    transition: 0.5s;
+}
+
+.logo img {
+    transition: 0.5s;
+}
+
+#logo_w_left {
+    margin-left: 3px;
+}
+
+#logo_w_right {
+    margin-right: 3px;
 }
 
 #start_link {
@@ -53,17 +70,15 @@ header .links {
     align-items: center;
     margin-left: 75px;
     margin-bottom: 5px;
-    color: #FFF;
 }
 
 #start_link img {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 a {
-    color: #3B89D7;
-    font-weight: 700;
-    font-size: 18px;
+    text-decoration: none;
+    color: black;
 }
 
 body {
@@ -210,6 +225,7 @@ footer {
     align-items: center;
     margin-top: 40px;
 }
+
 .input_label input {
     margin-top: 0;
 }
@@ -299,4 +315,63 @@ footer {
     position: absolute;
     bottom: 20px;
     right: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        padding: 24px 16px;
+    }
+
+    .img_container {
+        display: none;
+    }
+
+    body {
+        display: initial;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer_links a {
+        margin-left: 0;
+        font-size: 14px;
+    }
+    .footer_links a:nth-child(2) {
+        margin-left: 15px;
+    }
+
+    .logo_right {
+        bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .input_label {
+        display: initial;
+    }
+
+    form input, form textarea {
+        width: 100%;
+    }
+
+    .checkbox {
+        width: initial;
+    }
+
+    .checkboxes {
+        align-items: initial;
+        flex-direction: column;
+    }
+
+    .checkboxes .checkbox_container:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    .logo_right {
+        display: none;
+    }
+
+    #start_link {
+        margin-left: 15px;
+    }
 }
