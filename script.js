@@ -399,7 +399,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // иконка
     addTweenTriggerZero('#references_img',  {opacity: 0}, '#references_img', 300, 0, {opacity: 1})
         // попап окно
-    addTweenTriggerZero('#references #make_reference', {transform: 'translateX(-100vw)'}, '#references #make_reference', 1200, 50, {})
+    addTweenTriggerZero('#references #make_reference', {transform: 'translateX(-100vw)'}, '#references #make_reference', 600, 350, {})
         // окно
     addTweenTriggerZero('#references #egrn', {transform: 'translateX(-100vw)'}, '#references #egrn', 1300, 400, {})
         // надписи
