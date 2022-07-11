@@ -654,7 +654,7 @@ header .links {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-top: 160px;
+    margin-top: 120px;
 }
 
 #economy_left_container {
@@ -758,7 +758,7 @@ header .links {
 }
 
 #objects_in_one_place {
-    margin-top: 200px;
+    margin-top: 100px;
     /*height: 760px;*/
 }
 
@@ -1009,6 +1009,10 @@ header .links {
     /*height: 760px;*/
 }
 
+#profit_analysis .heading {
+    margin-top: 20px;
+}
+
 #profit_analysis .heading_info {
     margin-left: 125px;
     margin-top: 80px;
@@ -1022,6 +1026,7 @@ header .links {
 
 #profit_analysis .label {
     width: 520px;
+    margin-top: -100px;
     height: 96px;
 }
 
@@ -1180,6 +1185,10 @@ input {
 #references .block_left {
     padding-left: 170px;
     min-width: 763px;
+}
+
+#references .heading {
+    margin-top: -80px;
 }
 
 .block_right {
@@ -1373,6 +1382,7 @@ input {
 
 #references .label {
     max-width: 400px;
+    margin-top: -210px;
 }
 
 #references .heading_info {
@@ -1398,8 +1408,8 @@ input {
 
 #references_img {
     position: absolute;
-    left: 852px;
-    top: 440px;
+    left: 755px;
+    top: 370px;
 }
 
 #egrn .form_button {
@@ -1409,7 +1419,7 @@ input {
 
 #egrn {
     width: 700px;
-    height: 600px;
+    height: 575px;
     left: -100px;
     padding: 35px;
 }
@@ -1491,7 +1501,7 @@ input {
 }
 
 #actual_information {
-    margin-top: 350px;
+    margin-top: 280px;
 }
 
 #actual_information .label {
@@ -1541,7 +1551,7 @@ input {
     height: 600px;
     width: 800px;
     z-index: 4;
-    top: 100px;
+    top: 130px;
     padding: 40px;
     position: relative;
     /*overflow-x: hidden;*/
@@ -1662,7 +1672,7 @@ input {
 }
 
 #checks {
-    margin-top: 600px;
+    margin-top: 400px;
     /*height: 900px;*/
 }
 
@@ -1737,6 +1747,7 @@ input {
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    margin-top: -100px;
 }
 
 #service_team .heading {
