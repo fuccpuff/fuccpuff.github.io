@@ -2800,6 +2800,10 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 768px) {
+    #rects3, #rects4 {
+        display: none;
+    }
+
     #checks {
         margin-top: 150px;
     }
@@ -3045,7 +3049,26 @@ footer .footer_links a:nth-child(2) {
     }
 }
 
+@media screen and (max-width: 516px) {
+    #get_access {
+        height: 1350px;
+    }
+}
+
 @media screen and (max-width: 480px) {
+    #get_access input, #get_access textarea {
+        padding: 10px 10px 10px 20px;
+        font-size: 16px;
+    }
+
+    #get_access input::placeholder, #get_access textarea::placeholder {
+        font-size: 16px;
+    }
+
+    #get_access {
+        height: 1000px;
+    }
+
     .member h4 {
         font-size: 16px;
         margin-top: -16px;
