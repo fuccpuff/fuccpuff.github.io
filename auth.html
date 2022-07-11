@@ -1,44 +1,47 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link type="image/x-icon" href="static/favicon.ico" rel="shortcut icon">
     <link type="Image/x-icon" href="static/favicon.ico" rel="icon">
     <title>Войти | OWNEX</title>
     <link rel="stylesheet" href="style2.css">
 </head>
+
 <body>
-<header>
-    <div class="container">
-        <img src="static/logo.svg" alt="" class="logo">
-        <div class="links">
-            <a href="support.html" id="faq_link">FAQ</a>
-            <a href="auth.html" id="start_link">начать <img src="static/starticon.svg" alt=""></a>
+    <header>
+        <div class="container">
+            <img src="static/logo.svg" alt="" class="logo">
+            <div class="links">
+                <a href="support.html" id="faq_link">FAQ</a>
+                <a href="auth.html" id="start_link">начать <img src="static/starticon.svg" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <div class="left flex-container">
+        <div class="form_container auth_form">
+            <h1>Войти</h1>
+            <a href="register.html">Новый пользователь</a>
+            <form id="auth_form">
+                <input type="text" placeholder="Логин">
+                <input type="text" placeholder="Пароль">
+                <a href="forgot_password.html" id="forgot_password">Забыли пароль?</a>
+                <input type="button" value="Войти" class="form_button">
+            </form>
         </div>
     </div>
-</header>
-<div class="left flex-container">
-    <div class="form_container auth_form">
-        <h1>Войти</h1>
-        <a href="register.html">Новый пользователь</a>
-        <form id="auth_form">
-            <input type="text" placeholder="Логин">
-            <input type="text" placeholder="Пароль">
-            <a href="forgot_password.html" id="forgot_password">Забыли пароль?</a>
-            <input type="button" value="Войти" class="form_button">
-        </form>
-    </div>
-</div>
-<div class="right img_container" id="auth_img"></div>
-<footer>
-    <div class="footer_links">
-        <a href="#">пользовательское соглашение</a>
-        <a href="#">файлы Cookie</a>
-    </div>
-    <img src="static/logo_bottom_white.svg" alt="">
-</footer>
+    <div class="right img_container" id="auth_img"></div>
+    <footer>
+        <div class="footer_links">
+            <a href="#">пользовательское соглашение</a>
+            <a href="#">файлы Cookie</a>
+        </div>
+        <img src="static/logo_bottom_white.svg" alt="">
+    </footer>
 </body>
+
 </html>
