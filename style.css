@@ -2411,6 +2411,14 @@ footer .footer_links a:nth-child(2) {
     z-index: 3;
 }
 
+@media screen and (max-width: 1800px) {
+    #headblow_img {
+        right: 15px;
+        height: 80px;
+        width: 80px;
+    }
+}
+
 @media screen and (max-width: 1730px) {
     #economy_block .right {
         min-width: 700px;
@@ -2484,6 +2492,16 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 1400px) {
+    #checks .block_left {
+        min-width: 700px;
+    }
+
+    #checks .right {
+        transform: scale(0.85);
+        transform-origin: right;
+        left: 140px;
+    }
+
     #team_rects_right {
         display: none;
     }
@@ -2515,6 +2533,16 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 1300px) {
+    #checks .block_left {
+        min-width: 635px;
+    }
+
+    #checks .right {
+        transform: scale(0.8);
+        transform-origin: right;
+        left: 140px;
+    }
+
     #economy img {
         width: 500px;
     }
@@ -2529,6 +2557,16 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 1200px) {
+    #checks .block_left {
+        min-width: 544px;
+    }
+
+    #checks .right {
+        transform: scale(0.72);
+        transform-origin: right;
+        left: 140px;
+    }
+
     .heading_info {
         margin-left: 0 !important;
     }
@@ -2562,31 +2600,24 @@ footer .footer_links a:nth-child(2) {
     /*#objects_in_one_place {*/
     /*    height: 1200px;*/
     /*}*/
-
     /*#economy_block {*/
     /*    height: 1800px;*/
     /*}*/
-
     /*#profit_analysis {*/
     /*    height: 1100px;*/
     /*}*/
-
     /*#contragents {*/
     /*    height: 1400px;*/
     /*}*/
-
     /*#references {*/
     /*    height: 1400px;*/
     /*}*/
-
     /*#actual_information {*/
     /*    height: 1270px;*/
     /*}*/
-
     /*#checks {*/
     /*    height: 1200px;*/
     /*}*/
-
     .team {
         grid-column-gap: 60px;
     }
