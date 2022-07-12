@@ -620,7 +620,7 @@ header .links {
 }
 
 #economy_block {
-    margin-top: 100px;
+    margin-top: -71px;
     /*height: 860px;*/
 }
 
@@ -1059,7 +1059,7 @@ header .links {
 }
 
 #profit_analysis {
-    margin-top: 200px;
+    margin-top: 50px;
     /*height: 760px;*/
 }
 
@@ -2116,6 +2116,10 @@ input {
     font-family: 'Journal', sans-serif;
 }
 
+#references input, #references textarea {
+    font-family: 'Journal', sans-serif;
+}
+
 .form_button {
     cursor: pointer;
     width: 200px;
@@ -2510,7 +2514,7 @@ footer .footer_links a:nth-child(2) {
 
 @media screen and (max-width: 1800px) {
     #headblow_img {
-        right: 15px;
+        right: 100px;
         height: 80px;
         width: 80px;
     }
@@ -2726,6 +2730,10 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 1300px) {
+    #headblow_img {
+        right: 20px;
+    }
+
     #actual_information .block_left {
         min-width: 700px;
     }
@@ -2823,6 +2831,26 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 1024px) {
+    #economy_block {
+        margin-top: 166px;
+    }
+
+    #profit_analysis {
+        margin-top: 262px;
+    }
+
+    #contragents {
+        margin-top: 0;
+    }
+
+    #references {
+        margin-top: 150px;
+    }
+
+    #actual_information {
+        margin-top: 42px;
+    }
+
     #objects_in_one_place .right {
         transform: scale(1);
     }
