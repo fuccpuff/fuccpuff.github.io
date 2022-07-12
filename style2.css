@@ -289,6 +289,10 @@ footer {
     font-size: 18px;
 }
 
+.auth_form {
+    margin-top: 60px;
+}
+
 .form_button {
     cursor: pointer;
     width: 200px;
@@ -326,8 +330,30 @@ footer {
         display: none;
     }
 
-    body {
+    .left {
+        max-width: 100%;
+    }
+
+    .right {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .input_label {
         display: initial;
+    }
+
+    .input_label input {
+        margin-top: 15px;
+    }
+
+    form input, form textarea {
+        width: 100%;
+    }
+
+    .checkbox {
+        width: initial;
     }
 }
 
@@ -336,6 +362,7 @@ footer {
         margin-left: 0;
         font-size: 14px;
     }
+
     .footer_links a:nth-child(2) {
         margin-left: 15px;
     }
@@ -345,17 +372,16 @@ footer {
     }
 }
 
+@media screen and (max-width: 500px) {
+    .logo {
+        transform: scale(0.7);
+        transform-origin: left center;
+    }
+}
+
 @media screen and (max-width: 400px) {
-    .input_label {
-        display: initial;
-    }
-
-    form input, form textarea {
-        width: 100%;
-    }
-
-    .checkbox {
-        width: initial;
+    header .links {
+        font-size: 14px;
     }
 
     .checkboxes {
@@ -373,5 +399,11 @@ footer {
 
     #start_link {
         margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .footer_links a {
+        font-size: 10px;
     }
 }

@@ -291,9 +291,16 @@ header .links {
 }
 
 .possibility_element > img,
-.possibility_element .possibility_img {
+.possibility_element .possibility_img, #rouble_img {
     width: 80px;
     height: 80px;
+}
+
+.inner_possibility_element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .possibility_img {
@@ -1042,7 +1049,7 @@ header .links {
     border-radius: 100px;
     width: 111px;
     height: 8px;
-    z-index: 2;
+    z-index: 999;
     margin-left: 30px;
     margin-top: 30px;
 }
@@ -2592,6 +2599,13 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 1500px) {
+    #references .right {
+        transform: scale(0.8);
+        transform-origin: right;
+        min-width: 827px;
+    }
+
+
     #economy img {
         width: 700px;
     }
@@ -2621,7 +2635,27 @@ footer .footer_links a:nth-child(2) {
     }
 }
 
+@media screen and (max-width: 1460px) {
+    #actual_information .right {
+        transform: scale(0.8);
+        transform-origin: left;
+    }
+
+    #actual_information .block_left {
+        min-width: 795px;
+    }
+}
+
 @media screen and (max-width: 1400px) {
+    #objects_in_one_place .right {
+        transform: scale(0.8);
+        transform-origin: left;
+    }
+
+    #objects_in_one_place .block_left {
+        min-width: 674px;
+    }
+
     #profit_analysis #count_object {
         left: 203px;
     }
@@ -2692,6 +2726,10 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 1300px) {
+    #actual_information .block_left {
+        min-width: 700px;
+    }
+
     #checks .block_left {
         min-width: 635px;
     }
@@ -2721,6 +2759,32 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 1200px) {
+    #objects_in_one_place .right {
+        transform: scale(0.7);
+    }
+
+    #actual_information .right {
+        transform: scale(0.7);
+        max-width: 420px;
+    }
+
+    #actual_information .block_left {
+        min-width: 652px;
+    }
+
+    #references .block_right {
+        transform: scale(0.7);
+    }
+
+    #references .block_left {
+        min-width: 581px;
+    }
+
+    #clap_img {
+        left: 402px;
+        top: 272px;
+    }
+
     #checks .block_left {
         min-width: 544px;
     }
@@ -2752,7 +2816,35 @@ footer .footer_links a:nth-child(2) {
     }
 }
 
+@media screen and (max-width: 1070px) {
+    #actual_information .block_left {
+        min-width: 582px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
+    #objects_in_one_place .right {
+        transform: scale(1);
+    }
+
+    #clap_img {
+        left: 548px;
+        top: 101px;
+    }
+
+    #references .right {
+        transform: scale(1);
+        right: 200px;
+    }
+
+    #references_img {
+        left: 700px;
+    }
+
+    #actual_information .right {
+        transform: scale(1);
+    }
+
     #juridical_info_img {
         top: 180px;
         right: 0;
@@ -3017,6 +3109,23 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 768px) {
+    #objects_in_one_place .right {
+        transform: scale(0.8);
+        transform-origin: top;
+        right: -167px;
+    }
+
+    #references .right {
+        transform: scale(0.8);
+        transform-origin: top;
+        right: 0;
+    }
+
+    #references_img {
+        left: initial;
+        right: 120px;
+    }
+
     #contragents #info_cadastral {
         transform-origin: top;
         transform: scale(0.8);
@@ -3170,7 +3279,8 @@ footer .footer_links a:nth-child(2) {
 
     #andrey_references {
         left: initial;
-        right: 576px;
+        right: 603px;
+        font-size: 23px;
     }
 
     #vector_img {
@@ -3222,6 +3332,25 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 600px) {
+    #cool_img {
+        left: 324px;
+        height: 80px;
+        top: 74px;
+    }
+
+    #objects_in_one_place .right {
+        right: -50px;
+    }
+
+    #objects_in_one_place #check_cadastral_cost {
+        right: 605px;
+    }
+
+    #clap_img {
+        left: 463px;
+        top: 101px;
+    }
+
     #contragents #info_cadastral {
         transform: scale(0.7);
         right: -100px;
@@ -3298,6 +3427,20 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 480px) {
+    .possibility_element {
+        min-width: 140px;
+        max-width: 140px;
+        height: 190px;
+    }
+
+    .inner_possibility_element {
+        transform: scale(0.7);
+    }
+
+    #objects_in_one_place .right {
+        transform: scale(0.6);
+    }
+
     #references {
         margin-top: -100px;
     }
@@ -3383,7 +3526,11 @@ footer .footer_links a:nth-child(2) {
 
     #references .block_right {
         transform: scale(0.6);
-        margin-top: 0;
+        margin-top: 130px;
+    }
+
+    #actual_information {
+        margin-top: -233px;
     }
 
     #vector_img {
@@ -3408,9 +3555,14 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 400px) {
+    #actual_information .block_right {
+        transform: scale(0.6);
+    }
+
     #juridical_info_img {
         top: 225px;
     }
+
     .check .bell {
         height: 58px;
     }
