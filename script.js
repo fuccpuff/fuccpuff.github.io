@@ -260,9 +260,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Экран: "Экономьте на управлении и содержании"
     addTween("#economy_number", scale1, '#economy_block', 600, -150, scale0)
     addTween("#economy_percent", scale1, '#economy_block', 600, -150, scale0)
-    addTween("#warehouses_top", {transform: 'translateX(-24px) translateY(0)'}, '#economy_block', 500, 100, {transform: 'translateX(-24px) translateY(-200px)'})
+    addTween("#warehouses_top", {transform: 'translateX(-24px) translateY(0)'}, '#economy_block', 700, 100, {transform: 'translateX(-24px) translateY(-155px)'})
     addTween("#retail_space_cart", {transform: 'translateY(0)'}, '#economy_block', 500, 100, {transform: 'translateY(-200px)'})
-    addTween("#economy_office", {transform: 'translateY(0)'}, '#economy_block', 450, 100, {transform: 'translateY(-200px)'})
+    addTween("#economy_office", {transform: 'translateY(0)'}, '#economy_block', 600, 100, {transform: 'translateY(-155px)'})
     addTween("#economy_info", scale1, '#economy_block', 450, 0, scale0)
 
     // Экран: "Все объекты в одном месте"
@@ -306,8 +306,8 @@ document.addEventListener('DOMContentLoaded', () => {
     addTween("#sm10", bottomAnimation, '#contragents', 350, 0, beforeBottomAnimation)
     addTween("#cool_img", bottomAnimation, '#contragents', 400, -50, beforeBottomAnimation)
 //  addTween("#bradley5", opacity1, '#contragents', 200, -100)
-    addTween("#bradley6", opacity1, '#contragents', 450, -100, {opacity: 0})
-    addTween("#check_cells", opacity1, '#contragents', 500, -150, {opacity: 0})
+    addTween("#bradley6", opacity1, '#contragents', 350, -100, {opacity: 0})
+    addTween("#check_cells", opacity1, '#contragents', 250, -150, {opacity: 0})
 //  addTween("#ilya_cells", opacity1, '#contragents', 250, -150)
     addTween("#info_cadastral_container", {transform: 'translateX(0)'}, '#contragents', 350, 0, {transform: 'translateX(100vw)'})
 
@@ -385,8 +385,8 @@ document.addEventListener('DOMContentLoaded', () => {
     addTweenTriggerZero('.shadow', {opacity: 0}, '#objects_in_one_place', 50, 400, {opacity: 1})
     addTweenTriggerZero('#vector_img', {opacity: 0}, '#vector_img', 300, 0, {opacity: 1})
     // клетка и надпись
-    addTweenTriggerZero("#bradley1", {opacity: 0}, '#bradley1', 200, 50, {opacity: 1})
-    addTweenTriggerZero("#cells_img_cadastral", {opacity: 0}, '#cells_img_cadastral', 150, 50, {opacity: 1})
+    addTweenTriggerZero("#bradley1", {opacity: 0}, '#bradley1', 150, 50, {opacity: 1})
+    addTweenTriggerZero("#cells_img_cadastral", {opacity: 0}, '#cells_img_cadastral', 100, 50, {opacity: 1})
     // addTweenTriggerZero("#cells_img_important", {transform: 'translateX(100vw)'}, '#cells_img_important', 1400, 50, {transform: 'translateX(0)'})
     // уведомление
     addTweenTriggerZero(".windows_animation", {transform: 'translateX(100vw)'}, '#object_info', 800, 200, {})
@@ -397,9 +397,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // заголовок
     addTweenTriggerZero('#economy_block .heading', {opacity: 0}, '#economy_block .heading', 300, -50, {opacity: 1})
     // иконки
-    addTweenTriggerZero('#economy_block .economy_element:nth-child(1)', {opacity: 0}, '#economy_block .economy_element:nth-child(1)', 300, -50, {opacity: 1})
-    addTweenTriggerZero('#economy_block .economy_element:nth-child(2)', {opacity: 0}, '#economy_block .economy_element:nth-child(2)', 300, -50, {opacity: 1})
-    addTweenTriggerZero('#economy_block .economy_element:nth-child(3)', {opacity: 0}, '#economy_block .economy_element:nth-child(3)', 300, -50, {opacity: 1})
+    addTweenTriggerZero('#economy_block .economy_element:nth-child(1)', {opacity: 0}, '#economy_block .economy_element:nth-child(1)', 400, -50, {opacity: 1})
+    addTweenTriggerZero('#economy_block .economy_element:nth-child(2)', {opacity: 0}, '#economy_block .economy_element:nth-child(2)', 400, -50, {opacity: 1})
+    addTweenTriggerZero('#economy_block .economy_element:nth-child(3)', {opacity: 0}, '#economy_block .economy_element:nth-child(3)', 400, -50, {opacity: 1})
     // 25%
     addTweenTriggerZero('#economy_block .left', {transform: 'translateX(100vw)'}, '#economy_block .left', 900, 400, {})
 
