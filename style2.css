@@ -84,6 +84,7 @@ body {
     display: flex;
     position: relative;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .flex_body {
@@ -351,6 +352,10 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+    .logo_white {
+        filter: invert(1);
+    }
+
     .blue_corner {
         display: block;
         transform: scale(1.4);
