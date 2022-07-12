@@ -82,6 +82,10 @@ a {
 
 body {
     position: relative;
+    min-height: 100vh;
+}
+
+.flex_body {
     display: flex;
     min-height: 100vh;
 }

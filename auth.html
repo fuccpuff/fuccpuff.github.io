@@ -15,38 +15,40 @@
 <body>
 <img class="blue_corner" src="static/blue_corner.svg">
 <img src="static/blue_corner.svg" alt="" class="opposite_blue_corner blue_corner">
-<header class="animated_block">
-    <div class="container">
-        <div class="logo">
-            <img src="static/logo_left.png" alt=""><img src="static/logo_w.png" alt="" id="logo_w_left"><img
-                src="static/logo_w.png" alt="" id="logo_w_right"><img src="static/logo_right.png" alt="">
+<div class="flex_body">
+    <header class="animated_block">
+        <div class="container">
+            <div class="logo">
+                <img src="static/logo_left.png" alt=""><img src="static/logo_w.png" alt="" id="logo_w_left"><img
+                    src="static/logo_w.png" alt="" id="logo_w_right"><img src="static/logo_right.png" alt="">
+            </div>
+            <div class="links">
+                <a href="support.html" id="faq_link">FAQ</a>
+                <a href="auth.html" id="start_link">ВОЙТИ<img src="static/login.svg" alt=""></a>
+            </div>
         </div>
-        <div class="links">
-            <a href="support.html" id="faq_link">FAQ</a>
-            <a href="auth.html" id="start_link">ВОЙТИ<img src="static/login.svg" alt=""></a>
+    </header>
+    <div class="left flex-container">
+        <div class="form_container auth_form">
+            <h1>Войти</h1>
+            <a href="register.html">Новый пользователь</a>
+            <form id="auth_form">
+                <input type="text" placeholder="Логин">
+                <input type="text" placeholder="Пароль">
+                <a href="forgot_password.html" id="forgot_password">Забыли пароль?</a>
+                <input type="button" value="Войти" class="form_button">
+            </form>
         </div>
     </div>
-</header>
-<div class="left flex-container">
-    <div class="form_container auth_form">
-        <h1>Войти</h1>
-        <a href="register.html">Новый пользователь</a>
-        <form id="auth_form">
-            <input type="text" placeholder="Логин">
-            <input type="text" placeholder="Пароль">
-            <a href="forgot_password.html" id="forgot_password">Забыли пароль?</a>
-            <input type="button" value="Войти" class="form_button">
-        </form>
-    </div>
+    <div class="right img_container" id="auth_img"></div>
+    <footer>
+        <div class="footer_links">
+            <a href="#">пользовательское соглашение</a>
+            <a href="#">файлы Cookie</a>
+        </div>
+        <img src="static/logo_bottom_white.svg" alt="">
+    </footer>
 </div>
-<div class="right img_container" id="auth_img"></div>
-<footer>
-    <div class="footer_links">
-        <a href="#">пользовательское соглашение</a>
-        <a href="#">файлы Cookie</a>
-    </div>
-    <img src="static/logo_bottom_white.svg" alt="">
-</footer>
 </body>
 
 </html>
