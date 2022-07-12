@@ -17,11 +17,10 @@
 }
 
 header {
-    position: fixed;
+    position: absolute;
     padding: 24px 72px;
     width: 100%;
-    z-index: 999;
-    background-color: #FFF;
+    z-index: 4;
 }
 
 header .container {
@@ -119,6 +118,7 @@ body {
 
 #register_img {
     background: url("static/register.png") no-repeat;
+    background-position: center;
 }
 
 #support_img {
@@ -280,6 +280,24 @@ footer {
     transform: translateY(-5px);
 }
 
+.blue_corner {
+    position: absolute;
+    display: none;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transform-origin: top right;
+}
+
+.opposite_blue_corner {
+    right: initial;
+    top: initial;
+    bottom: 291px;
+    left: 259px;
+    transform: rotate(180deg);
+    transform-origin: left bottom;
+}
+
 #forgot_password {
     text-decoration: underline;
     color: #3B89D7;
@@ -321,9 +339,36 @@ footer {
     right: 20px;
 }
 
+@media screen and (max-width: 1200px) {
+    .register_footer.rg_links {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 800px) {
+    .blue_corner {
+        display: block;
+        transform: scale(1.4);
+    }
+
+    .opposite_blue_corner {
+        transform: scale(1.4) rotate(180deg);
+    }
+
     header {
         padding: 24px 16px;
+    }
+
+    header .links a {
+        color: #fff;
+    }
+
+    #start_link {
+        margin-left: 24px;
+    }
+
+    #start_link img {
+        filter: invert(1);
     }
 
     .img_container {
@@ -376,6 +421,10 @@ footer {
     .logo {
         transform: scale(0.7);
         transform-origin: left center;
+    }
+
+    .form_container h1 {
+        font-size: 30px;
     }
 }
 
