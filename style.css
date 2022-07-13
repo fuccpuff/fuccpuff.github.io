@@ -297,6 +297,11 @@ header .links {
     min-height: 80px;
 }
 
+#rouble_img {
+    width: 80px;
+    height: 80px;
+}
+
 .inner_possibility_element {
     display: flex;
     flex-direction: column;
