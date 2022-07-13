@@ -345,6 +345,10 @@ footer {
     right: 40px;
 }
 
+.logo_white {
+    margin-right: 20px;
+}
+
 @media screen and (max-width: 1200px) {
     .register_footer.rg_links {
         display: none;

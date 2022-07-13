@@ -98,7 +98,7 @@ header {
     padding: 24px 72px;
     width: 100%;
     z-index: 999;
-    background-color: rgba(255, 255, 255, 0.7);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7));
 }
 
 header .container {
@@ -236,7 +236,7 @@ header .links {
     margin: -680px auto 0 auto;
     border-radius: 16px;
     box-shadow: 0 4px 84px 0 rgba(0, 0, 0, 0.17);
-    max-width: 100%;
+    width: 100%;
     height: auto;
     transform-origin: bottom left;
 }
@@ -293,8 +293,8 @@ header .links {
 
 .possibility_element > img,
 .possibility_element .possibility_img, #rouble_img {
-    width: 80px;
-    height: 80px;
+    min-width: 80px;
+    min-height: 80px;
 }
 
 .inner_possibility_element {
