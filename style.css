@@ -227,17 +227,12 @@ header .links {
     z-index: -1;
 }
 
-#screen1_container {
-    display: flex;
-    justify-content: center;
-}
-
 .site_example {
     margin: -680px auto 0 auto;
     border-radius: 16px;
     box-shadow: 0 4px 84px 0 rgba(0, 0, 0, 0.17);
     width: 100%;
-    height: auto;
+    height: 100%;
     transform-origin: bottom left;
 }
 
@@ -1042,6 +1037,7 @@ header .links {
 
 #vector_img {
     margin-top: 10px;
+    z-index: 999;
 }
 
 #objects_in_one_place .shadow {
