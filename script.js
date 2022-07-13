@@ -446,8 +446,8 @@ document.addEventListener('DOMContentLoaded', () => {
     addTweenTriggerZero('#checks .heading', {opacity: 0}, '#checks', 300, 50, {opacity: 1})
     addTweenTriggerZero('#checks .heading_info', {opacity: 0}, '#checks', 300, 350, {opacity: 1})
     // уведомления
-    addTweenTriggerZero('#checks #sm20', {opacity: 0}, '#checks #sm20', 200, -50, {opacity: 1})
-    addTweenTriggerZero('#checks #sm21', {opacity: 0}, '#checks #sm21', 200, 0, {opacity: 1})
+    addTweenTriggerZero('#checks #sm20', {opacity: 0}, '#checks #sm20', 200, -100, {opacity: 1})
+    addTweenTriggerZero('#checks #sm21', {opacity: 0}, '#checks #sm21', 200, -50, {opacity: 1})
     addTweenTriggerZero('#checks #sm22', {opacity: 0}, '#checks #sm22', 200, 0, {opacity: 1})
     // молния
     addTweenTriggerZero('#checks #lightning', {opacity: 0}, '#checks #lightning', 1500, -350, {opacity: 1})
