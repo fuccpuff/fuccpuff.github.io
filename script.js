@@ -366,21 +366,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Первый экран
     // заголовок
-    addTweenTriggerZero('#main_block_left .heading', {opacity: 0}, '#main_block_left .heading', 300, -50, {opacity: 1})
+    addTweenTriggerZero('#main_block_left .heading', {opacity: 0}, '#main_block_left .heading', 300, -100, {opacity: 1})
 
     // Экран со скриншотом
     addTween('.site_example', {transform: 'scale(1)'}, '.site_example', 3000, -1900, {transform: 'scale(0)'})
 
     // Экран со сценариями
     // заголовок
-    addTweenTriggerZero('#possibility_block_header', {opacity: 0}, '#possibility_block_header', 350, -50, {opacity: 1})
+    addTweenTriggerZero('#possibility_block_header', {opacity: 0}, '#possibility_block_header', 350, -100, {opacity: 1})
     // сценарии
     addTweenTriggerZero('#possibility_block', {opacity: 0}, '#possibility_block', 350, -50, {opacity: 1})
 
     // Экран "Все объекты в одном месте"
     // заголовок и подзаголовок
-    addTweenTriggerZero('#objects_in_one_place .heading', {opacity: 0}, '#objects_in_one_place', 300, 0, {opacity: 1})
-    addTweenTriggerZero('#objects_in_one_place .heading_info', {opacity: 0}, '#objects_in_one_place', 300, 240, {opacity: 1})
+    addTweenTriggerZero('#objects_in_one_place .heading', {opacity: 0}, '#objects_in_one_place', 300, -50, {opacity: 1})
+    addTweenTriggerZero('#objects_in_one_place .heading_info', {opacity: 0}, '#objects_in_one_place', 300, 190, {opacity: 1})
     // значок гео
     addTweenTriggerZero('.shadow', {opacity: 0}, '#objects_in_one_place', 50, 400, {opacity: 1})
     addTweenTriggerZero('#vector_img', {opacity: 0}, '#vector_img', 300, 0, {opacity: 1})
@@ -395,7 +395,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Экран с 25%
     // заголовок
-    addTweenTriggerZero('#economy_block .heading', {opacity: 0}, '#economy_block .heading', 300, -50, {opacity: 1})
+    addTweenTriggerZero('#economy_block .heading', {opacity: 0}, '#economy_block .heading', 300, -150, {opacity: 1})
     // иконки
     addTweenTriggerZero('#economy_block .economy_element:nth-child(1)', {opacity: 0}, '#economy_block .economy_element:nth-child(1)', 400, -50, {opacity: 1})
     addTweenTriggerZero('#economy_block .economy_element:nth-child(2)', {opacity: 0}, '#economy_block .economy_element:nth-child(2)', 400, -50, {opacity: 1})
@@ -405,15 +405,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Экран "Анализ доходности"
     // заголовок и подзаголовок
-    addTweenTriggerZero('#profit_analysis .heading', {opacity: 0}, '#profit_analysis .heading', 300, -50, {opacity1})
+    addTweenTriggerZero('#profit_analysis .heading', {opacity: 0}, '#profit_analysis .heading', 300, -150, {opacity1})
     addTweenTriggerZero('#profit_analysis .heading_info', {opacity: 0}, '#profit_analysis .heading_info', 300, -50, {opacity1})
     // окошко
     addTweenTriggerZero('#count_object', {transform: 'translateX(-100vw)'}, '#count_object', 1500, 0, {})
 
     // Экран "Проверка контрагентов"
     // заголовок и подзаголовок
-    addTweenTriggerZero('#contragents .heading', {opacity: 0}, '#contragents', 600, 50, {opacity: 1})
-    addTweenTriggerZero('#contragents .heading_info', {opacity: 0}, '#contragents', 800, 250, {opacity: 1})
+    addTweenTriggerZero('#contragents .heading', {opacity: 0}, '#contragents', 600, 0, {opacity: 1})
+    addTweenTriggerZero('#contragents .heading_info', {opacity: 0}, '#contragents', 800, 200, {opacity: 1})
     // окошко
     addTweenTriggerZero("#contragents .right", {transform: 'translateX(100vw)'}, '#contragents .right', 900, 400, {})
     // кнопка
@@ -421,8 +421,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Экран "Справки и выписки в один клик"
     // заголовок и подзаголовок
-    addTweenTriggerZero('#references .heading', {opacity: 0}, '#references', 300, 0, {opacity: 1})
-    addTweenTriggerZero('#references .heading_info', {opacity: 0}, '#references', 600, 50, {opacity: 1})
+    addTweenTriggerZero('#references .heading', {opacity: 0}, '#references', 300, -50, {opacity: 1})
+    addTweenTriggerZero('#references .heading_info', {opacity: 0}, '#references', 600, 0, {opacity: 1})
     // иконка
     addTweenTriggerZero('#references_img', {opacity: 0}, '#references_img', 300, 0, {opacity: 1})
     // попап окно
@@ -434,8 +434,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Экран "Актуальная юридическая информация"
     // заголовок и подзаголовок
-    addTweenTriggerZero('#actual_information .heading', {opacity: 0}, '#actual_information', 300, 50, {opacity: 1})
-    addTweenTriggerZero('#actual_information .heading_info', {opacity: 0}, '#actual_information', 300, 350, {opacity: 1})
+    addTweenTriggerZero('#actual_information .heading', {opacity: 0}, '#actual_information', 300, 0, {opacity: 1})
+    addTweenTriggerZero('#actual_information .heading_info', {opacity: 0}, '#actual_information', 300, 300, {opacity: 1})
     // иконка
     addTweenTriggerZero('#juridical_info_img', {opacity: 0}, '#juridical_info_img', 300, 0, {opacity: 1})
     // документы
@@ -443,8 +443,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Экран "Проверки больше не будут внезапными"\
     // заголовок и подзаголовок
-    addTweenTriggerZero('#checks .heading', {opacity: 0}, '#checks', 300, 50, {opacity: 1})
-    addTweenTriggerZero('#checks .heading_info', {opacity: 0}, '#checks', 300, 350, {opacity: 1})
+    addTweenTriggerZero('#checks .heading', {opacity: 0}, '#checks', 300, 0, {opacity: 1})
+    addTweenTriggerZero('#checks .heading_info', {opacity: 0}, '#checks', 300, 300, {opacity: 1})
     // уведомления
     addTweenTriggerZero('#checks #sm20', {opacity: 0}, '#checks #sm20', 200, -100, {opacity: 1})
     addTweenTriggerZero('#checks #sm21', {opacity: 0}, '#checks #sm21', 200, -50, {opacity: 1})
