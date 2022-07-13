@@ -342,7 +342,7 @@ footer {
 .logo_right {
     position: absolute;
     bottom: 20px;
-    right: 20px;
+    right: 40px;
 }
 
 @media screen and (max-width: 1200px) {
