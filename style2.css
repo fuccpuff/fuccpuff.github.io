@@ -120,6 +120,7 @@ body {
 
 #auth_img {
     background: url("static/auth.png") no-repeat;
+    background-position: center;
 }
 
 #register_img {
