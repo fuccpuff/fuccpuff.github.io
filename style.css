@@ -2044,7 +2044,6 @@ input {
 #get_access {
     margin-top: 210px;
     background: linear-gradient(279.21deg, #91C2F4 18%, #6FA7DE 88.3%);
-    height: 1300px;
     padding-top: 90px;
     position: relative;
     overflow: hidden;
@@ -2518,6 +2517,12 @@ footer .footer_links a:nth-child(2) {
     margin-right: 33px;
 }
 
+#get_access .form_button {
+    width: 270px;
+    font-size: 21px;
+    border-radius: 19px;
+}
+
 #sm10 {
     font-size: 26px;
     padding: 0;
@@ -2857,6 +2862,10 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 1024px) {
+    #get_access .heading {
+        font-size: 70px;
+    }
+
     #economy_block {
         margin-top: 166px;
     }
@@ -3426,6 +3435,18 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 600px) {
+    footer .footer_links a {
+        font-size: 14px;
+    }
+
+    footer .footer_links a:nth-child(2) {
+        margin-left: 10px;
+    }
+
+    #get_access #logo_bottom {
+        margin-right: 0;
+    }
+
     #economy_block {
         margin-top: -140px;
     }
@@ -3443,7 +3464,6 @@ footer .footer_links a:nth-child(2) {
     /*#objects_in_one_place #check_cadastral_cost {*/
     /*    right: 605px;*/
     /*}*/
-
     #clap_img {
         left: 463px;
         top: 101px;
@@ -3467,11 +3487,9 @@ footer .footer_links a:nth-child(2) {
     /*#objects_in_one_place #new_cases {*/
     /*    right: 31px;*/
     /*}*/
-
     /*#objects_in_one_place #object_info {*/
     /*    right: 131px;*/
     /*}*/
-
     #profit_analysis #count_object {
         width: 671px;
         right: 90px;
@@ -3523,13 +3541,19 @@ footer .footer_links a:nth-child(2) {
         top: 382px;
         left: 321px;
     }
-
-    #get_access {
-        height: 1350px;
-    }
 }
 
 @media screen and (max-width: 480px) {
+    #logo_bottom {
+        display: none;
+    }
+
+    #get_access .form_button {
+        width: 200px;
+        font-size: 20px;
+        padding: 10px;
+    }
+
     #possibility_block_header {
         font-size: 14px !important;
     }
@@ -3551,10 +3575,6 @@ footer .footer_links a:nth-child(2) {
     #get_access input::placeholder,
     #get_access textarea::placeholder {
         font-size: 16px;
-    }
-
-    #get_access {
-        height: 1000px;
     }
 
     .member h4 {
@@ -3698,7 +3718,8 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 380px) {
-    #objects_in_one_place .heading_info {
+    footer .footer_links a {
+        font-size: 12px;
     }
 }
 
