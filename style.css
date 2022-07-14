@@ -3012,7 +3012,7 @@ footer .footer_links a:nth-child(2) {
     }
 
     #objects_in_one_place #new_cases {
-        right: 214px;
+        right: 274px;
         left: initial;
         top: 69px;
     }
@@ -3020,14 +3020,14 @@ footer .footer_links a:nth-child(2) {
     #objects_in_one_place #object_info {
         position: absolute;
         left: initial;
-        right: 363px;
+        right: -164px;
         top: 220px;
     }
 
     #objects_in_one_place #cells_img_cadastral {
         left: initial;
-        right: 341px;
-        top: -50px;
+        right: 330px;
+        top: 313px;
     }
 
     #objects_in_one_place #cells_img_important {
@@ -3038,8 +3038,8 @@ footer .footer_links a:nth-child(2) {
 
     #objects_in_one_place #check_cadastral_cost {
         left: initial;
-        right: 783px;
-        top: 114px;
+        right: 726px;
+        top: 412px;
     }
 
     #profit_analysis #count_object_container {
@@ -3183,6 +3183,10 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 768px) {
+    #economy_block {
+        margin-top: 0;
+    }
+
     #possibility_block_header {
         display: block;
         text-align: left;
@@ -3364,14 +3368,12 @@ footer .footer_links a:nth-child(2) {
     /*    bottom: -127px;*/
     /*    right: initial;*/
     /*}*/
-
-        /*#objects_in_one_place .shadow {*/
-        /*    !*right: 30px;*!*/
-        /*    bottom: -149px;*/
-        /*    left: -25px;*/
-        /*    right: initial;*/
-        /*}*/
-
+    /*#objects_in_one_place .shadow {*/
+    /*    !*right: 30px;*!*/
+    /*    bottom: -149px;*/
+    /*    left: -25px;*/
+    /*    right: initial;*/
+    /*}*/
     #objects_in_one_place .right {
         margin-top: 100px;
     }
@@ -3424,6 +3426,10 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 600px) {
+    #economy_block {
+        margin-top: -140px;
+    }
+
     #cool_img {
         left: 324px;
         height: 80px;
@@ -3431,12 +3437,12 @@ footer .footer_links a:nth-child(2) {
     }
 
     #objects_in_one_place .right {
-        right: -50px;
+        transform: scale(0.6);
     }
 
-    #objects_in_one_place #check_cadastral_cost {
-        right: 605px;
-    }
+    /*#objects_in_one_place #check_cadastral_cost {*/
+    /*    right: 605px;*/
+    /*}*/
 
     #clap_img {
         left: 463px;
@@ -3458,13 +3464,13 @@ footer .footer_links a:nth-child(2) {
         margin-top: -65px;
     }
 
-    #objects_in_one_place #new_cases {
-        right: 31px;
-    }
+    /*#objects_in_one_place #new_cases {*/
+    /*    right: 31px;*/
+    /*}*/
 
-    #objects_in_one_place #object_info {
-        right: 131px;
-    }
+    /*#objects_in_one_place #object_info {*/
+    /*    right: 131px;*/
+    /*}*/
 
     #profit_analysis #count_object {
         width: 671px;
@@ -3638,6 +3644,10 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 400px) {
+    #objects_in_one_place .right {
+        transform: scale(0.5);
+    }
+
     #actual_information .block_right {
         transform: scale(0.6);
     }
