@@ -341,6 +341,29 @@ footer {
     max-width: 250px;
 }
 
+.file_input input {
+    border: none;
+    opacity: 0;
+    z-index: 2;
+}
+
+.file_input {
+    position: relative;
+    flex: 3 !important;
+}
+
+.custom_file_input {
+    z-index: -1;
+    display: flex;
+    position: absolute;
+    top: 10px;
+}
+
+.custom_file_input span {
+    margin-left: 20px;
+    color: #888;    
+}
+
 .logo_right {
     position: absolute;
     bottom: 20px;

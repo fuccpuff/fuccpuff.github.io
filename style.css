@@ -3271,10 +3271,6 @@ footer .footer_links a:nth-child(2) {
         padding: 20px 15px;
     }
 
-    .logo {
-        transform: scale(0.8);
-    }
-
     #building {
         left: -15px;;
         top: 300px;
@@ -3565,20 +3561,12 @@ footer .footer_links a:nth-child(2) {
         font-size: 14px;
     }
 
-    .logo {
-        transform: scale(0.7);
-    }
-
     .team {
         grid-column-gap: 15px;
     }
 
     .service_team_img {
         transform: scale(0.6);
-    }
-
-    header .links {
-        font-size: 16px;
     }
 
     .heading {
