@@ -3080,7 +3080,7 @@ footer .footer_links a:nth-child(2) {
 
     #contragents #info_cadastral {
         left: initial;
-        right: 60px;
+        right: -300px;
         transform: scale(0.9);
     }
 
@@ -3222,6 +3222,7 @@ footer .footer_links a:nth-child(2) {
     #contragents #info_cadastral {
         transform-origin: top;
         transform: scale(0.8);
+        right: -364px;
     }
 
     #rects3,
@@ -3471,11 +3472,11 @@ footer .footer_links a:nth-child(2) {
 
     #contragents #info_cadastral {
         transform: scale(0.7);
-        right: -100px;
+        right: -365px;
     }
 
     #contragents .block_right {
-        margin-top: 0;
+        margin-top: 110px;
     }
 
     #checks .right {
@@ -3544,6 +3545,14 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 480px) {
+    #contragents .block_right {
+        margin-top: 0;
+    }
+
+    #contragents #info_cadastral {
+        right: -430px;
+    }
+
     #logo_bottom {
         display: none;
     }

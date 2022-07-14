@@ -288,8 +288,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     newWiggle('#vector_img', '#objects_in_one_place', 400)
 
-    addTween("#bradley1", opacity1, '#objects_in_one_place', 300, -100, opacity0)
-    addTween("#cells_img_cadastral", opacity1, '#objects_in_one_place', 250, -150, opacity0)
+    addTween("#bradley1", {opacity: 1}, '#objects_in_one_place', 300, -100, opacity0)
+    addTween("#cells_img_cadastral", {opacity: 1}, '#objects_in_one_place', 250, -150, opacity0)
 //  addTween("#cells_img_important", opacity1, '#objects_in_one_place', 200, 200, opacity0)
 
     // Экран: "Анализ доходности"
@@ -307,16 +307,16 @@ document.addEventListener('DOMContentLoaded', () => {
     addTween("#sm10", bottomAnimation, '#contragents', 350, 0, beforeBottomAnimation)
     addTween("#cool_img", bottomAnimation, '#contragents', 400, -50, beforeBottomAnimation)
 //  addTween("#bradley5", opacity1, '#contragents', 200, -100)
-    addTween("#bradley6", opacity1, '#contragents', 350, -100, {opacity: 0})
-    addTween("#check_cells", opacity1, '#contragents', 250, -150, {opacity: 0})
+    addTween("#bradley6", {opacity: 1}, '#contragents', 350, -100, {opacity: 0})
+    addTween("#check_cells", {opacity: 1}, '#contragents', 250, -150, {opacity: 0})
 //  addTween("#ilya_cells", opacity1, '#contragents', 250, -150)
-    addTween("#info_cadastral_container", {transform: 'translateX(0)'}, '#contragents', 350, 0, {transform: 'translateX(100vw)'})
+    addTween("#info_cadastral_container", {transform: 'translateX(0)'}, '#contragents', 350, 100, {transform: 'translateX(150vw)'})
 
     // Экран "Справки и выписки в один клик"
     addTween("#sm12", bottomAnimation, '#references', 500, -300, beforeBottomAnimation)
     addTween("#sm13", bottomAnimation, '#references', 450, -250, beforeBottomAnimation)
     addTween("#clap_img", bottomAnimation, '#references', 400, -200, beforeBottomAnimation)
-    addTween("#andrey_references", opacity1, '#references', 350, -150, {opacity: 0})
+    addTween("#andrey_references", {opacity: 1}, '#references', 350, -150, {opacity: 0})
     addTween("#egrn", {transform: 'translateX(0)'}, '#references', 300, -100, {transform: 'translateX(-100vw)'})
     addTween("#make_reference", {transform: 'translateX(0)'}, '#references', 150, 50, {transform: 'translateX(-100vw)'})
     addTween("#references_img", {transform: 'translateY(0)'}, '#references', 400, -160, {transform: 'translateY(100vw)'})
@@ -376,7 +376,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // заголовок
     addTweenTriggerZero('#possibility_block_header', {opacity: 0}, '#possibility_block_header', 350, -100, {opacity: 1})
     // сценарии
-    addTweenTriggerZero('#possibility_block', {opacity: 0}, '#possibility_block', 350, -50, {opacity: 1})
+    if (window.innerWidth > 660) // если ширина больше 660px делаем исчезновение раньше
+        addTweenTriggerZero('#possibility_block', {opacity: 0}, '#possibility_block', 350, -50, {opacity: 1})
+    else  // если ширина меньше 660px делаем исчезновение позже
+        addTweenTriggerZero('#possibility_block', {opacity: 0}, '#possibility_block', 350, 350, {opacity: 1})
 
     // Экран "Все объекты в одном месте"
     // заголовок и подзаголовок
@@ -406,8 +409,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Экран "Анализ доходности"
     // заголовок и подзаголовок
-    addTweenTriggerZero('#profit_analysis .heading', {opacity: 0}, '#profit_analysis .heading', 300, -150, {opacity1})
-    addTweenTriggerZero('#profit_analysis .heading_info', {opacity: 0}, '#profit_analysis .heading_info', 300, -50, {opacity1})
+    addTweenTriggerZero('#profit_analysis .heading', {opacity: 0}, '#profit_analysis .heading', 300, -150, {opacity: 1})
+    addTweenTriggerZero('#profit_analysis .heading_info', {opacity: 0}, '#profit_analysis .heading_info', 300, -50, {opacity: 1})
     // окошко
     addTweenTriggerZero('#count_object', {transform: 'translateX(-100vw)'}, '#count_object', 1500, 0, {})
 
