@@ -306,7 +306,7 @@ footer {
     transform-origin: left bottom;
 }
 
-#forgot_password {
+#forgot_password, #new_user {
     text-decoration: underline;
     color: #3B89D7;
 }
@@ -381,6 +381,10 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+    .logo_right {
+        bottom: 10px;
+    }
+
     .logo_white {
         filter: invert(1);
     }
@@ -457,9 +461,11 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-    .logo {
+    .logo_right {
+        right: 10px;
+        margin-right: 0;
         transform: scale(0.7);
-        transform-origin: left center;
+        transform-origin: right;
     }
 
     .form_container h1 {
