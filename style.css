@@ -98,8 +98,9 @@ header {
     padding: 24px 72px;
     width: 100%;
     z-index: 999;
-/*     background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7));
- */}
+    /*     background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7));
+     */
+}
 
 header .container {
     display: flex;
@@ -252,12 +253,14 @@ header .links {
 }
 
 #possibility_block {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(8, auto);
     justify-content: center;
     margin-top: -50px;
     width: auto;
     height: 460px;
     transition: 0.5s;
+    margin-top: 100px;
 }
 
 .possibility_element {
@@ -269,7 +272,7 @@ header .links {
     max-width: 180px;
     height: 265px;
     background-color: #FFF;
-    margin: 100px 10px;
+    margin: 0 10px;
     transition: 0.5s;
     border-radius: 10px;
     box-shadow: 0px 4px 41px 0px rgba(0, 0, 0, 0.11);
@@ -277,13 +280,13 @@ header .links {
     padding: 15px;
 }
 
-#possibility_block .splide__slide {
-    margin: 100px 10px;
-}
+/*#possibility_block .splide__slide {*/
+/*    margin: 100px 10px;*/
+/*}*/
 
-#possibility_block .splide__list {
-    padding: 0 40px !important;
-}
+/*#possibility_block .splide__list {*/
+/*    padding: 0 40px !important;*/
+/*}*/
 
 .possibility_element h3 {
     font-weight: normal;
@@ -2577,6 +2580,18 @@ footer .footer_links a:nth-child(2) {
     }
 }
 
+@media screen and (max-width: 1680px) {
+    #possibility_block {
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-row-gap: 20px;
+    }
+
+    #possibility_block_container {
+        height: 900px;
+    }
+}
+
 @media screen and (max-width: 1540px) {
     #checks .block_left {
         padding-left: 30px;
@@ -3147,7 +3162,33 @@ footer .footer_links a:nth-child(2) {
     }
 }
 
+@media screen and (max-width: 800px) {
+    .possibility_element {
+        min-width: 140px;
+        max-width: 140px;
+        height: 190px;
+    }
+
+    .inner_possibility_element {
+        transform: scale(0.7);
+    }
+
+    #possibility_block {
+        grid-row-gap: 0;
+    }
+
+    .pe_second_row {
+        margin-top: -40px !important;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    #possibility_block_header {
+        display: block;
+        text-align: left;
+        margin-left: 40px;
+    }
+
     #objects_in_one_place .right {
         transform: scale(0.8);
         transform-origin: top;
@@ -3322,18 +3363,18 @@ footer .footer_links a:nth-child(2) {
         font-size: 23px;
     }
 
-    #vector_img {
-        width: 90px;
-        bottom: -127px;
-        right: initial;
-    }
+    /*#vector_img {*/
+    /*    width: 90px;*/
+    /*    bottom: -127px;*/
+    /*    right: initial;*/
+    /*}*/
 
-    #objects_in_one_place .shadow {
-        /*right: 30px;*/
-        bottom: -149px;
-        left: -25px;
-        right: initial;
-    }
+        /*#objects_in_one_place .shadow {*/
+        /*    !*right: 30px;*!*/
+        /*    bottom: -149px;*/
+        /*    left: -25px;*/
+        /*    right: initial;*/
+        /*}*/
 
     #objects_in_one_place .right {
         margin-top: 100px;
@@ -3367,6 +3408,22 @@ footer .footer_links a:nth-child(2) {
 
     #contragents {
         margin-top: -100px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    #possibility_block {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-row-gap: 20px;
+    }
+
+    .pe_second_row {
+        margin-top: 0 !important;
+    }
+
+    #possibility_block_container {
+        height: 1000px;
     }
 }
 
@@ -3429,6 +3486,11 @@ footer .footer_links a:nth-child(2) {
 
     #vector_img {
         width: 75px;
+        right: 65px;
+    }
+
+    #objects_in_one_place .shadow {
+        transform: scale(0.7);
     }
 
     #juridical_info_img {
@@ -3466,14 +3528,8 @@ footer .footer_links a:nth-child(2) {
 }
 
 @media screen and (max-width: 480px) {
-    .possibility_element {
-        min-width: 140px;
-        max-width: 140px;
-        height: 190px;
-    }
-
-    .inner_possibility_element {
-        transform: scale(0.7);
+    #possibility_block_header {
+        font-size: 14px !important;
     }
 
     #objects_in_one_place .right {
@@ -3483,7 +3539,6 @@ footer .footer_links a:nth-child(2) {
     #references {
         margin-top: -100px;
     }
-
 
     #get_access input,
     #get_access textarea {
@@ -3574,6 +3629,7 @@ footer .footer_links a:nth-child(2) {
 
     #vector_img {
         width: 60px;
+        right: 45px;
     }
 
     #objects_in_one_place .shadow {
